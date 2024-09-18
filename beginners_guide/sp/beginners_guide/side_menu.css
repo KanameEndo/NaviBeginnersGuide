@@ -1,0 +1,306 @@
+/*---------------------------------------------------------
+            slide menu
+---------------------------------------------------------*/
+.side_menu {
+  position: fixed;
+  top: 0;
+  right: -468px;
+  width: 420px;
+  height: 100%;
+  background: #ffffff;
+  z-index:1003;
+  transform: translate3d(0px, 0px, 12px);
+  -webkit-transform: translate3d(0px, 0px, 12px);
+  -ms-transform: translate3d(0px, 0px, 12px);
+  font-size: 14px;
+}
+.side_menu .content_wrap_breeder{
+background-color: #FAFAFA;
+}
+.side_menu .breederlogin{
+  background-color: #FAFAFA;
+  margin-bottom:24px;
+}
+.side_menu_row{
+display: flex;
+gap: 0px 8px;
+}
+/* close btn */
+.side_menu .close_side_menu{
+  position: absolute;
+  left: -48px;
+}
+.side_menu .close_side_menu .side_menu_menu_toggle{
+position: relative;
+}
+.side_menu .close_side_menu .side_menu_menu_toggle::before{
+  content:url("../images/icon_sidemenu_close_w.png");
+  width: 48px;
+  height: 48px;
+  display: block;
+  top:0;
+  right:calc(420px - 100vw);
+}
+/* メニューが開いたら背景を固定する */
+.side-open{
+  overflow: hidden;
+  height: 100%;
+  position: fixed!important;
+}
+/* サイドオープン時にメインコンテンツを覆う部分 */
+.side_menu_overlay {
+  visibility: visible;
+  background:rgba(0,0,0,.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100% ;
+  height: 100%;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  z-index:1001;
+  transform: translate3d(0px, 0px, 11px);
+  -webkit-transform: translate3d(0px, 0px, 11px);
+  -ms-transform: translate3d(0px, 0px, 11px);
+  cursor: pointer;
+}
+@media screen and (max-width:1100px){
+  .side_menu {
+    right: -468px;
+    width: 350px;
+  }
+}
+@media screen and (max-width:375px){
+  .side_menu {
+    right: -368px;
+    width: 270px;
+  }
+}
+
+
+/*---------------------------------------------------------
+            slide menu inner
+---------------------------------------------------------*/
+
+/*  User表示 */
+.use_wrap{
+  display: flex;
+  gap: 0 16px;
+  margin-bottom: 24px;
+  line-height: 1;
+  align-items: center;
+}
+.usericon{
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+  object-fit: cover;
+}
+.username{
+  margin-bottom:8px;
+}
+.userstate{
+  font-size: 12px;
+  color: #B0B0B0;
+}  
+
+/* title */
+.side_menu_title{
+font-weight: 600;
+line-height: 1.4em;
+padding: 8px 24px;
+position: relative;
+color: #555555;
+}
+.side_menu .content_wrap_breeder > .side_menu_title,.side_menu .content_wrap_login .content_wrap_login_inner > .side_menu_title
+{
+padding: 16px 0;
+}
+
+/* list */
+.side_menu_list{
+margin-bottom: 32px;
+border-top: 1px #E5E5E5 solid;
+line-height: 1.2;
+}
+.side_menu_list a{
+display: block;
+border-bottom: 1px #E5E5E5 solid;
+padding: 16px 24px;
+}
+.side_menu_list a:hover {
+background-color: #FAFAFA;
+}
+.side_menu_list span{
+  display: block;
+  font-size: 11px;
+  color: #B0B0B0;
+  margin-top:8px;
+}
+
+
+/* サイドメニュー内通知（数字文字列あり) */
+#sidr-menu .new-arrival{
+  position: relative;
+}
+#sidr-menu .new-arrival[data-num=""]::after {
+  display: none;
+}
+#sidr-menu .new-arrival::after
+{
+  content: attr(data-num);
+  background-color: #FF2C2C;
+  border-radius: 10px;
+  position: absolute;
+  top: 41%;
+  right: 24px;
+  z-index: 1;
+  padding: 4px 5px;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 1;
+}
+
+#sidr-menu .protrusion.new-arrival::after{
+  transform: translate(-180%, -76%);
+}
+
+#sidr-menu .protrusion.breeder.new-arrival::after{
+  transform: translate(-180%, -10%);
+}
+
+#sidr-menu .protrusion.breeder.new-arrival::after{
+  transform: translate(-180%, -10%);
+}
+
+#sidr-menu li.new-arrival a{
+  padding-right: 96px;
+}
+
+/* title アイコン装飾 */
+.side_menu_title::before{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+  text-align: center;
+  vertical-align:  middle;
+  transform: scale(0.8, 0.8);
+}
+
+.side_menu_title.icon_loupe::before{
+  content:url("../images/icon_sidemenu_loupe_p.png");
+  }
+.side_menu_title.icon_info::before{
+  content:url("../images/icon_sidemenu_help_p.png");
+  }
+.side_menu_title.icon_like::before{
+  content:url("../images/icon_sidemenu_good_p.png");
+  }
+.side_menu_title.icon_foot_p::before {
+  content:url("../images/icon_sidemenu_foot_p.png");
+  }
+.side_menu_title.icon_foot_y::before{
+content:url("../images/icon_sidemenu_foot_y.png");
+}
+
+  
+/* btn 共通スタイル*/
+.side_menu_btn{
+font-weight: bold;
+font-size: 12px;
+padding:12px 0px;
+box-sizing: border-box;
+border-radius: 4px; 
+margin-bottom:16px;
+text-align: center;
+flex-grow: 1;
+justify-content: center;
+align-items: center;
+line-height: 1.4;
+}
+
+.side_menu_btn:hover{
+opacity: 0.8;
+}
+
+/* btn 塗り */
+.side_menu_btn.fill--pink{
+background: #ef6b8e;
+color: #ffffff;
+border: 2px solid #ef6b8e;
+display: block;
+}
+.side_menu_btn.fill--yellow{
+background: #E19623;
+color: #ffffff;
+border: 2px solid #E19623;
+display: block;
+}
+
+/* btn アウトライン */
+.side_menu_btn.outline--pink{
+background: #ffffff;
+color: #ef6b8e;
+border: 2px solid #ef6b8e;
+display: block;
+}
+.side_menu_btn.outline--yellow{
+background: #ffffff;
+color: #E19623;
+border: 2px solid #E19623;
+display: block;
+}
+
+/* btn 凹凸装飾 */
+.side_menu_btn.protrusion{
+background: #ffffff;
+color: #555555;
+border: 1px solid #e5e5e5;
+border-bottom: 4px solid #f2f2f2;
+position: relative;
+text-align: center;
+justify-content: center;
+align-items: center;
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+.side_menu_btn.protrusion >.subtext{
+font-size: 12px;
+color: #B0B0B0;
+font-weight: 400;
+display: block;
+}
+
+
+/* btn アイコン装飾 */
+.protrusion::before{ 
+  transform: scale(0.9, 0.9);
+}
+.icon_favorite::before{
+  content:url(../images/icon_sidemenu_favorite_p.png);
+  display: block;
+  margin-bottom:4px;
+}
+.icon_history::before{
+  content:url(../images/icon_sidemenu_history_p.png);
+  display: block;
+  margin-bottom:4px;
+}
+.icon_chat::before{
+  content:url(../images/icon_sidemenu_chat_p.png);
+  display: block;
+  margin-bottom:4px;
+}
+.icon_face::before{
+  content:url(../images/icon_sidemenu_face_y.png);
+  display: block;
+  margin-bottom:4px;
+}
+.icon_logout::before{
+  content:url(../images/icon_sidemenu_logout_y.png);
+  display: block;
+  margin-bottom:4px;
+}

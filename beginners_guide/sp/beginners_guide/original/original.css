@@ -1,0 +1,1039 @@
+@charset "utf-8";
+/* ==============================
+
+  common.cssに入ってるので不要
+
+================================*/
+.key-content .icon_breeder-search span.bg_icon_circle::before, .key-content .icon_dog-search span.bg_icon_circle::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.icon_dog-search span.bg_icon_circle::before, ul.focus li .icon_dog-search::after {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 27px;
+  background-image: url(../images/icon_search_dog.svg);
+  background-size: cover;
+  vertical-align: text-bottom;
+}
+.icon_breeder-search span.bg_icon_circle::before, ul.focus li .icon_breeder-search::after {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 29px;
+  background-image: url(../images/icon_search_breeder.svg);
+  background-size: cover;
+  vertical-align: text-bottom;
+}
+@media screen and (max-width: 1100px) {
+  .icon_breeder-search span.bg_icon_circle::before {
+    width: 17px;
+    height: 19px;
+  }
+  .icon_dog-search span.bg_icon_circle::before {
+    width: 21px;
+    height: 16px;
+  }
+}
+
+
+/* ==============================
+
+  base
+
+================================*/
+#guide,#guide a {
+  color: #563333;
+}
+#guide a.link_border {
+  text-decoration: underline;
+}
+#guide img {
+  width: 100%;
+}
+#guide p {
+  font-size: 15px;
+  line-height: 1.8em;
+}
+#guide .tsukufont {
+  font-family: "fot-tsukuardgothic-std", sans-serif, Arial,Helvetica,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",HiraKakuPro-W3,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+#guide .logocolor {
+  color: #EE7C7C;
+}
+#guide span.rl_sla {
+  position: relative;
+}
+#guide .rl_sla::before,
+#guide .rl_sla::after {
+content: "";
+position: absolute; 
+top: 0px;
+display: inline-block;
+width: 2px;
+height: 100%;
+background: #ccc;
+border-radius: 50px;
+}
+#guide .rl_sla::before { 
+  left: -14px; 
+  transform: rotate( -30deg ); 
+}
+#guide .rl_sla::after { 
+  right: -14px; 
+  transform: rotate( 30deg ); 
+}
+#guide .pc_ver {
+  display: block;
+}
+#guide .sp_ver {
+  display: none;
+}
+#guide span.bg_icon_circle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 100vh;
+  background-color: #f9f4f1;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+#guide .icon_dog-search span.bg_icon_circle::before,
+#guide .icon_breeder-search span.bg_icon_circle::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+#guide span.btnsearch_name {
+  vertical-align: sub;
+}
+
+/* =====================
+  header
+=======================*/
+#guide .guide_header {
+  background: linear-gradient(to bottom, #F9F4F1, #FFFFFF);
+  background: -webkit-linear-gradient(top, #F9F4F1, #FFFFFF);
+  background: -moz-linear-gradient(top, #F9F4F1, #FFFFFF);
+  position: relative;
+}
+#guide .guide_header .guide_header_inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 38px;
+  position: relative;
+}
+#guide .guide_header .guide_header_inner .guide_header_txt {
+  margin-right: 50px;
+}
+#guide .guide_header .guide_header_inner h2 {
+  color: #EE7C7C;
+  font-size: 28px;
+  margin: 0 50px 28px 0;
+}
+#guide .guide_header .guide_header_inner p {
+  color: #866C6D;
+  font-size: 14px;
+}
+#guide .guide_header .guide_header_inner .guide_header_img {
+  width: 340px;
+}
+
+/* =====================
+  header nav
+=======================*/
+#guide .guide_header .guide_nav {
+  width: 816px;
+  font-weight: bold;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+  left: 0;
+  margin: auto;
+  padding: 8px;
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(134, 108, 109, .08);
+}
+#guide .guide_header .guide_nav ul {
+  display: flex;
+  justify-content: center;
+}
+#guide .guide_header .guide_nav ul li,
+#guide .guide_header .guide_nav ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+#guide .guide_header .guide_nav ul li.guide_focus,
+#guide .guide_header .guide_nav ul li a {
+  font-size: 13px;
+  text-align: center;
+  border-radius: 50px;
+  padding: 20px 39px;
+}
+#guide .guide_header .guide_nav ul li a:hover,
+#guide .guide_header .guide_nav ul li.guide_focus {
+  color: #FFFFFF;
+  background-color: #EE7C7C;
+  border-radius: 50px;
+}
+#guide .guide_header .guide_nav ul li {
+  margin-right: 9px;
+}
+#guide .guide_header .guide_nav ul li:last-child {
+  margin-right: 0;
+}
+#guide .guide_header .guide_nav ul li .nav_icon {
+ margin-right: 8px; 
+}
+#guide .guide_header .guide_nav ul li .icon_wakaba::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(../img/icon_wakaba.png);
+  background-size: cover;
+  vertical-align: middle;
+  border-radius: 50px;
+  background-color: #F9F4F1;
+  margin-top: -3px;
+}
+#guide .guide_header .guide_nav ul li .icon_dog::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(../img/icon_dog.png);
+  background-size: cover;
+  vertical-align: middle;
+  border-radius: 50px;
+  background-color: #F9F4F1;
+  margin-top: -3px;
+}
+#guide .guide_header .guide_nav ul li .icon_present::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(../img/icon_present.png);
+  background-size: cover;
+  vertical-align: middle;
+  border-radius: 50px;
+  background-color: #F9F4F1;
+  margin-top: -3px;
+}
+#guide .guide_header .guide_nav ul li .icon_book::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-image: url(../img/icon_book.png);
+  background-size: cover;
+  vertical-align: middle;
+  border-radius: 50px;
+  background-color: #F9F4F1;
+  margin-top: -3px;
+}
+#guide .icon_paw::before {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 23px;
+  background: url(../img/svg/icon_paw.svg);
+  background-size: cover;
+  vertical-align: sub;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+#guide .guide_section h3.step::before {
+  width: 43px;
+  height: 47px;
+  top: -70px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+#guide .guide_section h3.step01::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: url(../img/svg/icon_ttl_step01.svg);
+  background-size: cover;
+}
+#guide .guide_section h3.step02::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: url(../img/svg/icon_ttl_step02.svg);
+  background-size: cover;
+}
+#guide .guide_section h3.step03::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  background: url(../img/svg/icon_ttl_step03.svg);
+  background-size: cover;
+}
+#guide .guide_section h4 {
+  width: calc(100% - 32px);
+  font-size: 16px;
+  line-height: 1.8em;
+  font-weight: 600;
+  background-color: #F9F4F1;
+  padding: 16px;
+}
+#guide .guide_section h3.icon_paw::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 33px;
+  background: url(../img/svg/icon_paw.svg);
+  background-size: cover;
+  vertical-align: sub;
+  position: absolute;
+  top: -100px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+#guide .icon_magnifying-glass::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(../img/svg/icon_magnifying-glass.svg);
+  background-size: cover;
+  vertical-align: top;
+  margin-right: 8px;
+}
+#guide .icon_circle-question {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(../img/svg/icon_circle-question.svg);
+  background-size: cover;
+  vertical-align: sub;
+  margin-right: 8px;
+}
+#guide .icon_circle-exclamation-mark::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  background-image: url(../img/svg/icon_circle-exclamation-mark.svg);
+  background-size: cover;
+  vertical-align: sub;
+  margin-right: 8px;
+}
+#guide .attention_kome li {
+  padding-left: 1em;
+	text-indent: -0.7em;
+  margin-bottom: 5px !important;
+}
+
+/* =====================
+  guide_about
+=======================*/
+#guide .guide_about {
+  margin: 128px auto;
+  display: flex;
+  position: relative;
+  width: 950px;
+}
+#guide .guide_about h3 {
+  font-size: 28px;
+  line-height: 1.8em;
+  letter-spacing: 0.1em;
+  margin-bottom: 56px;
+}
+#guide .guide_about .guide_about_txt {
+  width: 488px;
+  padding-left: 5vw;
+}
+#guide .guide_about .guide_about_txt p {
+  margin-bottom: 25px;
+}
+#guide .guide_about .guide_about_txt p:last-child {
+  margin-bottom: 0;
+}
+#guide .guide_about_img {
+  width: 400px;
+  position: absolute;
+  right: -50px;
+  bottom: 0;
+}
+
+/* =====================
+  guide_check / guide_step
+=======================*/
+#guide .guide_check,
+#guide .guide_step {
+  width: 100%;
+  background-color: #F9F4F1;
+}
+#guide .guide_check .guide_check_inner ul,
+#guide .guide_step .guide_step_inner ul {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#guide .guide_check .guide_check_inner ul li,
+#guide .guide_step .guide_step_inner ul li {
+  width: 200px;
+  border-left: thin dashed #DBDBDB;
+  font-weight: bold;
+  position: relative;
+}
+#guide .guide_check .guide_check_inner ul li:last-child,
+#guide .guide_step .guide_step_inner ul li:last-child {
+  border-right: thin dashed #DBDBDB;
+}
+#guide .guide_check .guide_check_inner ul li::after,
+#guide .guide_step .guide_step_inner ul li::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  background: url(../img/svg/arrow_bottom.svg) no-repeat;
+  background-size: contain;
+  bottom: 32px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+#guide .guide_check .guide_check_inner ul .check,
+#guide .guide_step .guide_step_inner ul .step {
+  color: #EE7C7C;
+  font-weight: normal;
+  line-height: 1.0;
+  letter-spacing: 0.09em;
+  margin-bottom: 12px;
+}
+#guide .guide_check .guide_check_inner ul .rl_sla::before, 
+#guide .guide_check .guide_check_inner ul .rl_sla::after,
+#guide .guide_step .guide_step_inner ul .rl_sla::before, 
+#guide .guide_step .guide_step_inner ul .rl_sla::after {
+  background: #F3AAAA !important;
+}
+#guide .guide_check .guide_check_inner ul li a,
+#guide .guide_step .guide_step_inner ul li a {
+  padding: 32px 0 59px;
+  display: block;
+}
+
+/* ==============================
+
+  guide_section base 
+
+================================*/
+#guide .guide_margin {
+  width: 100%;
+  margin-bottom: 80px;
+}
+/* section */
+#guide .guide_section {
+  width: 800px;
+  margin: 176px auto 0;
+}
+#guide .guide_section h3,
+#guide .guide_section p.description,
+#guide .guide_section h4 {
+  text-align: center;
+  margin-bottom: 56px;
+}
+#guide .guide_section h3 {
+  font-family: "fot-tsukuardgothic-std", sans-serif, Arial,Helvetica,"メイリオ",Meiryo,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",HiraKakuPro-W3,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+  font-size: 26px;
+  line-height: 1.6em;
+  position: relative;
+  letter-spacing: 0.09em;
+}
+#guide .guide_section h3::before {
+  content: "";
+  position: absolute;
+  width: 38px;
+  height: 47px;
+  display: inline-block;
+  background: url(../img/icon_ttl_point.png);
+  background-size: cover;
+  top: -70px;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+#guide .guide_section p {
+  margin-bottom: 23px;
+}
+#guide .guide_section p:last-child {
+  margin-bottom: 0;
+}
+/* cardlist */
+#guide .guide_cardlist {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
+}
+#guide .guide_cardlist li {
+  width: 31.7%;
+  height: 237px;
+  box-shadow: 0px 4px 16px 0px rgba(86, 50, 50, .05);
+  border: 1px solid #F9F4F1;
+  margin: 0 16px 56px 0;
+  display: table;
+  border-radius: 12px;
+}
+#guide .guide_cardlist li:nth-child(3n) {
+  margin-right: 0;
+}
+#guide .guide_cardlist li .cardlist_inner {
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#guide .guide_cardlist li .cardlist_inner a {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+#guide .guide_cardlist li .cardlist_inner a .card_item {
+  display: table-cell;
+  vertical-align: middle;
+}
+#guide .guide_cardlist li .cardlist_inner a:hover {
+  background-color: #F9F4F1;
+}
+#guide .guide_cardlist li .cardlist_inner a:hover h5 {
+  color: #EE7C7C;
+}
+#guide .guide_cardlist li .cardlist_inner a:hover .btn_more {
+  color: #FFFFFF;
+  background-color: #EE7C7C;
+}
+#guide .guide_cardlist li .cardlist_inner img {
+  width: 100px;
+  margin-bottom: 5px;
+}
+#guide .guide_cardlist li .btn_more {
+  width: 36%;
+  color: #EE7C7C;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #EE7C7C;
+  border-radius: 50px;
+  padding: 4px 16px;
+  margin: 12px auto 0;
+  display: block;
+}
+#guide .guide_cardlist.col1 {
+  display: block;
+}
+#guide .guide_cardlist.col1 li {
+  width: 100%;
+}
+/* accordion */
+#guide .guide_accordion.accordion_des {
+  margin: 48px auto;
+  border-bottom: thin dashed #EE7C7C;
+}
+#guide .guide_accordion {
+  border-bottom: thin dashed #DBDBDB;
+}
+#guide .guide_accordion dt {
+  text-align:center;
+  border-top: thin dashed #DBDBDB;
+  display:block;
+  cursor:pointer;
+  padding: 40px 0;
+}
+#guide .guide_accordion dt p {
+  font-size: 14px;
+}
+#guide .guide_accordion .accordion_dt_box {
+  display: flex;
+  justify-content: space-between;
+}
+#guide .guide_accordion .accordion_dt_box .accordion_dt_inner, 
+#guide .guide_accordion .accordion_dt_box .btn_accordion {
+  width: -webkit-fill-available;
+  display: inline-flex;
+  align-items: center;
+}
+#guide .guide_accordion.accordion_des .accordion_dt_box .accordion_dt_inner {
+  width: auto;
+}
+#guide .guide_accordion dt .accordion_dt_txt  {
+  text-align: left;
+}
+#guide .guide_accordion dt .accordion_dt_txt h5,
+#guide .guide_accordion dd .open_ttl,
+#guide h5.icon_paw {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+#guide h5.icon_paw,
+#guide .guide_accordion dd .open_ttl {
+  padding-left: 30px;
+  position: relative;
+}
+#guide .guide_accordion dt .accordion_dt_txt p {
+  color: #866C6D;
+}
+#guide .guide_accordion dt p.btn {
+  color: #EE7C7C;
+  display: flex;
+  align-items: center;
+}
+#guide .guide_accordion p.btn::before {
+  content: "もっと詳しく";
+}
+#guide .guide_accordion.accordion_des p.btn::before {
+  content: none;
+}
+#guide .guide_accordion dt p.btn.active::before {
+  content: "閉じる";
+}
+#guide .guide_accordion.accordion_des dt p.btn.active::before {
+  content: none;
+}
+#guide .guide_accordion img.thumbnail {
+  width: 127px;
+  margin: 0 24px 0 0;
+}
+#guide .guide_accordion .btn span.icon_accordion {
+  border: 1.5px solid #FFFFFF;
+  border-radius: 5px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  background-color: #EE7C7C;
+  border-radius: 50px;
+  margin-left: 8px;
+}
+#guide .guide_accordion .btn span.icon_accordion::before,
+#guide .guide_accordion .btn span.icon_accordion::after {
+  content: "";
+  position: absolute;
+  background: #FFFFFF;
+  top: 50%;
+  width: 12px;
+  height: 1.5px;
+  transition: all 0.3s;
+}
+#guide .guide_accordion .btn span.icon_accordion::after {
+  top: 48%;
+}
+#guide .guide_accordion .btn span.icon_accordion::before{
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+#guide .guide_accordion .btn span.icon_accordion::after{
+  transform: translateX(-50%);
+}
+#guide .guide_accordion .btn.active span.icon_accordion::before{
+  transform: translate(-50%, -50%);
+}
+#guide .guide_accordion .btn.active span.icon_accordion::after{
+  opacity: 0;
+}
+#guide .guide_accordion dd {
+  text-align: left;
+  display: none;
+  padding-bottom: 40px;
+}
+#guide .guide_accordion.accordion_des dt {
+  background-color: #FEFBFB;
+  padding: 16px 0;
+  border-color: #EE7C7C;
+  position: relative;
+}
+#guide .accordion_des dt::before {
+  content: "";
+  background-image: url(../img/icon_dog2.png);
+  width: 64px;
+  height: 75px;
+  display: inline-block;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 24px;
+}
+#guide .guide_accordion.accordion_des dt h5 {
+  margin: 0 0 0 108px;
+}
+#guide .guide_accordion dd ol {
+  list-style-type: decimal;
+}
+#guide .guide_accordion dd li,
+#guide .accordion_des dd .guide_cardlist li {
+  margin-bottom: 23px;
+}
+#guide .guide_accordion dd,
+#guide .accordion_des dd {
+  padding: 48px 56px;
+}
+#guide .guide_accordion dd li:last-child {
+  margin-bottom: 0;
+}
+
+/* =====================
+  guide_check
+=======================*/
+#guide #check01 img {
+  margin-bottom: 56px;
+}
+#guide #check02 .guide_check_item {
+  margin-bottom: 0;
+  border-bottom: thin dashed #DBDBDB;
+}
+
+/* =====================
+  txt_ttl_list
+=======================*/
+#guide .txt_ttl_list {
+  margin-bottom: 56px;
+}
+
+/* =====================
+  attention
+=======================*/
+#guide .attention_top {
+  font-size: 10px;
+  vertical-align: super;
+}
+#guide .attention_txt {
+  font-weight: lighter;
+  color: #866C6D;
+}
+
+/* =====================
+  btn
+=======================*/
+#guide .btn_normal {
+  margin: 48px auto;
+}
+#guide .btn_normal a {
+  color: #563333;
+  font-size: 14px;
+  border: 1px solid #563333;
+  border-radius: 4px;
+  padding: 8px 16px;
+  transition: all 0.3s ease 0s;
+  display: inline-block;
+}
+#guide .btn_color a {
+  color: #EE7C7C;
+  font-size: 14px;
+  border: 1px solid #EE7C7C;
+  border-radius: 4px;
+  padding: 8px 16px;
+  transition: all 0.3s ease 0s;
+}
+#guide .btn_column a {
+  display: inline-block;
+  margin-right: 16px;
+}
+#guide .btn_color a:hover {
+  color: #FFFFFF;
+  background-color: #EE7C7C;
+}
+#guide .btn_size {
+  font-size: 16px;
+  margin: 48px auto;
+}
+#guide .btn_size a,
+#guide .btn_size li {
+  display: block;
+  margin-bottom: 20px;
+}
+#guide .btn_size-s {
+  width: 30%;
+}
+#guide .btn_size-m {
+  width: 65%;
+}
+#guide .btn_size-l {
+  width: 100%;
+}
+#guide .btn_column a:last-child {
+  margin-right: 0;
+}
+#guide .btn_size a:last-child,
+#guide .btn_size li:last-child {
+  margin-bottom: 0;
+}
+
+
+@media screen and (max-width: 1100px) {
+/* ==============================
+
+  sp
+
+================================*/
+/* ==============================
+  base
+================================*/
+#guide p {
+  font-size: 14px;
+}
+#guide img.img_size {
+  width: 196px;
+}
+#guide .pc_ver {
+  display: none;
+}
+#guide .sp_ver {
+  display: block;
+}
+
+/* ==============================
+  header
+================================*/
+#guide .guide_header .guide_header_inner {
+  padding-top: 65px;
+  display: block;
+}
+#guide .guide_header .guide_header_inner h2 {
+  font-size: 18px;
+  margin: 0 0 16px 0;
+}
+#guide .guide_header .guide_header_inner .guide_header_txt {
+  margin: 0;
+  padding: 0 24px;
+}
+#guide .guide_header_img {
+  display: none;
+}
+
+/* ==============================
+  nav
+================================*/
+#guide .guide_header .guide_nav {
+  width: calc(100% - 32px);
+  position: unset;
+  border-radius: 20px;
+  margin-top: 24px;
+}
+#guide .guide_header .guide_nav ul {
+  display: block;
+}
+#guide .guide_header .guide_nav ul li,
+#guide .guide_header .guide_nav ul li a,
+#guide .guide_header .guide_nav ul li.guide_focus {
+  text-align: left;
+  display: block;
+}
+#guide .guide_header .guide_nav ul li {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+#guide .guide_header .guide_nav ul li:last-child {
+  margin-bottom: 0;
+}
+#guide .guide_header .guide_nav ul li a {
+  padding: 12px 8px;
+}
+#guide .guide_header .guide_nav ul li a:hover,
+#guide .guide_header .guide_nav ul li.guide_focus {
+  padding: 8px;
+}
+
+/* ==============================
+  about
+================================*/
+#guide .guide_about {
+  margin: 96px auto;
+  display: block;
+  width: calc(100% - 48px);
+}
+#guide .guide_about h3 {
+  font-size: 24px;
+  letter-spacing: 0.05em;
+}
+#guide .guide_about .guide_about_txt {
+  width: auto;
+  margin: 0 0 45px 0;
+  padding: 0;
+}
+#guide .guide_about_img {
+  width: 100%;
+  position: unset;
+  margin: 0;
+}
+
+/* ==============================
+  check / step
+================================*/
+#guide .guide_check .guide_check_inner ul,
+#guide .guide_step .guide_step_inner ul {
+  display: inherit;
+  padding: 0 16px;
+}
+#guide .guide_check .guide_check_inner ul li,
+#guide .guide_step .guide_step_inner ul li {
+  width: 49%;
+  display: inline-block;
+  border: none;
+}
+#guide .guide_check .guide_check_inner ul li:last-child,
+#guide .guide_step .guide_step_inner ul li:last-child {
+  border: none;
+}
+#guide .guide_check_item,
+#guide .guide_step_item {
+  margin-bottom: 64px;
+}
+
+/* ==============================
+  ttl_txt_list_item
+================================*/
+#guide .ttl_txt_list_item {
+  margin-bottom: 48px;
+}
+
+/* ==============================
+  accordion
+================================*/
+#guide .guide_accordion dt {
+  padding: 28px 0;
+}
+#guide .guide_accordion .accordion_dt_box,
+#guide .guide_accordion .accordion_dt_box .btn_accordion {
+  display: block;
+}
+#guide .guide_accordion img.thumbnail {
+  width: 100px;
+  margin: 0 16px 0 0;
+}
+#guide .guide_accordion .accordion_dt_box .btn_accordion {
+  margin-top: 8px;
+}
+#guide .guide_accordion dt p.btn {
+  justify-content: flex-end;
+}
+#guide .guide_accordion dd {
+  padding: 0px 0 28px;
+}
+#guide .guide_accordion.accordion_des .accordion_dt_box {
+  display: flex;
+}
+#guide .guide_accordion.accordion_des .accordion_dt_box .btn_accordion {
+  width: auto;
+  display: flex;
+  margin: 0 !important;
+}
+#guide .guide_accordion.accordion_des dd {
+  padding: 24px 24px 24px 42px;
+}
+#guide .guide_accordion.accordion_des dt::before {
+  width: 40px;
+  height: 46px;
+}
+#guide .guide_accordion.accordion_des dt h5 {
+  margin-left: 72px;
+}
+
+/* ==============================
+  guide_section
+================================*/
+#guide .guide_section {
+  width: calc(100% - 48px);
+}
+#guide .guide_section h3, 
+#guide .guide_section p.description, 
+#guide .guide_section h4,
+#guide #check01 img,
+#guide img.img_size {
+  margin-bottom: 48px;
+}
+#guide .guide_section h3 {
+  font-size: 20px;
+}
+#guide .guide_section h4 {
+  font-size: 16px;
+  padding: 12px 16px;
+}
+
+/* ==============================
+  cardlist
+================================*/
+/* reset */
+#guide .guide_cardlist li,
+#guide .accordion_des dd .guide_cardlist li {
+  width: 47.5%;
+  height: 200px;
+  font-size: 13px;
+  margin-bottom: 2vw;
+}
+#guide .guide_cardlist li:nth-child(3n) {
+  margin-right: auto;
+}
+#guide .guide_cardlist li:nth-child(odd) {
+  margin-right: 2vw;
+}
+#guide .guide_cardlist li:nth-child(2n) {
+  margin-right: 0;
+}
+#guide .guide_cardlist li .cardlist_inner img {
+  width: 80px;
+}
+#guide .guide_cardlist li .btn_more {
+  width: 50%;
+  font-size: 12px;
+}
+#guide .guide_cardlist_box {
+  padding: 20px !important;
+}
+#guide .guide_accordion .guide_cardlist.col1 {
+  margin-bottom: 15px;
+}
+#guide .guide_accordion .guide_cardlist.col1 li {
+  width: fit-content;
+  padding: 14px;
+  margin: 0 auto 2vw;
+} 
+#guide .guide_cardlist.col1 li .cardlist_inner img {
+  width: 166px;
+}
+
+/* ==============================
+  font size
+================================*/
+#guide .semi_small {
+  font-size: 14px !important;
+}
+}
+
+
+@media screen and (max-width: 364px) {
+  #guide .btn_column a {
+    margin-bottom: 16px;
+  }
+  #guide .btn_column a:last-child {
+    margin-bottom: 0;
+  }
+}
+

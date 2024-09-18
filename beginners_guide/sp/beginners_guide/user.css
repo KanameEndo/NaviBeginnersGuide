@@ -1,0 +1,8649 @@
+@charset "utf-8";
+
+/* ------------------------------------------------------------------
+  topicPath
+------------------------------------------------------------------ */
+
+.breadCrumb {
+    position: static;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: solid 1px #e9e9e9;
+    padding-top: 32px;
+}
+
+.breadcrumb_list {
+    width: 1100px;
+    margin: 0px auto;
+    overflow: hidden;
+    font-size: 13px;
+    padding: 3px 0;
+}
+
+.breadcrumb_list li {
+    float: left;
+}
+
+.breadcrumb_list li:before {
+    content: ">";
+    margin: 0 2px 0 7px;
+    font-size: 13px;
+}
+
+.breadcrumb_list li.home:before {
+    content: " ";
+    margin: 0;
+}
+
+.breadcrumb_list li a {
+    color: #ec7190;
+}
+
+@media screen and (max-width:1100px) {
+    .breadCrumb {
+        position: static;
+        margin: 0px auto 0px auto;
+    }
+    .breadcrumb_list {
+        width: auto;
+        font-size: 10px;
+        line-height: 1.4em;
+        letter-spacing: 0.2px;
+        padding: 3px 2%;
+    }
+    .breadcrumb_list li:before {
+        font-size: 10px;
+    }
+}
+
+
+/* ------------------------------------------------------------------
+  subKeyVisual
+------------------------------------------------------------------ */
+
+.keyColor {
+    position: relative;
+    background: url(../images/background_icon01.png) no-repeat left 25% top -90px, url(../images/background_icon02.png) no-repeat right 25% top 70px, url(../images/background_icon02.png) no-repeat left -5% top 100px, url(../images/background_icon01.png) no-repeat right -15% top 50px, #f9e7e5;
+    z-index: -1;
+    overflow: hidden;
+}
+.keyColor202110 {
+    position: relative;
+    background: #f9e7e5;
+    z-index: -1;
+    overflow: hidden;
+}
+@media screen and (max-width:1100px) {
+    .keyColor {
+        background: url(../images/background_icon01.png) no-repeat left -55% top 10px, url(../images/background_icon02.png) no-repeat right -10% top -30px, #f9e7e5;
+        background-size: 230px, 150px;
+    }
+}
+
+.keyColor .inner {
+    margin: 0 auto;
+    width: 1100px;
+    z-index: 100;
+}
+.keyColor202110 .inner {
+    margin: 0 auto;
+    width: 1100px;
+    z-index: 100;
+}
+
+.keyColor .key {
+    padding: 90px 0 60px !important;
+}
+
+.keyColor .key h1 {
+    color: #ea5f83;
+    font-size: 300%;
+    font-weight: bold;
+    line-height: 100%;
+    text-align: center;
+}
+
+.keyColor .img01 {
+    position: absolute;
+    top: 35%;
+    left: -8%;
+    z-index: -2;
+}
+
+.keyColor .img02 {
+    position: absolute;
+    top: 10%;
+    left: 62%;
+    z-index: -2;
+}
+
+.keyColor .img03 {
+    position: absolute;
+    top: -100%;
+    left: 18%;
+    z-index: -2;
+}
+
+.keyColor .img04 {
+    position: absolute;
+    top: -20%;
+    left: 90%;
+    z-index: -2;
+}
+
+
+/* Elements/Dogs/comment.ctpの$this->Session->flash() bootstrapを当ててないため似せて作った */
+
+.subPageD .alert_message .message {
+    background: #ffb4b7;
+    border: #a20303;
+    color: #d23030;
+}
+
+
+/* --------------- 「ブリーダー」一覧 --------------- */
+
+section.searchList {}
+
+section.searchList .inner {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+section.searchList .searchForm {
+    background: #fdf5f4;
+}
+
+section.searchList .searchForm .inner {
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 1100px;
+}
+
+section.searchList .searchForm ul {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+section.searchList .searchForm ul li {
+    float: left;
+}
+
+section.searchList .searchForm ul li .formWrap {
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+section.searchList .searchForm ul li:last-child .formWrap {
+    margin-right: 0;
+}
+
+section.searchList .searchForm ul li .formWrap .title {
+    float: left;
+    padding: 10px;
+    width: 120px;
+    background: #fee5e5;
+    text-align: center;
+    box-sizing: boder-box;
+}
+
+section.searchList .searchForm ul li .formWrap .form {
+    float: left;
+    background: #fff;
+}
+
+section.searchList .searchForm ul li .formWrap .form select {
+    padding: 10px 10px 10px 20px;
+    width: 105px;
+}
+
+section.searchList .searchForm ul li:nth-child(1) .formWrap .form select {
+    width: 240px;
+}
+
+section.searchList .searchForm ul li:nth-child(3) div.title {
+    letter-spacing: -2px;
+}
+
+section.searchList .searchForm ul li:nth-child(3) .formWrap .form input {
+    width: 240px;
+    padding: 10px;
+    height: 44px;
+    background: #fff;
+    font-size: 1em;
+    color: #aaa;
+    border: none;
+    box-sizing: border-box;
+}
+
+section.searchList .result {
+    overflow: hidden;
+    padding: 0;
+    z-index: 2;
+}
+
+section.searchList .result .inner {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+section.searchList h2 .pink {
+    color: #f07191;
+}
+
+section.searchList .formWrap .form {
+    background: url(../images/icon_order.png) no-repeat 0 50%;
+    background-size: 23px;
+    width: 250px;
+}
+
+.searchFormP .formWrap .form select {
+    padding: 5px 5px 5px 10px;
+    width: 200px;
+    border: 1px solid #cccccc;
+    background: url(../images/arrow_black_b.png) no-repeat right 10px center;
+    background-size: 15px;
+}
+
+section.searchList .tax_price_pc {
+    position: relative;
+    bottom: -8px;
+    padding: 0px 20px;
+    font-size: smaller;
+}
+section.searchList .tax_price_sp {
+    display: none;
+}
+
+section.searchList .adDogList {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    background: #D64F53;
+    /* background: #fd7e00; */
+}
+
+section.searchList .adDogList .title {
+    padding: 5px 5px 5px 40px;
+    font-size: 130%;
+    font-weight: bold;
+    color: white;
+}
+
+ul.resultList {
+    overflow: hidden;
+}
+
+ul.resultList li {
+    margin-bottom: 20px;
+    background: #fff;
+}
+
+ul.resultList li:last-child {
+    margin: 0;
+}
+
+ul.resultList li .listWrap {
+    overflow: hidden;
+    padding: 20px;
+}
+
+ul.resultList li .listWrap .photo {
+    float: left;
+    width: 388px;
+}
+
+ul.resultList li .listWrap .photo .mainPhoto {
+    margin-bottom: 8px;
+}
+
+ul.resultList li .listWrap .photo .mainPhoto a img {
+    width: 100%;
+}
+
+ul.resultList li .listWrap .photo .puppyTitle {
+    margin-bottom: 8px;
+    padding: 10px 10px 10px 45px;
+    background: #fee5e5 url(../images/icon_title07.png) 15px 48% no-repeat;
+}
+
+ul.resultList li ul.puppyImgList {
+    overflow: hidden;
+}
+
+ul.resultList li ul.puppyImgList li {
+    float: left;
+    margin-right: 8px;
+    margin-bottom: 0;
+    width: 30%;
+}
+
+ul.resultList li ul.puppyImgList li img {
+    width: 100%;
+}
+
+ul.resultList li ul.puppyImgList li:last-child {
+    margin-right: 0;
+}
+
+ul.resultList li .listWrap .textArea {
+    float: left;
+    margin-left: 20px;
+    width: 650px;
+}
+
+ul.resultList li .listWrap .textArea .title {
+    margin-bottom: 10px;
+    padding: 0;
+    font-size: 200%;
+    line-height: 100%;
+    background: none;
+    border: none;
+    font-weight: bold;
+}
+
+ul.resultList li .listWrap .textArea ul.info {
+    margin-bottom: 10px;
+    width: 100%;
+    border-top: 1px #ddd solid;
+}
+
+ul.resultList li .listWrap .textArea ul.info li {
+    margin-bottom: 0;
+    border-bottom: 1px #ddd solid;
+}
+
+ul.resultList li .listWrap .textArea ul.info li dl {
+    overflow: hidden;
+    font-size: 90%;
+}
+
+ul.resultList li .listWrap .textArea ul.info li dl dt {
+    float: left;
+    padding: 5px 5px 5px 15px;
+    width: 190px;
+    background: url(../images/arrow09.png) 0 50% no-repeat;
+    box-sizing: border-box;
+}
+
+ul.resultList li .listWrap .textArea ul.info li dl dd {
+    float: left;
+    padding: 5px;
+    width: 460px;
+    box-sizing: border-box;
+}
+
+ul.resultList li .listWrap .textArea table {
+    margin-bottom: 10px;
+}
+
+ul.resultList li .listWrap .textArea table th,
+ul.resultList li .listWrap .textArea table td {
+    padding: 6px 20px;
+    width: 123px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+ul.resultList li .listWrap .textArea table td span {
+    font-size: 60%;
+}
+
+ul.resultList li .listWrap .textArea table th.puppy {
+    background: #fed6d6;
+}
+
+ul.resultList li .listWrap .textArea table td.count1 {
+    color: #f94c79;
+    background: #fff3f3;
+    font-size: 280%;
+    line-height: 100%;
+    font-weight: bold;
+}
+
+ul.resultList li .listWrap .textArea table th.user {
+    background: #ffdcaf;
+}
+
+ul.resultList li .listWrap .textArea table td.count2 {
+    color: #ff7901;
+    background: #fff5e4;
+    font-size: 280%;
+    font-weight: bold;
+}
+
+.intButton {
+    margin-bottom: 10px;
+}
+
+.intButton a {
+    display: block;
+    padding: 25px 25px 25px 100px;
+    color: #f94c79;
+    background: url(../images/icon_title08.png) 20px 50% no-repeat, url(../images/background_icon03.png) 100% 100% no-repeat #ffffff;
+    border: 3px #f6dedb solid;
+    border-radius: 10px;
+    font-size: 120%;
+    font-weight: bold;
+}
+
+ul.resultList li .listWrap .textArea .text {
+    padding: 0 0 0 15px;
+    background: url(../images/arrow09.png) 0 6px no-repeat;
+}
+
+
+/* --------------- 「子犬」一覧 --------------- */
+
+section.searchList .searchFormP .inner {
+    margin: 0 auto;
+    padding: 20px 0 20px;
+    width: 1100px;
+}
+
+section.searchList .searchFormP ul {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+section.searchList .searchFormP ul li {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 545px;
+}
+
+section.searchList .searchFormP ul li:nth-child(2n) {
+    margin-right: 0;
+    float: right;
+}
+
+section.searchList .searchFormP ul li .formWrap {
+    overflow: hidden;
+    margin-right: 0px;
+}
+
+section.searchList .searchFormP ul li:last-child .formWrap {
+    margin-right: 0;
+}
+
+section.searchList .searchFormP ul li .formWrap .title {
+    float: left;
+    padding: 10px;
+    width: 30%;
+    background: #fee5e5;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+section.searchList .searchFormP ul li .formWrap .form {
+    overflow: hidden;
+    float: left;
+    background: #fff;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+section.searchList .searchFormP ul li .formWrap .form select,
+section.searchList .searchFormP ul li .formWrap .form button,
+section.searchList .searchFormP ul li .formWrap .form .select_button {
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section.searchList .searchFormP ul li .formWrap .form input {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+}
+
+section.searchList .searchFormP ul li .formWrap .form2Wrap {
+    overflow: hidden;
+    width: 70%;
+}
+
+section.searchList .searchFormP ul li .formWrap .form2h {
+    float: left;
+    width: 175px;
+    background: #fff;
+}
+
+section.searchList .searchFormP ul li .formWrap .aImg {
+    float: left;
+    padding: 40px 10px 0 21px;
+    background: url(../images/icon_line.png) 50% 50% no-repeat;
+    background-size: 15px 15px;
+}
+
+section.searchList .searchFormP ul li .formWrap .form2h select {
+    padding: 10px 10px 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+section.searchList .searchFormP ul li .formWrap .form2,
+section.searchList .searchFormP ul li .formWrap .form3 {
+    float: left;
+    padding: 10px 10px;
+}
+
+.searchFormP .formWrap {
+    text-align: right;
+    float: right;
+}
+
+section.searchList .title_dog {
+    width: 35%;
+    float: left;
+}
+
+/* 子犬検索（条件設定後） --- */
+
+.searchRule_set2 table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto 15px auto;
+    font-size: 16px;
+    text-align: left;
+}
+
+.searchRule_set2 table th {
+    padding: 10px 2% 8px 2%;
+    width: 15%;
+    background: #fee5e5;
+    border: 1px #ddd solid;
+    vertical-align: top;
+}
+
+.searchRule_set2 table td {
+    padding: 10px 2% 8px 2%;
+    width: 85%;
+    background: #fff;
+    border: 1px #ddd solid;
+}
+
+section.searchList .searchFormP .buttonWrap,
+section.searchList .searchRule_set2 .buttonWrap2 {
+    overflow: hidden;
+    margin: 0 auto 10px;
+    width: 520px;
+}
+
+section.searchList .searchRule_set2 .buttonWrap2 {
+    margin: 0 auto 0px;
+}
+
+section.searchList .searchFormP .buttonWrap p,
+section.searchList .searchRule_set2 .buttonWrap2 p {
+    float: left;
+    margin: 0 10px;
+}
+
+section.searchList .searchFormP .buttonWrap p a,
+section.searchList .searchFormP .buttonWrap2 p a {
+    display: block;
+    padding: 8px 8px 8px 35px;
+    color: #ef7091;
+    width: 240px;
+    border: 1px #f4cacb solid;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+section.searchList .searchFormP .buttonWrap .sButton a {
+    background: #fff url(../images/icon_clip.png) 15px 50% no-repeat;
+    background-size: 21px;
+}
+
+section.searchList .searchFormP .buttonWrap .sButton2 a {
+    background: #fff url(../images/icon10.png) 10px 50% no-repeat;
+}
+
+.searchRule_set2 .buttonWrap2 .change a {
+    background: #fff url(../images/icon_change.png) 15px 50% no-repeat;
+    background-size: 23px;
+}
+
+.searchRule_set2 .buttonWrap2 .save a {
+    background: #fff url(../images/icon_clip.png) 15px 50% no-repeat;
+    background-size: 21px;
+}
+
+@media screen and (max-width:1100px) {
+    /* -----------  子犬検索  -------------*/
+    section.searchList .searchFormP {
+        background: none;
+        height: 36px;
+        margin-top: 15px;
+    }
+    section.searchList .searchFormP .inner {
+        padding: 3% 3% 3px 3%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    section.searchList .searchFormP ul {
+        width: 100%;
+        margin-bottom: 3%;
+        border: 1px solid #cccccc;
+        background: #fee5e5;
+    }
+    section.searchList .searchFormP ul li {
+        margin-bottom: 0;
+        border-bottom: 1px solid #cccccc;
+        width: 100%;
+        line-height: 1.3em;
+    }
+    section.searchList .searchFormP ul li:last-child {
+        border-bottom: none;
+        width: 100%;
+    }
+    section.searchList .searchFormP ul li .formWrap .title {
+        padding: 12px 3% 8px 3%;
+        width: 18%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    section.searchList .searchFormP ul li:last-child .title {
+        box-sizing: border-box;
+    }
+    section.searchList .searchFormP ul li .formWrap .form {
+        width: 82%;
+    }
+    section.searchList .searchFormP ul li .formWrap .form button {
+        padding: 10px 3% 10px 4%;
+        text-align: left;
+        color: #555555;
+    }
+    section.searchList .searchFormP ul li .formWrap .form input {
+        padding: 15px 3% 15px 2%;
+    }
+    section.searchList .searchFormP ul li .formWrap .form2Wrap {
+        overflow: hidden;
+        width: 82%;
+    }
+    section.searchList .searchFormP ul li .formWrap .form2h {
+        float: left;
+        width: 50%;
+    }
+    section.searchList .searchFormP ul li .formWrap .afterImage {
+        border-right: 1px solid #cccccc;
+        width: 49.6%;
+    }
+    section.searchList .searchFormP ul li .formWrap .aImg {
+        display: none;
+    }
+    section.searchList .searchFormP ul li .formWrap .form2h select {
+        padding: 10px 3% 10px 5%;
+    }
+    section.searchList .searchFormP ul li .formWrap .form2 {
+        width: 30%;
+    }
+    section.searchList .searchFormP ul li .formWrap .form3 {
+        padding: 5% 0 5% 3%;
+        width: 30%;
+    }
+    /* 子犬検索（条件設定後） --- */
+    .searchRule_set2 {
+        background: #ffffff;
+        border: solid 2px #f9e7e5;
+        border-radius: 5px;
+        padding: 8px 4px 8px 5px;
+        margin: 0px auto 0px;
+    }
+    .searchRule_set2 table {
+        font-size: 12px;
+        line-height: 1.2em;
+        letter-spacing: 0.5px;
+        margin: 0 auto 5px auto;
+    }
+    .searchRule_set2 table th {
+        padding: 4px 3% 4px 0;
+        width: 2%;
+        text-indent: -9999px;
+        border: none;
+    }
+    .searchRule_set2 table th.dogbreed {
+        background: url(../images/icon_title02.png) no-repeat center 4px;
+        background-size: 18px;
+    }
+    .searchRule_set2 table th.prefecture {
+        background: url(../images/icon_area_l.png) no-repeat center 3px;
+        background-size: 11px;
+    }
+    .searchRule_set2 table th.other {
+        background: url(../images/icon_title19.png) no-repeat center 5px;
+        background-size: 16px;
+    }
+    .searchRule_set2 table td {
+        padding: 4px 0 4px 2%;
+        width: 98%;
+        border: none;
+    }
+    section.searchList .searchFormP .buttonWrap {
+        width: 100%;
+    }
+    section.searchList .searchFormP .buttonWrap p {
+        margin: 0 3px;
+        width: 47.5%;
+    }
+    section.searchList .searchFormP .buttonWrap p a {
+        width: 100%;
+        font-size: 12px;
+        border-radius: 5px;
+    }
+    section.searchList .searchFormP .searchRule_set2 .buttonWrap2 {
+        width: 80%;
+        margin: 0 auto 0px;
+        overflow: hidden;
+    }
+    section.searchList .searchFormP .searchRule_set2 .buttonWrap2 p {
+        margin: 0 3px;
+        width: 45%;
+    }
+    section.searchList .searchFormP .searchRule_set2 .buttonWrap2 p a {
+        display: block;
+        padding: 4px 0 2px 18%;
+        color: #ffffff;
+        width: 100%;
+        font-weight: bold;
+        border-radius: 5px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        float: left;
+        margin: 0 1.5%;
+        text-align: center;
+        border: none;
+    }
+    .searchRule_set2 .buttonWrap2 .change a {
+        background: url(../images/icon_change_white.png) 18% 50% no-repeat #f07191;
+        background-size: 16px;
+    }
+    .searchRule_set2 .buttonWrap2 .save a {
+        background: url(../images/icon_clip_white.png) 18% 50% no-repeat #f07191;
+        background-size: 15px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    section.searchList .searchFormP ul li .formWrap .form3 {
+        margin: 0;
+        padding: 20px 5px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    section.searchList .searchFormP ul li .formWrap .form input {
+        padding: 4.7% 6% 3% 6%;
+    }
+}
+
+button.search_more_detail {
+    display: inline-block;
+    padding: 0.3em 1em;
+    text-decoration: none;
+    color: #ec7190;
+    border: solid 2px #ec7190;
+    border-radius: 3px;
+    transition: .4s;
+    background: #fff;
+    margin-bottom: 5px;
+}
+
+.modal_prefecture {
+    padding: 10px 10px 10px 20px;
+    width: 70%;
+    box-sizing: border-box;
+    float: left;
+}
+
+@media screen and (max-width:1100px) {
+    #dogColor,
+    .modal_prefecture {
+        width: 82%;
+    }
+}
+
+.category_search_dog .category_search_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.category_search_dog .category_search_list li {
+  width: 270px;
+  line-height: 1.0;
+  margin: 2.5px;
+  background-color: #f8f2ee;
+}
+
+.category_search_dog .category_search_list li:last-child {
+  margin-right: 0;
+}
+
+.category_search_item {
+  width: 100%;
+  height: 100%;
+}
+
+.category_search_dog .category_search_list li a {
+  width: calc(100% - 28px);
+  height: calc(100% - 28px);
+  padding: 14px;
+  display: table;
+  position: relative;
+}
+
+.category_search_dog .category_search_list li a:hover {
+  color: #B96C42;
+  opacity: .8;
+}
+
+.category_search_dog span.category_search_dog_icon {
+  line-height: 1.2em;
+  padding-left: 33px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.category_search_dog span.category_search_dog_icon::before {
+  content: "";
+  background: url(../images/icon_title02.png) no-repeat;
+  display: inline-block;
+  width: 25px;
+  height: 20px;
+  background-size: contain;
+  position: absolute;
+  left: 15px;
+  top: 30%;
+}
+
+@media screen and (max-width: 1100px) {
+  .category_search_dog .category_search_list li {
+    width: 49.2%;
+    margin: 0 0.8% 0.8% 0;
+  }
+  .category_search_dog .category_search_list li:last-child {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .category_search_dog .category_search_list li a {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    padding: 10px;
+  }
+  .category_search_dog span.category_search_dog_icon::before {
+    left: 10px;
+  }
+}
+
+.category_search_dog .title_style1{
+    line-height: 120%;
+}
+
+.sex_search_dog {
+    margin-top: 20px;
+}
+
+.sex_search_dog .sex_search_list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sex_search_dog .sex_search_list li {
+    width: 270px;
+    line-height: 1.0;
+    margin: 2.5px;
+    background-color: #f8f2ee;
+  }
+  .sex_search_dog .sex_search_list li:last-child {
+    margin-right: 0;
+  }
+  
+  .sex_search_item {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sex_search_dog .sex_search_list li a {
+    width: calc(100% - 28px);
+    height: calc(100% - 28px);
+    padding: 14px;
+    display: table;
+    position: relative;
+  }
+  
+  .sex_search_dog .sex_search_list li a:hover {
+    color: #B96C42;
+    opacity: .8;
+  }
+  
+  .sex_search_dog span.sex_search_dog_icon {
+    line-height: 1.2em;
+    padding-left: 33px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  
+  #dog_sex_1::before  {
+    content: "";
+    background: url(../images/icon_male.png) no-repeat;
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background-size: contain;
+    position: absolute;
+    left: 15px;
+    top: 30%;
+  }
+
+  #dog_sex_2::before {
+    content: "";
+    background: url(../images/icon_female.png) no-repeat;
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background-size: contain;
+    position: absolute;
+    left: 15px;
+    top: 30%;
+  }
+  
+  @media screen and (max-width: 1100px) {
+    .sex_search_dog .sex_search_list li {
+      width: 49.2%;
+      margin: 0 0.8% 0.8% 0;
+    }
+    .sex_search_dog .sex_search_list li:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  @media screen and (max-width: 750px) {
+    .sex_search_dog .sex_search_list li a {
+      width: calc(100% - 20px);
+      height: calc(100% - 20px);
+      padding: 10px;
+    }
+    .sex_search_dog span.sex_search_dog_icon::before {
+      left: 10px;
+    }
+  }
+
+.neighborhood_search_dog {
+    margin-bottom: 20px;
+}
+
+.neighborhood_search_dog .neighborhood_search_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.neighborhood_search_dog .neighborhood_search_list li {
+    width: 270px;
+    line-height: 1.0;
+    margin: 2.5px;
+    background-color: #f8f2ee;
+}
+
+.neighborhood_search_dog .neighborhood_search_list li:last-child {
+    margin-right: 0;
+}
+
+.neighborhood_search_item {
+    width: 100%;
+    height: 100%;
+}
+
+.neighborhood_search_dog .neighborhood_search_list li a {
+    width: calc(100% - 28px);
+    height: calc(100% - 28px);
+    padding: 14px;
+    display: table;
+    position: relative;
+}
+
+.neighborhood_search_dog .neighborhood_search_list li a:hover {
+    color: #B96C42;
+    opacity: .8;
+}
+  
+.neighborhood_search_dog span.neighborhood_search_dog_icon {
+    line-height: 1.2em;
+    padding-left: 33px;
+    display: table-cell;
+    vertical-align: middle;
+}
+  
+.neighborhood_search_dog span.neighborhood_search_dog_icon::before {
+    content: "";
+    background: url(../images/../images/icon_area_l.png) no-repeat 3px center;
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    background-size: contain;
+    position: absolute;
+    left: 15px;
+    top: 30%;
+}
+  
+@media screen and (max-width: 1100px) {
+    .neighborhood_search_dog .neighborhood_search_list li {
+        width: 49.2%;
+        margin: 0 0.8% 0.8% 0;
+    }
+    .neighborhood_search_dog .neighborhood_search_list li:last-child {
+        margin-right: 0;
+    }
+}
+  
+@media screen and (max-width: 750px) {
+    .neighborhood_search_dog .neighborhood_search_list li a {
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        padding: 10px;
+    }
+    .neighborhood_search_dog span.neighborhood_search_dog_icon::before {
+        left: 10px;
+    }
+}
+
+
+/* --------------- ブリーダー詳細 --------------- */
+
+section.infoWrap {
+    margin-bottom: 40px;
+}
+
+section.infoWrap .info {
+    overflow: hidden;
+}
+
+section.infoWrap .inner {
+    margin: 0 auto;
+    padding: 40px 0 0;
+    width: 1100px;
+}
+
+section.basicInfo h1 {
+    margin-bottom: 15px;
+    padding: 10px 10px 10px 35px;
+    background: url(../images/icon_title07.png) 0 50% no-repeat;
+    font-size: 160%;
+    line-height: 100%;
+    border-bottom: 1px #ea5f83 solid;
+}
+
+section.infoWrap .wrap {
+    overflow: hidden;
+    margin: 0 0 20px 0;
+}
+
+section.infoWrap .titleWrap {
+    overflow: hidden;
+    margin-bottom: 15px;
+    padding: 0 0 0 35px;
+    background: url(../images/icon_title07.png) 0 50% no-repeat;
+    border-bottom: 1px #ea5f83 solid;
+}
+
+section.infoWrap .titleWrap .title {
+    float: left;
+    margin-top: 19px;
+    margin-bottom: 0;
+    padding: 0;
+    background: none;
+    font-size: 160%;
+    line-height: 100%;
+    border-bottom: 0;
+}
+
+section.infoWrap .titleWrap .update {
+    float: left;
+    margin-left: 10px;
+    margin-top: 22px;
+    color: #efa2a2;
+}
+
+section.infoWrap .titleWrap .update span {
+    vertical-align: bottom;
+}
+
+section.infoWrap .titleWrap .star {
+    float: right;
+}
+
+section.infoWrap .titleWrap .star a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 6px 20px 6px 40px;
+    color: #fff;
+    background: #ef7091 url(../images/icon012.png) 10px 50% no-repeat;
+    border-radius: 5px;
+}
+
+section.infoWrap .titleWrap .star a:hover {
+    background: #d8476b url(../images/icon012.png) 10px 50% no-repeat;
+}
+
+section.infoWrap .colL,
+.wrap2 .colL {
+    float: left;
+    width: 51%;
+}
+
+section.infoWrap .colR,
+.wrap2 .colR {
+    float: right;
+    width: 47%;
+}
+
+section.infoWrap .textArea {
+    padding: 20px;
+    background: #fff;
+}
+
+section.infoWrap .dog_house {
+    overflow: auto;
+    line-height: 22px;
+}
+
+section.infoWrap .textArea .dogHousePoint {
+    overflow: auto;
+    line-height: 22px;
+}
+
+section.infoWrap .info ul.tabImage {
+    overflow: hidden;
+    margin-top: 40px;
+    width: 100%;
+}
+
+section.infoWrap .info ul.tabImage li {
+    float: left;
+    margin-right: 1.2%;
+    margin-bottom: 0;
+    width: 32.5%;
+}
+
+section.infoWrap .info ul.tabImage li:last-child {
+    margin: 0;
+}
+
+section.infoWrap .info ul.tabImage li a {
+    display: block;
+    padding: 20px;
+    color: #6c0000;
+    background: #f6dcd9 url(../images/arrow02.png) 25px 50% no-repeat;
+    font-size: 120%;
+    line-height: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 5px;
+}
+
+section.infoWrap .info ul.tabImage li a.active {
+    color: #fff;
+    background: #ef6f90 url(../images/arrow02.png) 25px 50% no-repeat;
+}
+
+section.infoWrap .info ul.tabImage li a span {
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: #555;
+    font-size: 80%;
+    line-height: 100%;
+    background: #fff;
+    border-radius: 5px;
+}
+
+section.basicInfo {
+    margin-bottom: 40px;
+}
+
+section.basicInfo .inner {
+    margin: 0 auto;
+    width: 1100px;
+}
+
+section.basicInfo .inner ul {
+    margin-bottom: 0px;
+}
+
+section.basicInfo .inner ul li {
+    margin-bottom: 10px;
+}
+
+section.basicInfo .inner ul li:last-child {
+    margin-bottom: 20px;
+}
+
+.evaluate {
+    overflow: hidden;
+    padding: 20px;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.evaluate .text {
+    float: left;
+    padding-left: 20px;
+    background: #fff url(../images/arrow09.png) 0 7px no-repeat;
+}
+
+.evaluate .colL {
+    float: left;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.evaluate .colL p.photo {
+    float: left;
+    margin-right: 20px;
+}
+
+.evaluate .colR {
+    float: right;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.evaluate .colR .dateWrap {
+    float: left;
+    padding: 8px 0 3px 40px;
+    width: 650px;
+    background: url(../images/icon04.png) 0 50% no-repeat;
+    box-sizing: border-box;
+}
+
+.evaluate .colR .dateWrap p span {
+    font-size: 120%;
+    font-weight: bold !important;
+}
+
+.evaluate .colR dl {
+    float: right;
+    width: 380px;
+}
+
+.evaluate .colR dl dt {
+    float: left;
+    padding: 10px 0;
+    width: 18%;
+    color: #fff;
+    background: #66300a;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.evaluate .colR dl dd {
+    float: left;
+    width: 82%;
+}
+
+.evaluate .colR dl dd img {
+    width: 35px;
+}
+
+.evaluate .colR dl dd ul {
+    overflow: hidden;
+    width: 100%;
+}
+
+.evaluate .colR dl dd ul li {
+    float: left;
+    margin-right: 2.5%;
+    margin-bottom: 0;
+    width: 18%;
+}
+
+.evaluate .colR dl dd ul li:last-child {
+    margin-right: 0;
+}
+
+.evaluate .colR dl dd .imgWrap {
+    float: left;
+    padding: 7px 11px;
+    background: #fcf9f3;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+.evaluate .colR dl dd .point {
+    float: left;
+    padding: 10px 0;
+    background: #f3e7de;
+    color: #643009;
+    font-size: 160%;
+    font-weight: bold;
+    text-align: center;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+section.basicInfo .inner .evaluate ul li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* --------------- 子犬詳細 --------------- */
+
+section.infoWrap .puppyKeyVisual {
+    position: relative;
+    overflow: hidden;
+    z-index: -1;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+
+/* --- 動画設定関連 --- */
+
+section.infoWrap .position {
+    position: relative;
+    margin: 0 auto;
+    width: 1100px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+section.infoWrap .movieWrap {
+    margin-top: 0;
+    height: 550px;
+    overflow: hidden;
+}
+
+#background:hover {
+    margin-bottom: 0px;
+}
+
+iframe#background {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: scale(2.3);
+    -webkit-transform: scale(2.3);
+    -moz-transform: scale(2.3);
+    -o-transform: scale(2.3);
+    -ms-transform: scale(2.3);
+}
+
+#background-front {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    min-height: 100%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
+/* --- 動画設定関連 ここまで --- */
+
+section.infoWrap .puppyKeyVisual .inner {
+    position: absolute;
+    top: 350px;
+    left: 0;
+    margin: 0 auto;
+    z-index: 100;
+}
+
+section.infoWrap .puppyKeyVisual .puppy_key_title {
+    margin-bottom: 2px;
+    font-size: 300%;
+    font-weight: bold;
+    line-height: 100%;
+    color: #fff;
+}
+
+section.infoWrap .puppyKeyVisual p.coat {
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+section.infoWrap .puppyKeyVisual p.birthday {
+    color: #ffe8d2;
+    font-size: 130%;
+    font-weight: bold;
+    line-height: 100%;
+}
+
+section.infoWrap .puppyKeyVisual .puppy_key_title:first-letter {
+    color: #ea5f83;
+}
+
+section.infoWrap .info .inner .pointWrap {
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: auto;
+}
+
+section.infoWrap .info .inner .point {
+    padding: 20px;
+    background: #f9e7e5;
+    border-radius: 10px;
+}
+
+section.infoWrap .info .inner .point h3 {
+    margin-bottom: 5px;
+    padding: 5px 5px 5px 40px;
+    background: url(../images/icon11.png) 0 50% no-repeat;
+    font-size: 140%;
+    line-height: 100%;
+}
+
+section.infoWrap .wrap2,
+.wrap2 {
+    overflow: hidden;
+}
+
+.detail .table_style1 {
+    margin: 0 auto 30px auto;
+}
+
+section.infoWrap .detail .textArea {
+    margin-bottom: 30px;
+    background: #fff;
+}
+
+section.infoWrap .detail .textArea .bold {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+section.infoWrap .detail .button {
+    margin-bottom: 30px;
+}
+
+section.infoWrap .detail .acbutton,
+.comment_style2 .more {
+    display: block;
+    padding: 25px;
+    color: #ef7091;
+    background: #fff url(../images/icon14.png) 97% 50% no-repeat;
+    font-size: 150%;
+    line-height: 100%;
+    font-weight: bold;
+    border: 5px #fae5e2 solid;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+}
+
+section.infoWrap .detail .close,
+.comment_style2 .more.close {
+    background: #fff url(../images/icon13.png) 97% 50% no-repeat;
+}
+
+section.infoWrap .benefits_wrap .acbutton,
+section.usermypage .benefits_wrap .acbutton{
+    display: block;
+    padding: 25px;
+    color: #f19800;
+    font-size: 150%;
+    line-height: 100%;
+    font-weight: bold;
+    border: 5px #ffe7b1 solid;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+    background-image: url(../images/toggle_add_yellow.png), url(../images/icon_present.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 97% 50%, 26% 50%;
+    background-size: 38px, 37.5px;
+}
+
+section.infoWrap .benefits_wrap .close,
+section.usermypage .benefits_wrap .close {
+    background-image: url(../images/toggle_subtraction_yellow.png), url(../images/icon_present.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: 97% 50%, 26% 50%;
+    background-size: 38px, 37.5px;
+}
+
+
+/* ------------------------------------------------------------------
+  下層ページ共通 上書き用CSS sectionに.subPageDを追加 ------------------------------------------------------------------ */
+
+section.subPageD .inner {
+    margin: 0 auto 40px;
+    width: 1100px;
+}
+
+section.subPageD h1,
+.title_style1 {
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 35px;
+    background: url(../images/icon_title07.png) 0 50% no-repeat;
+    font-size: 160%;
+    line-height: 100%;
+    border-bottom: 1px #ea5f83 solid;
+    overflow: hidden;
+}
+
+.aling_r {
+    display: inline-block;
+    font-size: 18px;
+    float: right;
+    font-weight: normal;
+}
+
+.aling_r a {
+    color: #ea5f83;
+}
+
+@media screen and (max-width:1100px) {
+    section.subPageD h1,
+    .title_style1 {
+        background: url(../images/icon_title07.png) 0 0 no-repeat;
+        padding: 1px 0px 6px 30px;
+        margin-bottom: 8px;
+    }
+    .aling_r {
+        font-size: 13px;
+    }
+}
+
+
+/* ------------------------------
+   子犬詳細　写真＆動画タブ
+------------------------------ */
+
+.resp-tabs-list li {
+    width: 321px;
+    display: inline-block;
+    padding: 20px 20px 20px 45px;
+    list-style: none;
+    cursor: pointer;
+    float: left;
+    color: #fff;
+    font-size: 140%;
+    background: #eab6b6;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.resp-tabs-list li:nth-child(1) {
+    background: #eab6b6 url(../images/icon_title10.png) 30px 50% no-repeat;
+}
+
+.resp-tabs-list li:nth-child(2) {
+    background: #eab6b6 url(../images/icon_title11.png) 30px 50% no-repeat;
+}
+
+.resp-tabs-container {
+    padding: 0px;
+    clear: left;
+}
+
+.resp-tabs-container p.more {
+    margin: 30px 0;
+}
+
+.resp-accordion {
+    cursor: pointer;
+    padding: 5px;
+    background-color: #ef7091;
+    display: none;
+}
+
+.resp-tab-content {
+    display: none;
+}
+
+.resp-tab-active {
+    border-bottom: none;
+    background-color: #ef7091 !important;
+}
+
+.resp-content-active,
+.resp-accordion-active {
+    display: block;
+}
+
+
+/*基本情報/掲載中の子犬/評価一覧タブ*/
+
+#breederInfoTab ul:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+#breederInfoTab ul.resp-tabs-list li {
+    float: left;
+    width: 33.3%;
+    display: block;
+    padding: 20px 15px;
+    color: #ef6f90;
+    background: #e8e8e8;
+    font-size: 90%;
+    font-weight: bold;
+    text-align: center;
+    max-height: 69px;
+    border-top: 5px #c7c7c7 solid;
+}
+
+#breederInfoTab ul.resp-tabs-list li a {
+    color: #ef6f90;
+}
+
+#breederInfoTab ul.resp-tabs-list li:nth-child(2) {
+    border-right: 1px #cacaca solid;
+    border-left: 1px #cacaca solid;
+}
+
+#breederInfoTab ul.resp-tabs-list li.resp-tab-active {
+    /*color: #ef6f90;*/
+    color: #fff;
+    background: #fff;
+    background-color: #fff;
+    border-top: 5px #ef6f90 solid;
+}
+
+#breederInfoTab ul.resp-tabs-list li.resp-tab-active a {
+    color: #fff;
+}
+
+
+/*基本情報タブ下の要素(table_tworowと同じ)*/
+
+#breederInfoTab .breederInfo {
+    background: #fff;
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    margin: 40px 0 0 0;
+    border: 1px #ddd solid;
+    font-size: 16px;
+}
+
+#breederInfo .breederInfo th {
+    width: 200px;
+    background: #fdf5f4;
+    border-bottom: 1px #ddd solid;
+    border-right: 1px #ddd solid;
+    vertical-align: middle;
+    padding: 30px 30px;
+}
+
+#breederInfo .breederInfo td {
+    padding: 30px 30px;
+    vertical-align: middle;
+    border-bottom: 1px #ddd solid;
+}
+
+#breederInfoTab .resp-tab-content {
+    margin: 20px 0 0 0;
+}
+
+
+/* ------------------------------------------------------------------
+  下層ページ サムネイル付きスライダー
+------------------------------------------------------------------ */
+
+.bx-wrapper .bx-pager {
+    bottom: -95px !important;
+}
+
+.bx-wrapper .bx-pager a {
+    border: solid #fff 1px;
+    display: block;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.bx-wrapper .bx-pager a:hover,
+.bx-wrapper .bx-pager a.active {
+    /* border: solid #ef7091 1px; */
+    box-sizing: border-box;
+}
+
+.thumbpager a.active img,
+.thumbpager a img:hover {
+    border: solid #ef7091 1px;
+    box-sizing: border-box;
+}
+
+.thumbpager {
+    width: 100%;
+    overflow: hidden;
+}
+
+.thumbpager a {
+    display: block;
+    float: left;
+    width: 19%;
+    height: 90px;
+    padding: 0;
+    margin: 0 0 0 5px;
+}
+
+.thumbpager a img {
+    width: 100%;
+}
+
+@media screen and (max-width:1100px) {
+    .thumbpager {
+        margin: -7px 0 13px 0;
+    }
+    .thumbpager a {
+        width: 19%;
+        margin: 0 0 0 2px;
+        height: 100px;
+    }
+    .thumbpager a img {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .thumbpager a {
+        width: 19%;
+        margin: 0 0 0 2px;
+        height: 40px;
+    }
+}
+
+
+/* ------------------------------------------------------------------
+
+  メディアクエリ
+
+------------------------------------------------------------------ */
+
+
+/* ----- PC非表示 ----- */
+
+div.breederTab,
+div.puppyTab,
+div.breederInfoTab {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+    div.breederTab,
+    div.puppyTab {
+        display: block;
+        overflow: hidden;
+        margin: 10px 0 0 0;
+    }
+    div.breederTab .leftTab,
+    div.puppyTab .leftTab {
+        float: left;
+        width: 50%;
+    }
+    div.breederTab .leftTab a,
+    div.puppyTab .rightTab a {
+        display: block;
+        padding: 8px 15px;
+        background: #e8e8e8;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        border-top: 3px #c7c7c7 solid;
+    }
+    div.breederTab .rightTab,
+    div.puppyTab .rightTab {
+        float: left;
+        width: 50%;
+    }
+    div.breederTab .rightTab a,
+    div.puppyTab .leftTab a {
+        display: block;
+        padding: 8px 15px;
+        color: #ef6f90;
+        background: #fdf5f4;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+        border-top: 3px #ef6f90 solid;
+    }
+    ul.resultList {
+        margin-bottom: 0;
+    }
+    section.searchList .inner {
+        width: 100%;
+    }
+    section.searchList .inner2 {
+        padding: 0px 0 0 0;
+        box-sizing: border-box;
+    }
+    .keyColor .key {
+        padding: 15px 3% 15px !important;
+    }
+    .keyColor .key h1 {
+        font-size: 18px;
+    }
+    .keyColor .img01 {
+        top: 0;
+        left: -20%;
+    }
+    .keyColor .img02 {
+        display: none;
+        top: 0;
+        left: 0;
+    }
+    .keyColor .img03 {
+        top: -50%;
+        left: 60%;
+    }
+    .keyColor .img04 {
+        display: none;
+        top: 0;
+        left: 0;
+    }
+    section.searchList .searchForm .inner {
+        padding: 3% 3%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    section.searchList .searchForm ul {
+        margin-bottom: 3%;
+    }
+    section.searchList .searchForm ul li {
+        margin-bottom: 1%;
+        width: 100%;
+    }
+    section.searchList .searchForm ul li:last-child {
+        margin-bottom: 0;
+    }
+    section.searchList .searchForm ul li .formWrap {
+        margin-right: 0;
+    }
+    section.searchList .searchForm ul li .formWrap .title {
+        width: 30%;
+        font-size: 80%;
+        box-sizing: border-box;
+    }
+    section.searchList .searchForm ul li .formWrap .form {
+        width: 70%;
+        box-sizing: border-box;
+    }
+    section.searchList .searchForm ul li:nth-child(1) .formWrap .form select,
+    section.searchList .searchForm ul li .formWrap .form select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    section.searchList .searchForm ul li:nth-child(3) .formWrap .form input {
+        width: 100%;
+    }
+    section.searchList .result {
+        padding: 0 0 5px 0;
+    }
+    section.searchList .result .inner {
+        width: auto;
+        padding: 0 3%;
+    }
+    section.searchList .title_dog {
+        background: none;
+        float: left;
+        margin-top: 0;
+    }
+    .searchFormP .formWrap {
+        width: 50%;
+        float: right;
+        text-align: right;
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+    .searchFormP .formWrap .title {
+        padding: 3px 1px 3px 18px;
+        width: 43px;
+        background: url(../images/icon_order.png) no-repeat 0 50%;
+        background-size: 14px;
+        text-align: left;
+    }
+    .searchFormP .formWrap .form select {
+        padding: 3px 3px 3px 5px;
+        width: 90%;
+        box-sizing: border-box;
+        background: url(../images/arrow_black_b.png) no-repeat right 5px center;
+        background-size: 10px;
+    }
+    section.searchList .formWrap .form {
+        background: url(../images/icon_order.png) no-repeat 0 50%;
+        background-size: 15px;
+        width: auto;
+    }
+    section.searchList .tax_price_pc {
+        display: none;
+    }
+    section.searchList .tax_price_sp {
+        display: block;
+        text-align: right;
+        font-size: smaller;
+    }
+    /* この子犬のブリーダー情報 */
+    section.subPageD .inner {
+        margin: 0 3%;
+        width: auto;
+    }
+    section.subPageD h1,
+    .title_style1 {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    /* Elements/Dogs/comment.ctpの$this->Session->flash() bootstrapを当ててないため似せて作った(スマホ用) */
+    section.subPageD .alert_message .message {
+        background: #ffb4b7;
+        border: #a20303;
+        color: #d23030;
+    }
+    div.resultListWrap {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    ul.resultList li {
+        padding-bottom: 1px;
+    }
+    ul.resultList li .listWrap {
+        padding: 3% 2% 1%;
+    }
+    ul.resultList li .listWrap .photo {
+        float: left;
+        width: 53%;
+    }
+    ul.resultList li .listWrap .photo .mainPhoto {
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    ul.resultList li .listWrap .photo .puppyTitle {
+        margin-bottom: 2%;
+        padding: 7px 0 7px 30%;
+        background: #fee5e5 url(../images/icon_title19.png) 10px 50% no-repeat;
+        -moz-background-size: 16px 13px;
+        background-size: 16px 13px;
+        font-size: 13px;
+        line-height: 100%;
+    }
+    ul.resultList li .listWrap .textArea {
+        float: right;
+        margin-left: 0;
+        padding: 0;
+        width: 45%;
+    }
+    ul.resultList li .listWrap .textArea .title {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 120%;
+    }
+    ul.resultList li .listWrap .textArea ul.info li dl dd {
+        width: 100%;
+        font-size: 13px;
+        line-height: 120%;
+    }
+    ul.resultList li .listWrap .textArea table {
+        width: 100%;
+    }
+    ul.resultList li .listWrap .textArea table th {
+        padding: 3%;
+        width: 40%;
+        font-size: 13px;
+    }
+    ul.resultList li .listWrap .textArea table td {
+        padding: 3%;
+    }
+    ul.resultList li .listWrap .textArea table td.count1 {
+        font-size: 150%;
+    }
+    ul.resultList li .listWrap .textArea table td.count2 {
+        font-size: 150%;
+    }
+    ul.resultList li ul.puppyImgList li {
+        margin-right: 2%;
+        width: 32%;
+    }
+    ul.resultList li ul.puppyImgList li:last-child {
+        margin-right: 0;
+    }
+    ul.resultList li ul.puppyImgList li img {
+        width: 100%;
+    }
+    .intButton a {
+        margin: 0 3%;
+        padding: 2% 2% 2% 52px;
+        color: #f94c79;
+        background: url(../images/icon_title08.png) 10px 50% no-repeat #ffffff;
+        -moz-background-size: 24px 24px;
+        background-size: 24px 24px;
+        font-size: 90%;
+        line-height: 120%;
+    }
+    /* -----------  ブリーダー詳細  -------------*/
+    section.infoWrap .inner {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    section.infoWrap .info .inner {
+        padding: 18px 3%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    section.basicInfo h1 {
+        font-size: 100%;
+    }
+    /*ブリーダー詳細情報タブ */
+    #breederInfoTab ul.resp-tabs-list {
+        width: 100%;
+        display: inline-table;
+        overflow-x: auto;
+        border-bottom: 2px solid #f07191;
+        margin: 7px 0 10px 0;
+    }
+    #breederInfoTab ul.resp-tabs-list li {
+        float: none;
+        width: 34%;
+        display: table-cell;
+        padding: 5px 10px;
+        background: #e8e8e8;
+        color: #444444;
+        font-size: 12px;
+        text-align: center;
+        border-top: none;
+        line-height: 1.4em;
+        margin: 0;
+        vertical-align: middle;
+    }
+    #breederInfoTab .resp-tab-content {
+        margin: 0px 0 0 0;
+    }
+    #breederInfoTab ul.resp-tabs-list li:nth-child(2) {
+        border-right: 1px #cacaca solid;
+        border-left: 1px #cacaca solid;
+    }
+    #breederInfoTab ul.resp-tabs-list li.resp-tab-active {
+        color: #fff;
+        background: #fff;
+        background-color: #fff;
+        border-top: none;
+    }
+    #breederInfoTab ul.resp-tabs-list li.resp-tab-active span {
+        color: #ef6f90;
+    }
+    #breederInfoTab ul.resp-tabs-list li span {
+        display: block;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 10px;
+        width: 80%;
+        font-weight: normal;
+        font-size: 11px;
+    }
+    #breederInfoTab ul.resp-tabs-list li a {
+        color: #444444;
+    }
+    div.breederInfoTab a.active span {
+        background: #fdf5f4;
+        font-weight: normal;
+    }
+    section.infoWrap {
+        margin-bottom: 0;
+    }
+    section.infoWrap .wrap {
+        min-height: auto;
+    }
+    section.infoWrap .wrap .colL,
+    section.infoWrap .wrap .colR {
+        float: none;
+        width: 100%;
+    }
+    section.infoWrap .wrap .colL {
+        position: relative;
+    }
+    section.infoWrap .bx-wrapper {
+        margin-bottom: 3% !important;
+        margin-left: 0.5%;
+        width: 95%;
+    }
+    section.infoWrap .bx-wrapper .bx-pager {
+        bottom: -55px !important;
+    }
+    section.infoWrap .bx-wrapper .bx-pager a {
+        border: solid #fff 1px;
+        display: block;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+    section.infoWrap .bx-wrapper .bx-pager {
+        position: inherit;
+        padding: 0;
+    }
+    section.infoWrap .bx-wrapper .bx-pager a:hover,
+    section.infoWrap .bx-wrapper .bx-pager a.active {
+        border: solid #ef7091 1px;
+        box-sizing: border-box;
+    }
+    section.infoWrap .bx-wrapper .bx-pager-item {
+        width: 20%;
+    }
+    section.infoWrap a.bx-pager-link {
+        width: 100% !important;
+    }
+    section.infoWrap a.bx-pager-link img {
+        height: 38px;
+    }
+    section.infoWrap .bx-wrapper .bx-controls-direction a {
+        top: 40% !important;
+    }
+    section.basicInfo .inner {
+        width: auto;
+        margin: 0 3%;
+    }
+    section.basicInfo .inner ul li:last-child {
+        margin-bottom: 3%;
+    }
+    section.basicInfo h1 {
+        margin: 0 0 2%;
+    }
+    section.infoWrap .colL .textArea {
+        padding: 3%;
+    }
+    section.basicInfo {
+        margin-bottom: 0;
+        padding-bottom: 0px;
+    }
+    .evaluate_wrap {
+        margin-bottom: 0;
+        padding: 0 0 13px 0;
+    }
+    .evaluate {
+        padding: 5px 8px;
+        width: 100%;
+        background: #ffffff;
+        margin: 0;
+    }
+    .evaluate .colL {
+        margin-bottom: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .evaluate .colR {
+        margin-bottom: 0;
+        width: 100%;
+        padding: 7px 0 0px 0;
+        background: #fff;
+    }
+    .evaluate .colR .dateWrap {
+        margin-bottom: 3px;
+        width: 100%;
+        background: url(../images/icon04.png) no-repeat 0 0;
+        background-size: 20px;
+        padding: 0 0 3px 27px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
+    .evaluate .colR .dateWrap p span {
+        font-size: 14px;
+        width: auto;
+        float: left;
+    }
+    .evaluate .colL p.photo {
+        margin: 0;
+        width: 100%;
+    }
+    .evaluate .text {
+        padding: 7px 0;
+        width: 100%;
+        background: #fff;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    .evaluate .colR dl {
+        overflow: hidden;
+        width: 100%;
+    }
+    .evaluate .colR dl dt {
+        padding: 5px 0;
+        width: 20%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    .evaluate .colR dl dd {
+        width: 80%;
+    }
+    .evaluate .colR dl dd .imgWrap {
+        float: left;
+        padding: 5px 10px;
+        width: 60%;
+        box-sizing: border-box;
+    }
+    .evaluate .colR dl dd .point {
+        float: left;
+        padding: 5px 0;
+        width: 40%;
+        height: auto;
+        box-sizing: border-box;
+    }
+    .evaluate .colR dl dd ul {
+        overflow: hidden;
+        width: 100%;
+    }
+    .evaluate .colR dl dd ul li {
+        float: left;
+        margin: 0 1.5% 0 0;
+        width: 21px;
+    }
+    .evaluate .colR dl dd ul li:last-child {
+        margin-right: 0;
+    }
+    .evaluate .colR dl dd img {
+        width: 100%;
+        vertical-align: middle;
+    }
+    /* -----------  子犬詳細  -------------*/
+    article#puppy section.basicInfo {
+        padding-bottom: 0;
+    }
+    section.infoWrap .info {
+        margin-bottom: 0;
+    }
+    section.infoWrap .position {
+        width: 100%;
+    }
+    section.infoWrap .puppyKeyVisual {
+        display: none;
+    }
+    section.infoWrap .puppyKeyVisual .inner {
+        position: static;
+        top: 0;
+        position: relative;
+        padding: 240px 20px 30px;
+        background-size: cover;
+        z-index: -1;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    section.infoWrap .puppyKeyVisual h1 {
+        margin-bottom: 0;
+        font-size: 140%;
+    }
+    section.infoWrap .puppyKeyVisual p.coat {
+        margin-bottom: 2%;
+        font-size: 100%;
+        line-height: 110%;
+    }
+    section.infoWrap .puppyKeyVisual p.birthday {
+        font-size: 85%;
+    }
+    section.infoWrap .titleWrap {
+        padding: 5px 5px 5px 30px;
+        margin: -10px 0 10px;
+    }
+    section.infoWrap .titleWrap .title {
+        margin-top: 2%;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    section.infoWrap .wrap2,
+    .wrap2 {
+        width: 100%;
+        min-width: auto;
+    }
+    section.infoWrap .wrap2 .colL,
+    .wrap2 .colL {
+        float: none;
+        width: 100%;
+        margin: 0 auto 8px auto;
+    }
+    .videobox iframe {
+        width: 100% !important;
+        height: 240px;
+    }
+    section.infoWrap .wrap2 .colR,
+    .wrap2 .colR {
+        float: none;
+        width: 100%;
+    }
+    section.infoWrap .info .inner .pointWrap {
+        margin-bottom: 3%;
+        padding: 0;
+    }
+    section.infoWrap .info .inner .point h3 {
+        margin-bottom: 7px;
+        padding: 6px 5px 5px 27px;
+        background: url(../images/icon11.png) 0 50% no-repeat;
+        background-size: 20px;
+        font-size: 15px;
+    }
+    section.infoWrap .info .inner .point {
+        padding: 17px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    section.infoWrap .detail {
+        line-height: 1.4em;
+    }
+    section.infoWrap .detail .acbutton,
+    .comment_style2 .more {
+        padding: 3.5% 20px 3.5% 3.5%;
+        font-size: 14px;
+        background: #fff url(../images/icon14.png) 97% 50% no-repeat;
+        -moz-background-size: 15px;
+        background-size: 15px;
+        border: 2px #fae5e2 solid;
+    }
+    section.infoWrap .detail .close,
+    .comment_style2 .more.close {
+        padding: 3.5% 20px 3.5% 3.5%;
+        font-size: 14px;
+        background: #fff url(../images/icon13.png) 97% 50% no-repeat;
+        -moz-background-size: 15px;
+        background-size: 15px;
+        border: 2px #fae5e2 solid;
+    }
+    section.infoWrap .benefits_wrap .acbutton,
+    section.usermypage .benefits_wrap .acbutton {
+        border: 2px #ffd67b solid;
+        background-image: url(../images/toggle_add_yellow.png), url(../images/icon_present.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 97% 50%, 8% 50%;
+        background-size: 15px, 18px;
+    }
+    section.infoWrap .benefits_wrap .close,
+    section.usermypage .benefits_wrap .close {
+        background-image: url(../images/toggle_subtraction_yellow.png), url(../images/icon_present.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 97% 50%, 8% 50%;
+        background-size: 15px, 18px;
+    }
+    .detail .table_style1 {
+        margin: 0 auto 13px auto;
+    }
+    section.infoWrap .detail .textArea {
+        margin-bottom: 10px;
+        padding: 7px;
+        font-size: 13px;
+    }
+    section.infoWrap .detail .textArea .bold {
+        margin-bottom: 5px;
+        font-weight: normal;
+    }
+    section.infoWrap .detail .textArea .table_style1 th {
+        width: 37.5%;
+    }
+    section.infoWrap .detail .textArea .table_style1 td {
+        width: 62.5%;
+    }
+    section.infoWrap .detail .button {
+        margin-bottom: 13px;
+    }
+    /*----- 子犬詳細 youtube動画サイズ -----*/
+    .resp-tabs-container iframe {
+        width: 100% !important;
+    }
+    /*----- 子犬詳細 ページ下部固定 -----*/
+    .footer_area {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgba( 255, 255, 255, 0.6);
+        z-index: 100;
+    }
+    .footer_area .footer_area_inner {
+        position: relative;
+        margin: 0px auto;
+        padding: 10px 0;
+        width: 100%;
+    }
+    .footer_area a {
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+        width: 80%;
+        color: #fff;
+        background: #ffaf30;
+        border-radius: 10px;
+        text-align: center;
+    }
+    /* --- 子犬詳細 footer余白 ---*/
+    footer.footerPb {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width:780px) {
+    section.infoWrap .titleWrap .title {
+        margin-top: 2.5%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    section.infoWrap .titleWrap .title {
+        margin-top: 5.5%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    section.infoWrap .titleWrap .title {
+        margin-top: 8%;
+    }
+}
+
+@media screen and (max-width:350px) {
+    section.infoWrap .benefits_wrap .acbutton,
+    section.usermypage .benefits_wrap .acbutton {
+        background-image: url(../images/toggle_add_yellow.png), url(../images/icon_present.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 97% 50%, 3% 50%;
+        background-size: 15px, 15px;
+    }
+    section.infoWrap .benefits_wrap .close,
+    section.usermypage .benefits_wrap .close {
+        background-image: url(../images/toggle_subtraction_yellow.png), url(../images/icon_present.png);
+        background-repeat: no-repeat, no-repeat;
+        background-position: 97% 50%, 3% 50%;
+        background-size: 15px, 15px;
+    }
+}
+
+
+/* --------------- 子犬の基礎知識 --------------- */
+
+section.knowledge .linkWrap {}
+
+section.knowledge .linkWrap .inner {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 40px 0;
+    width: 1100px;
+}
+
+section.knowledge .linkWrap .inner h2 {
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 35px;
+    background: url(../images/icon_title07.png) 0 50% no-repeat;
+    font-size: 160%;
+    line-height: 100%;
+    border-bottom: 1px #ea5f83 solid;
+}
+
+section.knowledge .linkWrap .inner ul li a {
+    display: block;
+    padding: 10px 0 10px 25px;
+    color: #333;
+    border-bottom: 1px #aaa dotted;
+    background: url(../images/arrow12.png) no-repeat 0 50%;
+}
+
+section.knowledge .linkWrap .inner ul li a:hover {
+    color: #ec6486;
+    background: url(../images/arrow12.png) no-repeat 3px 50%;
+}
+
+section.knowledge .linkWrap .leftBox {
+    float: left;
+    padding: 20px;
+    width: 49%;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+section.knowledge .linkWrap .rightBox {
+    float: right;
+    padding: 20px;
+    width: 49%;
+    background: #fff;
+    box-sizing: border-box;
+}
+
+
+/* --------------- ブリーダーインタビュー一覧 --------------- */
+
+section.breederInt {
+    margin-bottom: 40px;
+}
+
+section.breederInt .intWrap .inner {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 40px 0 0;
+    width: 1100px;
+}
+
+
+/* --------------- お客様インタビュー --------------- */
+
+section.customerInt .intWrap .inner {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 40px 0 0;
+    width: 1100px;
+}
+
+section.customerInt .intWrap .cusWrap {
+    overflow: hidden;
+    background: #fff;
+}
+
+section.customerInt .intWrap ul li {
+    margin-bottom: 14px;
+}
+
+section.customerInt .intWrap .cusPhoto {
+    float: left;
+    width: 353px;
+}
+
+section.customerInt .intWrap .cusText {
+    float: left;
+    padding: 18px;
+    width: 747px;
+    box-sizing: border-box;
+}
+
+section.customerInt .intWrap .text {
+    padding-left: 40px;
+    background: url(../images/icon04.png) no-repeat;
+}
+
+section.customerInt .intWrap hr {
+    margin: 10px 0;
+}
+
+section.customerInt .intWrap .cusText .name {
+    text-align: right;
+}
+
+
+/* --------------- 犬種毎コンテンツ一覧 --------------- */
+
+section.useful .inner {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 40px 0 0;
+    width: 1100px;
+}
+
+section.useful .boxWrap:nth-child(3) .inner {
+    padding: 0;
+}
+
+section.useful .boxWrap:nth-child(4) .inner {
+    padding: 0 0 20px 0;
+}
+
+section.useful .inner .box {
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+
+section.useful .inner h2 {
+    margin-bottom: 15px;
+    padding: 10px 10px 10px 35px;
+    background: url(../images/icon_title07.png) 0 50% no-repeat;
+    font-size: 160%;
+    line-height: 100%;
+    border-bottom: 1px #ea5f83 solid;
+}
+
+section.useful .inner .box ul {
+    overflow: hidden;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+section.useful .inner .box ul li {
+    position: relative;
+    float: left;
+    margin: 0 15px 15px 0;
+    width: 356px;
+    background: #fff;
+}
+
+section.useful .inner .box ul li img {
+    width: 100%;
+}
+
+section.useful .inner .box ul li:nth-child(3n) {
+    margin-right: 0;
+}
+
+section.useful .inner .box ul li div.contain {
+    padding: 20px;
+}
+
+section.useful .inner .box ul li div.contain h3 {
+    margin-bottom: 10px;
+    color: #f26c8d;
+    font-size: 150%;
+    line-height: 100%;
+}
+
+section.useful .inner .box ul li div.contain p.text {
+    margin-bottom: 30px;
+}
+
+section.useful .inner .box ul li div.contain p.date {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    color: #aaa;
+    text-align: right;
+}
+
+section.useful .inner .more {
+    display: block;
+    margin: 0 auto;
+    padding: 22px 0 20px;
+    width: 500px;
+    color: #fff;
+    background: #ec7190 url(../index_files/common/images/arrow02.png) 95% 50% no-repeat;
+    border-radius: 30px;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+}
+
+section.useful .inner .more::before,
+section.useful .inner .more::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+}
+
+section.useful .inner .more,
+section.useful .inner .more::before,
+section.useful .inner .more::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+section.useful .inner .more:hover {
+    cursor: pointer;
+    background: #d8476b url(../index_files/common/images/arrow02.png) 95% 50% no-repeat;
+}
+
+
+/* --------------- よくある質問 --------------- */
+
+section.faq .faqList .inner {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 40px 0 0;
+    width: 1100px;
+}
+
+section.faq .faqList .inner h2 {
+    margin-bottom: 15px;
+    padding: 10px 10px 10px 35px;
+    background: url(../images/icon_title07.png) 0 50% no-repeat;
+    font-size: 160%;
+    line-height: 100%;
+    border-bottom: 1px #ea5f83 solid;
+}
+
+section.faq .faqList .inner h2 a {
+    overflow: hidden;
+    z-index: -100;
+}
+
+section.faq .faqList ul {
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px #ffd8d8 solid;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+section.faq .faqList ul li {
+    float: left;
+    width: 20%;
+    background: #fff url(../images/arrow14.png) no-repeat 15px 50%;
+    border-right: 1px #ffd8d8 solid;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.faq .faqList ul li:last-child {
+    border-right: none;
+}
+
+section.faq .faqList ul li a {
+    z-index: 2;
+    display: block;
+    padding: 10px 10px 10px 47px;
+    width: 100%;
+}
+
+section.faq .faqList #menu1,
+section.faq .faqList #menu2,
+section.faq .faqList #menu3,
+section.faq .faqList #menu4,
+section.faq .faqList #menu5 {
+    margin-top: -100px;
+    padding-top: 100px;
+}
+
+section.faq .faqList ul li a:hover {
+    color: #ea5f83;
+}
+
+section.faq .faqList dl {
+    position: relative;
+    margin-bottom: 30px;
+    z-index: 2;
+}
+
+.syncer-acdn-faq dt,
+.syncer-acdn-faq dd {
+    padding: 20px;
+}
+
+.syncer-acdn-faq dt {
+    padding-left: 60px;
+    color: #333;
+    background: #fff url(../images/faq_q.png) no-repeat 10px 50%;
+    border-bottom: 1px #ea5f83 dashed;
+    box-sizing: border-box;
+}
+
+.syncer-acdn-faq dd {
+    display: none;
+    padding-left: 60px;
+    background: #fff4f3 url(../images/faq_a.png) no-repeat 10px 10px;
+}
+
+.syncer-acdn-faq dt:hover {
+    color: #ea5f83;
+    background: #ffffff url(../images/faq_q.png) no-repeat 10px 50%;
+    cursor: pointer;
+}
+
+@media screen and (max-width:1100px) {
+    /* --------------- 子犬の基礎知識 --------------- */
+    section.knowledge .linkWrap .inner,
+    section.knowledge .linkWrap .leftBox,
+    section.knowledge .linkWrap .rightBox {
+        width: 100%;
+    }
+    section.knowledge .linkWrap .inner {
+        padding: 3%;
+        box-sizing: border-box;
+    }
+    section.knowledge .linkWrap .leftBox {
+        margin-bottom: 3%;
+    }
+    .keyColor .inner {
+        width: 100%;
+    }
+    section.knowledge .linkWrap .inner h2 {
+        font-size: 100%;
+    }
+    section.knowledge .linkWrap .inner ul li a:hover {
+        color: #333;
+        background: url(../images/arrow12.png) no-repeat 0 50%;
+    }
+    /* --------------- ブリーダーインタビュー一覧 --------------- */
+    section.breederInt {
+        margin-bottom: 13px;
+    }
+    section.breederInt .intWrap .inner {
+        padding: 3% 3% 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    /* --------------- お客様インタビュー --------------- */
+    section.customerInt .intWrap .inner,
+    section.customerInt .intWrap .cusPhoto,
+    section.customerInt .intWrap .cusText {
+        width: 100%;
+    }
+    section.customerInt .intWrap .inner {
+        padding: 3%;
+        box-sizing: border-box;
+    }
+    section.customerInt .intWrap .cusPhoto,
+    section.customerInt .intWrap .cusText {
+        float: none;
+    }
+    section.customerInt .intWrap .cusText {
+        padding: 3%;
+        box-sizing: border-box;
+    }
+    section.customerInt .intWrap .text {
+        padding: 0 0 0 40px;
+        background: url(../images/icon04.png) no-repeat 0px 0px;
+    }
+    section.customerInt .intWrap .cusWrap {
+        padding: 1%;
+        box-sizing: border-box;
+    }
+    /* --------------- 犬種毎コンテンツ一覧 --------------- */
+    section.useful .inner,
+    section.useful .boxWrap:nth-child(3) .inner,
+    section.useful .boxWrap:nth-child(4) .inner {
+        width: 100%;
+        padding: 3%;
+        box-sizing: border-box;
+    }
+    section.useful .inner .box ul li {
+        width: 100%;
+        margin: 0 0 3%;
+    }
+    section.useful .inner .box ul li div.contain p.date {
+        left: 0;
+        right: 10px;
+    }
+    section.useful .inner .box ul li:nth-child(3n) {}
+    section.useful .inner h2 {
+        font-size: 100%;
+    }
+    section.useful .inner .more {
+        width: 100%;
+    }
+    section.useful .inner .more:hover {
+        background: #ec7190;
+    }
+    /* --------------- よくある質問 --------------- */
+    section.faq .faqList .inner {
+        padding: 3%;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    section.faq .faqList .inner h2 {
+        overflow: hidden;
+        font-size: 100%;
+    }
+    section.faq .faqList ul {
+        width: 100%;
+    }
+    section.faq .faqList ul li {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px #ffd8d8 solid;
+    }
+    section.faq .faqList #menu1,
+    section.faq .faqList #menu2,
+    section.faq .faqList #menu3,
+    section.faq .faqList #menu4,
+    section.faq .faqList #menu5 {
+        margin-top: -75px;
+        padding-top: 75px;
+    }
+    section.faq .faqList ul li a {
+        padding: 15px 15px 15px 47px;
+    }
+}
+
+
+/* ===================================================================
+  ガイドコンテンツ
+=================================================================== */
+
+section.guide .boxWrap .inner {
+    overflow: hidden;
+    margin: 30px auto;
+    padding: 10px 0 30px 0;
+    width: 1100px;
+    background: #fff;
+}
+
+.sct_guide {
+    width: 978px;
+    margin: 0 auto;
+    padding-top: 40px;
+    font-size: 14px;
+}
+
+.sct_guide .guideTopText {
+    margin-bottom: 50px;
+    color: #5e4d39;
+}
+
+.sct_guide .sct_contents .text {
+    margin-bottom: 25px;
+    color: #5e4d39;
+}
+.sct_guide .sct_contents .starterkit .text {
+  margin: 20px 0 0 0;
+}
+.sct_guide .sct_contents .starterkit .caption .text {
+  color: #f24e55;
+}
+
+@media screen and (max-width:1100px) {
+    section.guide .boxWrap .inner {
+        overflow: hidden;
+        margin: 0px auto 13px;
+        padding: 0px 0 0px 0;
+        width: auto;
+        background: #fff;
+    }
+    .sct_guide {
+        width: auto;
+        margin: 0 auto;
+        padding-top: 0px;
+        font-size: 14px;
+    }
+    .sct_guide .guideTopText {
+        margin-bottom: 0px;
+        padding: 0px 10px 10px 10px;
+        line-height: 1.5em;
+    }
+    .sct_guide .sct_contents .text {
+        margin-bottom: 0px;
+        padding: 0px 10px 10px 10px;
+        line-height: 1.5em;
+    }
+    .sct_guide .sct_contents .starterkit .text {
+      margin: 5px 0 0 0;
+      padding: 0px;
+      line-height: 1.4em;
+    }
+}
+
+
+/* タブメニュー */
+
+.sct_guide .tabMenu {
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.sct_guide .list_tab li {
+    float: left;
+}
+
+.sct_guide .list_tab li a {
+    display: block;
+    width: 0;
+    height: 74px;
+    overflow: hidden;
+    background: url(../images/guid/tab_contents.png?20220719) no-repeat;
+}
+
+.sct_guide .list_tab .guide1 a,
+.sct_guide .list_tab .guide2 a,
+.sct_guide .list_tab .guide3 a,
+.sct_guide .list_tab .guide4 a {
+    padding-left: 244.5px;
+}
+
+.sct_guide .list_tab .guide5 a {
+    padding-left: 244.5px;
+}
+
+.sct_guide .list_tab .guide1 a {
+    background-position: 0 0;
+}
+
+.sct_guide .list_tab .guide1 a:hover {
+    background-position: 0 -80px;
+}
+
+.sct_guide .list_tab .guide1 a.active {
+    background-position: 0 -160px;
+}
+
+.sct_guide .list_tab .guide2 a {
+    background-position: -244.5px 0;
+}
+
+.sct_guide .list_tab .guide2 a:hover {
+    background-position: -244.5px -80px;
+}
+
+.sct_guide .list_tab .guide2 a.active {
+    background-position: -244.5px -160px;
+}
+
+.sct_guide .list_tab .guide3 a {
+    background-position: -489px 0;
+}
+
+.sct_guide .list_tab .guide3 a:hover {
+    background-position: -489px -80px;
+}
+
+.sct_guide .list_tab .guide3 a.active {
+    background-position: -489px -160px;
+}
+
+.sct_guide .list_tab .guide4 a {
+    background-position: -489px 0;
+}
+
+.sct_guide .list_tab .guide4 a:hover {
+    background-position: -489px -80px;
+}
+
+.sct_guide .list_tab .guide4 a.active {
+    background-position: -489px -160px;
+}
+
+.sct_guide .list_tab .guide5 a {
+    background-position: -733.5px 0;
+}
+
+.sct_guide .list_tab .guide5 a:hover {
+    background-position: -733.5px -80px;
+}
+
+.sct_guide .list_tab .guide5 a.active {
+    background-position: -733.5px -160px;
+}
+
+@media screen and (max-width:1100px) {
+    .sct_guide .tabMenu {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    /* スマホタブメニュー */
+    .list_guideMenu {
+        display: table;
+        text-align: center;
+        margin: 0 0 0 -1px;
+        border-bottom: 1px solid #dddddd;
+    }
+    .list_guideMenu a {
+        display: table-cell;
+        vertical-align: middle;
+        border-left: 1px solid #dddddd;
+        padding: 24px 0 6px 0;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-position: center 4px;
+        background-color: #eeeeee;
+        font-size: 11px;
+        letter-spacing: 0.5px;
+        line-height: 1.3em;
+        width: 20%;
+    }
+    .list_guideMenu a.guide1 {
+        background-image: url(../images/guid/navi_first.png);
+        background-size: 16px;
+    }
+    .list_guideMenu a.guide2 {
+        background-image: url(../images/guid/navi_arrow.png);
+        background-size: 16px;
+    }
+    .list_guideMenu a.guide3 {
+        background-image: url(../images/guid/navi_label.png);
+        background-size: 16px;
+    }
+    .list_guideMenu a.guide4 {
+        background-image: url(../images/guid/navi_heart.png);
+        background-size: 16px;
+    }
+    .list_guideMenu a.guide5 {
+        background-image: url(../images/icon_title16_old.png);
+        background-size: 13px;
+    }
+    .list_guideMenu a.active {
+        font-weight: bold;
+        background-color: #ffffff;
+    }
+}
+
+
+/* スマホタブメニュー（最小サイズ）*/
+
+@media screen and (max-width:350px) {
+    .list_guideMenu a {
+        font-size: 10px;
+        letter-spacing: 0.2px;
+    }
+}
+
+
+/* タイトル１*/
+
+.sct_guide .guide_title {
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.sct_guide .guide_title span {
+    display: block;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.sct_guide .guide_title .sub {
+    font-size: 18px;
+    color: #8d8674;
+    font-weight: bold;
+}
+
+.sct_guide .guide_title .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.guideContents1 .guide_title {
+    background: url(../images/guid/guid01_headLine.png) repeat-y left top;
+}
+
+.guideContents1 .guide_title .title {
+    color: #61c9cc;
+}
+
+.guideContents2 .guide_title {
+    background: url(../images/guid/guid02_headLine.png) repeat-y left top;
+}
+
+.guideContents2 .guide_title .title {
+    color: #f58c2e;
+}
+
+.guideContents3 .guide_title {
+    background: url(../images/guid/guid03_headLine.png) repeat-y left top;
+}
+
+.guideContents3 .guide_title .title {
+    color: #90c92e;
+}
+
+.guideContents4 .guide_title {
+    background: url(../images/guid/guid04_headLine.png) repeat-y left top;
+}
+
+.guideContents4 .guide_title .title {
+    color: #ef7091;
+}
+
+.guideContents5 .guide_title {
+    background: url(../images/guid/guid05_headLine.png) repeat-y left top;
+}
+
+.guideContents5 .guide_title .title {
+    color: #dd9d04;
+    float: right;
+    padding-right: 450px;
+    padding-top: 40px;
+}
+
+@media screen and (max-width:1100px) {
+    .sct_guide .guide_title {
+        padding: 15px 10px 5px 10px;
+        margin-bottom: 0px;
+        background: none;
+    }
+    .guideContents1 .guide_title {
+        border-top: 6px solid #2fcdd3;
+    }
+    .guideContents2 .guide_title {
+        border-top: 6px solid #f58c2e;
+    }
+    .guideContents3 .guide_title {
+        border-top: 6px solid #90c92e;
+    }
+    .guideContents4 .guide_title {
+        border-top: 6px solid #ef7091;
+    }
+    .guideContents5 .guide_title {
+        border-top: 6px solid #dd9d04;
+    }
+    .sct_guide .guide_title span {
+        display: block;
+        margin-bottom: 16px;
+    }
+    .sct_guide .guide_title .sub {
+        font-size: 12px;
+        margin: 0 0 5px 0;
+    }
+    .sct_guide .guide_title .title {
+        font-size: 16px;
+        line-height: 1.4em;
+        margin: 0 0 4px 0;
+    }
+    .guideContents5 .guide_title .title {
+        float: none;
+        padding-right: 0px;
+        padding-top: 0px;
+    }
+    .guideContents5 .guide_title img {
+      display: none;
+    }
+}
+
+
+/* タイトル２*/
+
+.sct_guide .cnt_caption {
+    margin-bottom: 25px;
+    padding: 14px 0 10px;
+    background: url(../images/bdr_check_L.png) repeat-x top left;
+    border-bottom: 1px solid #ece8e0;
+    clear: both;
+}
+.sct_guide .cnt_caption.basic_knowledge {
+    background-image: url(../images/arrow_white-circle_pink.png),url(../images/bdr_check_L.png);
+    background-repeat: no-repeat,repeat-x;
+    background-position: center,top;
+    background-position-x: right;
+}
+
+.sct_guide .cnt_caption.basic_knowledge:hover {
+    opacity: 0.8;
+}
+
+.sct_guide .cnt_caption .icon {
+    display: table-cell;
+    width: 65px;
+    height: 66px;
+    line-height: 1.3;
+    background: url(../images/guid/icn_head.png) no-repeat;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sct_guide .cnt_caption .caption {
+    display: table-cell;
+    padding: 0 10px;
+    line-height: 1.4;
+    color: #5e4d39;
+    font-size: 21px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.sct_guide .cnt_caption.basic_knowledge:hover .caption {
+    color: #ef7091;
+    text-decoration: underline;
+}
+
+.guideContents1 .cnt_caption .icon {
+    background-position: 0 0;
+    text-shadow: 0 1px 3px #046367;
+}
+
+.guideContents2 .cnt_caption .icon {
+    background-position: -80px 0;
+    text-shadow: 0 1px 3px #7e5902;
+}
+
+.guideContents3 .cnt_caption .icon {
+    background-position: -160px 0;
+    text-shadow: 0 1px 3px #699e00;
+}
+
+.guideContents4 .cnt_caption .icon {
+    background-position: -240px 0;
+    text-shadow: 0 1px 3px #8d0528;
+    font-size: 10px;
+}
+
+.guideContents5 .cnt_caption .icon {
+    background-position: -80px 0;
+    text-shadow: 0 1px 3px #7e5902;
+}
+
+@media screen and (max-width:1100px) {
+    .sct_guide .cnt_caption {
+        margin-bottom: 10px;
+        padding: 12px 5px 5px 5px;
+        background: url(../images/bdr_check_L.png) repeat-x top left;
+        border-bottom: 1px solid #ece8e0;
+    }
+    .sct_guide .cnt_caption.basic_knowledge {
+        background-image: url(../images/arrow_white-circle_pink.png),url(../images/bdr_check_L.png);
+        background-repeat: no-repeat,repeat-x;
+        background-position: center,top;
+        background-position-x: right;
+    }
+    .sct_guide .cnt_caption.basic_knowledge:hover .caption {
+        opacity: 0.8;
+    }
+    .sct_guide .cnt_caption .icon {
+        display: table-cell;
+        width: 45px;
+        height: 45px;
+        line-height: 1.2;
+        background-repeat: no-repeat;
+        color: #fff;
+        font-size: 10px;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+    .guideContents1 .cnt_caption .icon {
+        background: url(../images/guid/guide_icn_blue.png) no-repeat 0 0;
+        background-size: 45px auto;
+    }
+    .guideContents2 .cnt_caption .icon {
+        background: url(../images/guid/guide_icn_orange.png) no-repeat 0 0;
+        background-size: 45px auto;
+    }
+    .guideContents3 .cnt_caption .icon {
+        background: url(../images/guid/guide_icn_green.png) no-repeat 0 0;
+        background-size: 45px auto;
+    }
+    .guideContents4 .cnt_caption .icon {
+        background: url(../images/guid/guide_icn_pink.png) no-repeat 0 0;
+        background-size: 45px auto;
+    }
+    .guideContents5 .cnt_caption .icon {
+        background: url(../images/guid/guide_icn_orange.png) no-repeat 0 0;
+        background-size: 45px auto;
+    }
+    .sct_guide .cnt_caption .caption {
+        padding: 0 0 0 8px;
+        line-height: 1.4;
+        font-size: 15px;
+    }
+}
+
+
+/* リストガイド */
+
+.sct_guide .list_guide {
+    margin: 0 -30px 40px 0;
+    overflow: hidden;
+}
+
+.sct_guide .list_guide li {
+    float: left;
+    width: 474px;
+    margin: 0 30px 20px 0;
+}
+
+.sct_guide .list_guide .guideBox {
+    border: 1px solid #ece8e0;
+    border-radius: 5px;
+}
+
+.sct_guide .list_guide .guideBox h4 {
+    padding: 10px 20px 10px 47px;
+    background: url(../images/guid/circle_double_main.png) no-repeat 20px center #f8f5f0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sct_guide .list_guide .guideBox p {
+    padding: 15px 20px 15px;
+    color: #8d8674;
+}
+
+.sct_guide .list_guide .guideBox em {
+    font-weight: bold;
+    color: #90c92e;
+}
+
+@media screen and (max-width:1100px) {
+    .sct_guide .list_guide {
+        overflow: hidden;
+        width: auto;
+        margin: 0 10px 10px 10px;
+    }
+    .sct_guide .list_guide li {
+        float: none;
+        width: auto;
+        margin: 0 0px 10px 0;
+    }
+    .sct_guide .list_guide .guideBox h4 {
+        padding: 10px 10px 10px 35px;
+        background: url(../images/guid/circle_double_main.png) no-repeat 10px center #f8f5f0;
+        font-size: 15px;
+    }
+    .sct_guide .list_guide .guideBox p {
+        padding: 10px;
+        line-height: 1.4em;
+    }
+}
+
+
+/* 優良ブリーダー条件 */
+
+.conditionalList {
+    position: relative;
+    margin: 60px auto 40px auto;
+    padding: 60px 20px 43px;
+    background: #f8f5f0;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.conditionalList .title {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+}
+
+.conditionalList li {
+    position: relative;
+    padding: 12px 0 12px 40px;
+    border-bottom: 1px dashed #d8d2c4;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.conditionalList .circle {
+    position: absolute;
+    top: 14px;
+    left: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    background: #90c92e;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media screen and (max-width:1100px) {
+    .conditionalList {
+        margin: 30px 10px 13px 10px;
+        padding: 30px 10px 15px;
+        background: #f8f5f0;
+        border-radius: 5px;
+        font-weight: bold;
+        width: auto;
+    }
+    .conditionalList .title {
+        position: absolute;
+        top: -25px;
+        left: 10px;
+    }
+    .conditionalList .title img {
+        width: 210px;
+    }
+    .conditionalList li {
+        padding: 8px 0 8px 26px;
+        font-size: 13px;
+    }
+    .conditionalList .circle {
+        top: 10px;
+    }
+}
+
+
+/* ブリーダー登録申請に進む */
+
+.btnBox {
+    text-align: center;
+}
+
+.btn_primary {
+    display: block;
+    margin: 0 auto 40px auto;
+    padding: 19px 0 17px;
+    width: 500px;
+    color: #fff;
+    background: #ec7190 url(../images/arrow02.png) 95% 50% no-repeat;
+    border-radius: 30px;
+    font-size: 130%;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btn_primary:hover {
+    background: #d8476b url(../images/arrow02.png) 95% 50% no-repeat;
+}
+
+@media screen and (max-width:1100px) {
+    .guideContents1 .btnBox {
+        display: none;
+    }
+    .btn_primary {
+        width: 90%;
+        height: auto;
+        line-height: 43px;
+        font-size: 16px;
+        margin: 0px auto 20px auto;
+        padding: 0;
+    }
+}
+
+
+/* ステップ　*/
+
+.sct_guide .stepFlow {
+    margin-bottom: 40px;
+    clear: both;
+}
+
+.guideContents2 .stepFlow {
+    margin-bottom: 60px;
+}
+
+.sct_guide .stepFlow li+li {
+    padding-top: 35px;
+    background: url(../images/guid/triangle_under.png) no-repeat top center;
+}
+
+.sct_guide .stepFlow dl {
+    border: 1px solid #ece8e0;
+    border-radius: 5px;
+}
+
+.sct_guide .stepFlow dt {
+    display: table-cell;
+    width: 190px;
+    padding: 18px 20px;
+    border-right: 1px dotted #ece8e0;
+    font-weight: bold;
+}
+
+.sct_guide .stepFlow dt span {
+    display: block;
+}
+
+.sct_guide .stepFlow dt .stepNo {
+    font-size: 16px;
+}
+
+.guideContents2 .stepFlow .stepNo {
+    color: #f58c2e;
+}
+
+.guideContents3 .stepFlow .stepNo {
+    color: #90c92e;
+}
+
+.guideContents4 .stepFlow .stepNo {
+    color: #ef7091;
+}
+
+.guideContents5 .stepFlow .stepNo {
+    color: #f5ba2e;
+}
+
+.sct_guide .stepFlow dt .stepTitle {
+    color: #5e4d39;
+    font-size: 21px;
+}
+
+.sct_guide .stepFlow dd {
+    display: table-cell;
+    padding: 18px 20px 18px 25px;
+}
+
+.sct_guide .stepFlow dd a {
+    margin-right: 25px;
+}
+
+.sct_guide .stepFlow dd .guide_step3_message {
+    color: #ff0000;
+}
+
+.lnk_arw {
+    background: url(../images/arw_right_pink.png) no-repeat left 4px;
+    padding: 0 0 0 12px;
+    background-size: 5px;
+    color: #ef7091;
+}
+
+.lnk_arw:hover {
+    color: #ef7091;
+    text-decoration: underline;
+}
+
+
+/* ステップの中のinfomation  */
+
+.sct_guide .stepFlow .sct_information {
+    padding: 15px 0;
+    border: 1px dashed #ece8e0;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+}
+
+.sct_guide .stepFlow .sct_information .title {
+    padding: 0 20px 0 40px;
+    margin-bottom: 10px;
+    background: url(../images/circle_mainColor.png) no-repeat 20px center;
+    font-size: 16px;
+    color: #4c4126;
+    font-weight: bold;
+}
+
+.sct_guide .stepFlow .sct_information p {
+    color: #8d8674;
+    padding: 0 20px 0px;
+}
+
+.sct_guide .stepFlow .sct_information .information_adress {
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+.sct_guide .stepFlow .sct_information .information_adress p {
+    float: left;
+    background: none;
+    height: auto;
+    padding: 0;
+}
+
+.sct_guide .stepFlow .sct_information .information_adress a,
+.sct_guide .stepFlow .sct_information .sub_mc {
+    color: #ef7091;
+    font-size: 18px;
+}
+
+@media screen and (max-width:1100px) {
+    .sct_guide .stepFlow {
+        margin-bottom: 10px;
+    }
+    .sct_guide .stepFlow li+li {
+        padding-top: 10px;
+        background: none;
+    }
+    .sct_guide .stepFlow dl {
+        width: auto;
+        border: none;
+        border-top: 1px solid #ece8e0;
+        border-radius: 0px;
+    }
+    .sct_guide .stepFlow dt {
+        display: block;
+        width: auto;
+        padding: 6px 10px;
+        background: #fbf9f5;
+        border-right: none;
+    }
+    .sct_guide .stepFlow dt span {
+        display: inline;
+    }
+    .sct_guide .stepFlow dt .stepNo {
+        font-size: 14px;
+    }
+    .sct_guide .stepFlow dt .stepTitle {
+        font-size: 15px;
+    }
+    .sct_guide .stepFlow dd {
+        display: block;
+        padding: 10px 10px 10px 10px;
+        line-height: 1.5em;
+    }
+    .lnk_arw {
+        display: block;
+        margin: 3px 0 0 0;
+    }
+    .dog_detail_arw {
+        background-position: 30%;
+    }
+    /* ステップの中のinfomation  */
+    .sct_guide .stepFlow .sct_information {
+        padding: 15px 10px;
+        border: none;
+        border-radius: 5px;
+        background: #f8f5f0;
+        margin: 10px 0 0 0;
+    }
+    .sct_guide .stepFlow .sct_information .title {
+        padding: 0 0px 0 20px;
+        margin-bottom: 10px;
+        background: url(../images/circle_mainColor.png) no-repeat 0px center;
+        font-size: 16px;
+        color: #4c4126;
+        font-weight: bold;
+    }
+    .sct_guide .stepFlow .sct_information p {
+        padding: 0 0px 0px;
+    }
+    .sct_guide .stepFlow .sct_information ul {
+        padding: 0px 0px 0px;
+    }
+    .sct_guide .stepFlow .sct_information li {
+        float: none;
+        padding: 10px 0 0px 0;
+    }
+    .sct_guide .stepFlow .sct_information li img {
+        width: 181px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .sct_guide .stepFlow .sct_information .information_adress {
+        padding: 0;
+    }
+    .sct_guide .stepFlow .sct_information .information_adress a {
+        font-size: 13px;
+        margin: 0;
+    }
+}
+
+
+/*血統書の見方を知ろう*/
+
+.sct_guide cite {
+    display: block;
+    color: #8d8674;
+    font-style: normal;
+    text-align: right;
+}
+
+.sct_guide cite a {
+    color: #ef7091;
+    text-decoration: underline;
+}
+
+.sct_guide .sct_caption {
+    padding: 0 0 10px 20px;
+    background: url(../images/guid/circle_lightColor_L.png)no-repeat 0 5px;
+    border-bottom: 1px solid #ece8e0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #5e4d39;
+    margin: 40px 0 20px 0;
+    clear: both;
+}
+
+.sct_guide .certifiedPedigreeGuide .imageBox {
+    float: left;
+    width: 418px;
+    margin: 0px 0 40px 0;
+}
+
+.sct_guide .certifiedPedigreeGuide .detailBox {
+    float: right;
+    width: 520px;
+    background: #f8f5f0;
+    border-radius: 5px;
+    margin: 0px 0 40px 0;
+}
+
+.sct_guide .certifiedPedigreeGuide .detailBox dl {
+    margin: 12px 20px;
+}
+
+.sct_guide .certifiedPedigreeGuide .detailBox dd+dt {
+    border-top: 1px solid #ece8e0;
+}
+
+.sct_guide .certifiedPedigreeGuide .detailBox dt {
+    margin: 12px 0 6px;
+    padding-top: 12px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sct_guide .certifiedPedigreeGuide .detailBox dt .circle {
+    display: inline-block;
+    width: 19px;
+    height: 24px;
+    line-height: 24px;
+    background: url(../images/guid/circle_orange.png) no-repeat left 2px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.sct_guide .certifiedPedigreeGuide .detailBox dd {
+    color: #8d8674;
+}
+
+.guideContents3 .imageBox {
+    float: left;
+    width: 256px;
+    margin: 0px 0 40px 0;
+}
+
+.guideContents3 .detailBox {
+    float: right;
+    width: 722px;
+    color: #5e4d39;
+    margin: 0px 0 40px 0;
+}
+
+.guideContents3 .detailBox p {
+    margin: 0px 0 20px 0;
+}
+
+@media screen and (max-width:1100px) {
+    .sct_guide cite {
+        margin: 10px 0 0 0;
+        font-size: 12px;
+    }
+    .sct_guide .sct_caption {
+        padding: 0 0 5px 20px;
+        font-size: 15px;
+        margin: 0px 10px 10px 10px;
+    }
+    .sct_guide .certifiedPedigreeGuide .imageBox {
+        float: none;
+        width: 90%;
+        margin: 0px auto 10px auto;
+    }
+    .sct_guide .certifiedPedigreeGuide .detailBox {
+        float: none;
+        width: auto;
+        border-radius: 0px;
+        margin: 0px 0 20px 0;
+        background: #fff;
+    }
+    .sct_guide .certifiedPedigreeGuide .detailBox dl {
+        margin: 10px 10px;
+    }
+    .sct_guide .certifiedPedigreeGuide .detailBox dt {
+        margin: 10px 0 4px;
+        padding-top: 5px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    .guideContents3 .imageBox {
+        float: none;
+        width: 120px;
+        margin: 0px auto 10px auto;
+    }
+    .guideContents3 .imageBox img {
+        width: 100%;
+    }
+    .guideContents3 .detailBox {
+        float: none;
+        width: auto;
+        color: #5e4d39;
+        line-height: 1.5em;
+        margin: 0px 10px 20px 10px;
+    }
+    .guideContents3 .detailBox p {
+        margin: 0px 0 10px 0;
+    }
+}
+
+.guideContents4 .sct_contents {
+    margin: 0px 0 40px 0;
+}
+
+.guideContents4 .sct_contents p {
+    margin: 0px 0 20px 0;
+    overflow: hidden;
+}
+
+.guideContents4 .sp_only {
+    display: none;
+}
+
+.guideContents4 .rFloat {
+    float: right;
+    margin: 0 0 0px 25px;
+}
+
+.guideContents2 .center,
+.guideContents4 .center {
+    text-align: center;
+}
+
+.guideContents4 .sct_contents .caution {
+    color: #cc0000;
+}
+
+.sub_mc {
+    color: #ef7091;
+}
+
+
+/*表*/
+
+.guideContents4 .tbl_guide,
+.guideContents5 .tbl_guide {
+    width: 620px;
+    margin: 20px auto 30px;
+    font-size: 16px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.guideContents4 .tbl_guide th,
+.guideContents5 .tbl_guide th{
+    font-weight: bold;
+}
+
+.guideContents4 .tbl_guide th,
+.guideContents4 .tbl_guide td,
+.guideContents5 .tbl_guide th,
+.guideContents5 .tbl_guide td {
+    padding: 12px 0;
+    border: 1px solid #ece8e0;
+}
+
+.guideContents4 .tbl_guide thead th,
+.guideContents5 .tbl_guide thead th {
+    background: #c3bba3;
+    color: #fff;
+}
+
+.guideContents4 .tbl_guide tbody th,
+.guideContents5 .tbl_guide tbody th {
+    width: 130px;
+    background: #f8f5f0;
+}
+
+.guideContents5 .tbl_guide td {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.guideContents4 .dl_guide2column {
+    overflow: hidden;
+    margin: 0px -30px 20px 0;
+}
+
+.guideContents4 .dl_guide2column dl {
+    float: left;
+    width: 474px;
+    margin-right: 30px;
+}
+
+.guideContents4 .dl_guide2column dt {
+    margin-bottom: 15px;
+    padding: 6px 10px;
+    background: #f8f5f0;
+    font-weight: bold;
+    color: #5e4d39;
+}
+
+.guideContents4 .dl_guide2column dd em {
+    color: #90c92e;
+}
+
+.guideContents4 .dl_guide2column dd a,
+.guideContents4 #medical_compensation a,
+.underLineLink {
+    color: #ef7091;
+    text-decoration: underline;
+}
+
+.underLineLink:hover {
+    opacity: 0.8;
+}
+
+/* column */
+
+.wdg_column {
+    padding: 10px;
+    background: url(../images/bg_slant.png);
+    border: 1px solid #ece8e0;
+    margin: 0 0 40px 0;
+}
+
+.wdg_column .innerbox {
+    padding: 20px 30px;
+    background: url(../images/guid/guide04_img_pen.png) right top no-repeat #fff;
+}
+
+.wdg_column .wdg_title {
+    margin: 10px 0 20px 0px;
+    color: #d8d2c4;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.wdg_column p {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1100px) {
+    .guideContents4 .sct_contents {
+        margin: 0px 0px 20px 0px;
+    }
+    .guideContents4 .sct_contents p {
+        margin: 0px 10px 10px 10px;
+    }
+    .guideContents4 .pc_only {
+        display: none;
+    }
+    .guideContents4 .sp_only {
+        display: block;
+    }
+    .guideContents4 .sp_only .hedding1 {
+        display: block;
+        font-weight: bold;
+        margin: 0 0 6px 0;
+        color: #4c4126;
+    }
+    .guideContents4 .sct_contents .caution {
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+    /*表*/
+    .guideContents4 .tbl_guide,
+    .guideContents5 .tbl_guide {
+        width: 95%;
+        margin: 10px auto 10px;
+        font-size: 13px;
+        line-height: 1.5em;
+    }
+    .guideContents4 .tbl_guide th,
+    .guideContents4 .tbl_guide td,
+    .guideContents5 .tbl_guide th,
+    .guideContents5 .tbl_guide td {
+        padding: 10px 6px;
+        vertical-align: middle;
+    }
+    .guideContents4 .tbl_guide tbody th,
+    .guideContents5 .tbl_guide tbody th {
+        width: 74px;
+        background: #f8f5f0;
+    }
+    .guideContents4 .dl_guide2column {
+        margin: 0px 10px 0px 10px;
+    }
+    .guideContents4 .dl_guide2column dl {
+        float: none;
+        width: auto;
+        margin: 0 0 10px 0;
+    }
+    .guideContents4 .dl_guide2column dt {
+        margin-bottom: 5px;
+        padding: 6px 10px;
+        line-height: 1.5em;
+    }
+    /* column */
+    .wdg_column {
+        padding: 6px;
+        margin: 0 0 20px 0;
+    }
+    .wdg_column .innerbox {
+        padding: 10px 10px 5px 10px;
+    }
+    .wdg_column .wdg_title {
+        margin: 5px 0 10px 0px;
+        font-size: 20px;
+    }
+    .wdg_column p {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* 注意書き */
+
+.sct_warning {
+    margin-bottom: 20px;
+    padding: 20px 20px 10px;
+    background: #fffde8;
+    border-radius: 5px;
+}
+
+.sct_warning .sct_title {
+    padding: 0 0 8px;
+    border-top: none;
+    border-color: #d4cdb9;
+    text-align: center;
+}
+
+.sct_warning .sct_title .icn_warning {
+    height: 35px;
+    padding: 10px 0 0px 50px;
+    display: inline-block;
+    background: url("../images/icn_warning.png") no-repeat left 3px;
+}
+
+.sct_warning a {
+    color: #ef7091;
+    text-decoration: underline;
+}
+
+.sct_warning em {
+    font-weight: bold;
+    color: #000;
+}
+
+.sct_warning dt,
+.sct_warning li {
+    padding-left: 20px;
+    background: url("../images/circle_yellow.png") no-repeat left 6px
+}
+
+.sct_warning dt {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sct_warning dd {
+    margin: 0px 20px 10px;
+    color: #8d8674;
+}
+
+.sct_warning li {
+    margin-bottom: 15px;
+    color: #8d8674;
+}
+
+.sct_warning .emText {
+    margin-bottom: 20px;
+    color: #90c92e;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.sct_warning .emText2 {
+    margin-bottom: 20px;
+}
+
+.fbold {
+    font-weight: bold;
+}
+
+.sct_warning .ballonOn {
+    background: url(../images/ballon_bottom.png) no-repeat top center;
+    margin-bottom: 0;
+    padding-top: 38px;
+}
+
+@media screen and (max-width:1100px) {
+    .sct_warning {
+        margin-bottom: 10px;
+        padding: 14px 10px 10px;
+        border-radius: 0px;
+    }
+    .sct_warning .sct_title {
+        padding: 0 0 8px;
+        font-size: 14px;
+    }
+    .sct_warning .sct_title .icn_warning {
+        height: 20px;
+        padding: 0px 0 0px 25px;
+        background: url("../images/icn_warning.png") no-repeat left 3px;
+        background-size: 19px;
+    }
+    .sct_warning dt,
+    .sct_warning li {
+        padding-left: 16px;
+        background: url("../images/circle_yellow.png") no-repeat left 4px;
+    }
+    .sct_warning dt {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .sct_warning dd {
+        margin: 0px 20px 10px;
+        color: #8d8674;
+    }
+    .sct_warning .emText {
+        margin-bottom: 8px;
+        font-size: 13px;
+        line-height: 1.4em;
+    }
+    .sct_warning li {
+        margin-bottom: 5px;
+        font-size: 12px;
+        line-height: 1.6em;
+    }
+}
+
+
+/* 犬種から探す */
+
+.sct_title {
+    margin-bottom: 0;
+    padding: 11px 0;
+    border-top: 3px solid #ef7091;
+    font-size: 21px;
+    font-weight: bold;
+    color: #4c4126;
+}
+
+.sct_title .icn_foot {
+    background: url(../images/icn_foot.png) no-repeat 0 0;
+    padding: 5px 0 5px 50px;
+}
+
+.topRanking {
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.topRanking ul {
+    letter-spacing: -.4em;
+}
+
+.topRanking li {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 163px;
+    margin: 0 0 5px 0;
+    text-align: center;
+    letter-spacing: normal;
+    vertical-align: top;
+}
+
+.topRanking a {
+    color: #4c4126;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.topRanking a:hover {
+    color: #ef7091;
+    text-decoration: underline;
+}
+
+.topRanking img {
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+@media screen and (max-width:1100px) {
+    .topRanking {
+        display: none;
+    }
+}
+
+
+/* ===================================================================
+  ブリーダーインタビュー詳細
+=================================================================== */
+
+.contents_column {
+    width: 1100px;
+    margin: 30px auto;
+    background: #fff;
+}
+
+.contents_column .mainContents {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.contents_column .mainContents a {
+    color: #ef7091;
+}
+
+.breeder_interviewSet {
+    line-height: 1.5;
+}
+
+.breeder_interviewSet .interviewttl {
+    margin: 0 0 20px 0;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 0px 0 10px 0;
+    border-bottom: 3px solid #ef7091;
+}
+
+.interviewSet_text {
+    line-height: 1.8em;
+    padding: 10px 0 10px 0;
+}
+
+.breeder_interviewSet .breederInfo {
+    padding: 15px;
+    margin: 10px 0px;
+    background-color: #fbf9f5;
+    border: 4px solid #ece8e0;
+    overflow: hidden;
+}
+
+.breeder_interviewSet .breederInfo .breederInfo_ttl {
+    background: url(../images/icn_foot2.png) no-repeat;
+    background-size: 24px;
+    padding: 1px 0 0 33px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.breeder_interviewSet .breederInfo dl {
+    line-height: 1.8;
+}
+
+.breeder_interviewSet .breederInfo dt {
+    float: left;
+    width: 9em;
+    position: relative;
+}
+
+.breeder_interviewSet .breederInfo dt:before {
+    content: "・";
+}
+
+.breeder_interviewSet .breederInfo dt:after {
+    content: " : ";
+    position: absolute;
+    right: 0;
+}
+
+.breeder_interviewSet .breederInfo dd {
+    margin-left: 1em;
+    float: left;
+    width: 64%;
+    /* サポートしてないブラウザ向け */
+    width: -webkit-calc(100% - 10em);
+    /* 2013年10月以前のSafariをサポートする場合 */
+    width: calc(100% - 10em);
+}
+
+.list_interview {
+    margin: 20px 0;
+}
+
+.interviewSet-wrap {
+    margin-top: 30px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+
+.interviewSet_subttl {
+    padding: 10px 10px;
+    background-color: #fceded;
+    font-style: italic;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.imageWrap {
+    border: 4px solid #ece8e0;
+}
+
+.imageWrap.photoR {
+    float: right;
+    width: 35%;
+    box-sizing: border-box;
+    margin: 0 0 0 15px;
+    text-align: center;
+}
+
+.imageWrap.photoL {
+    float: left;
+    width: 35%;
+    box-sizing: border-box;
+    margin: 0 20px 0 0;
+    text-align: center;
+}
+
+.imageWrap.photoC {
+    width: 35%;
+    box-sizing: border-box;
+    margin: 0 auto 15px auto;
+    text-align: center;
+}
+
+.imageWrap img {
+    width: 100%;
+    height: auto;
+}
+
+.imageWrap p {
+    padding: 6px 3px;
+    font-size: 14px;
+}
+
+.breederInterview_searchWrap {
+    border: 2px solid #ef7091;
+    background: url(../images/bg_check2.png);
+    padding: 10px 10px;
+    text-align: center;
+    margin: 20px 0px 30px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.breederInterview_searchWrap p {
+    margin: 15px auto;
+}
+
+.searchDog_btn {
+    text-decoration: none;
+    border: 1px solid #ece8e0;
+    background: #fff;
+    display: inline-block;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: #ef7091;
+    margin: 0 auto;
+}
+
+.searchDog_btn:hover {
+    text-decoration: underline;
+}
+
+.list_breederinterview li {
+    margin: 0 10px 10px 0px;
+    background-color: #fbf9f5;
+    border: 5px solid #fff;
+    box-shadow: 0 0 0 1px #ece8e0;
+    box-sizing: border-box;
+    height: 110px;
+    overflow: hidden;
+}
+
+.list_breederinterview li a {
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    height: 110px;
+}
+
+.list_breederinterview li .photoW {
+    float: left;
+    width: 150px;
+    height: 110px;
+    margin-right: 15px;
+    text-align: center;
+    background: #fff;
+}
+
+.list_breederinterview li img {
+    width: 100%;
+    height: auto;
+}
+
+.list_breederinterview li a:hover .list_interviewttl {
+    color: #ef7091;
+}
+
+.list_breederinterview li a:hover img {
+    opacity: 0.8;
+}
+
+.list_breederinterview li .list_interviewttl {
+    padding: 7px 10px 5px 10px;
+    text-align: left;
+    font-weight: bold;
+    color: #4c4126;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.list_breederinterview li .list_interviewtext {
+    padding: 0px 10px 0px 10px;
+    text-align: left;
+    box-sizing: border-box;
+    color: #4c4126;
+    font-size: 12px;
+    line-height: 1.3;
+}
+
+.list_breederinterview li .list_interviewttl span {
+    color: #8e8672;
+    display: block;
+    margin: 5px 0;
+    font-size: 12px;
+    text-align: right;
+}
+
+.contents_column .sct_title {
+    border: none;
+}
+
+@media screen and (max-width:1100px) {
+    .contents_column {
+        width: auto;
+        margin: 10px 3%;
+    }
+    .contents_column .mainContents {
+        width: auto;
+        padding: 20px 10px;
+    }
+    .contents_column .mainContents a {
+        color: #ef7091;
+    }
+    .breeder_interviewSet {
+        line-height: 1.4;
+    }
+    .breeder_interviewSet .interviewttl {
+        margin: 0 0 10px 0;
+        font-size: 15px;
+        padding: 0px 0 6px 0;
+        border-bottom: 2px solid #ef7091;
+    }
+    .interviewSet_text {
+        line-height: 1.5em;
+        padding: 0 0px 10px 0px;
+    }
+    .breeder_interviewSet .breederInfo {
+        padding: 8px;
+        margin: 0 0 10px 0px;
+    }
+    .breeder_interviewSet .breederInfo .breederInfo_ttl {
+        background: url(../images/icn_foot2.png) no-repeat;
+        background-size: 20px;
+        padding: 1px 0 0 30px;
+    }
+    .list_interview {
+        margin: 0px 0;
+    }
+    .interviewSet-wrap {
+        margin-top: 0px;
+    }
+    .interviewSet_subttl {
+        padding: 6px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .imageWrap {
+        border: 4px solid #ece8e0;
+    }
+    .imageWrap.photoR {
+        float: none;
+        width: 100%;
+        margin: 0 auto 10px auto;
+    }
+    .imageWrap.photoL {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .imageWrap.photoC {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .imageWrap p {
+        padding: 2px 3px;
+        font-size: 14px;
+    }
+    .breederInterview_searchWrap {
+        padding: 0 8px;
+        margin: 10px 0px 15px;
+        font-size: 15px;
+    }
+    .breederInterview_searchWrap p {
+        margin: 10px auto;
+    }
+    .searchDog_btn {
+        padding: 10px 13px;
+    }
+    .list_breederinterview li {
+        margin: 0 auto;
+        padding: 5px 0;
+        background-color: #ffffff;
+        border: none;
+        border-bottom: 1px dotted #cccccc;
+        box-shadow: none;
+        height: auto;
+        overflow: hidden;
+    }
+    .list_breederinterview li a {
+        height: auto;
+    }
+    .list_breederinterview li .photoW {
+        float: left;
+        width: 30%;
+        height: auto;
+        margin-right: 0;
+    }
+    .list_breederinterview li .list_interviewttl {
+        padding: 0px 0 0px 2%;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 1.4;
+        float: left;
+        width: 65%;
+    }
+    .contents_column .sct_title {
+        font-size: 15px;
+    }
+}
+
+
+/* ===================================================================
+  子犬の基礎知識詳細
+=================================================================== */
+
+.column_header {
+    margin-bottom: 20px;
+}
+
+.column_date {
+    color: #9a9692;
+    font-size: 13px;
+    text-align: right;
+}
+
+.column_title {
+    margin-bottom: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: 3px solid #ef7091;
+    padding: 10px 0 10px 0;
+    line-height: 1.4em;
+}
+
+.column_contents_warp {
+    margin-bottom: 40px;
+    position: relative;
+    border: 1px solid #e1ddd2;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.column_contents_warp .title {
+    position: relative;
+    padding: 5px 18px;
+    border-bottom: 1px dotted #e1ddd2;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.column_contents_warp .column_contents {
+    padding: 20px 0 5px;
+    letter-spacing: -.4em;
+}
+
+.column_contents_warp dl {
+    display: inline-block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    letter-spacing: normal;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.column_contents_warp dt {
+    font-weight: bold;
+    color: #4c4126;
+    line-height: 1.5;
+}
+
+.column_contents_warp dt a {
+    color: #4c4126;
+}
+
+.column_contents_warp li {
+    margin-top: 6px;
+    vertical-align: top;
+    display: block;
+    line-height: 1.5;
+    padding-left: 15px;
+    background: url("../images/arw_right_pink.png") no-repeat 3px 6px;
+}
+
+.column_contents_warp a {
+    display: block;
+    color: #6f6659;
+    text-decoration: none;
+}
+
+.column_contents_warp a:hover {
+    text-decoration: underline;
+}
+
+.column_contents_warp .more {
+    border-top: 2px dotted #cbe9ea;
+    padding: 6px 18px;
+    text-align: right;
+}
+
+.column_contents_warp .more a {
+    display: inline;
+    color: #ef7091;
+}
+
+.column_box {
+    margin-bottom: 30px;
+}
+
+.column_box a {
+    text-decoration: underline;
+}
+
+.column_box strong {
+    font-weight: bold;
+}
+
+.column_box .cl {
+    overflow: hidden;
+}
+
+.column_box:after {
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.column_image {
+    float: left;
+    max-width: 300px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-align: right;
+    border: 5px solid #d8d2c4;
+}
+
+.column_image_no_border {
+    float: left;
+    max-width: 300px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.column_image a {
+    margin-right: 0.5em;
+}
+
+.column_image_full {
+    width: 100%;
+}
+
+.column_image_full img,
+.column_image img {
+    max-width: 100%;
+}
+
+.column_box cite {
+    display: block;
+    margin: 3px 0 8px;
+    color: #9a9692;
+    font-size: 11px;
+}
+
+.column_box cite a {
+    color: #9a9692;
+}
+
+.column_imgCaption {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.column_caption {
+    clear: both;
+    margin-bottom: 14px;
+    margin-bottom: 23px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #fbe3ea;
+    border-left: 4px solid #f17b9c;
+    padding: 8px 10px;
+}
+
+.column_caption2 {
+    clear: both;
+    margin-bottom: 14px;
+    font-size: 16px;
+    border-bottom: 1px solid #f17b9c;
+    padding: 4px 0;
+    font-weight: bold;
+}
+
+.column_box blockquote {
+    padding: 15px 15px 15px 50px;
+    background: url(../images/icn_blockquote.png) no-repeat 18px 13px #f8f5f0;
+    background-size: 20px;
+    border: 2px dashed #C9C1AC;
+    border-radius: 10px;
+    position: relative;
+}
+
+.column_box blockquote {
+    margin-bottom: 15px;
+}
+
+.column_source {
+    margin-top: 3px;
+    margin-bottom: -5px;
+    text-align: right;
+    font-size: 12px;
+    color: #9a9692;
+}
+
+.column_source a {
+    color: #ef7091;
+}
+
+.column_text_wrap {
+    float: left;
+    width: 485px;
+}
+
+.column_text {
+    padding-bottom: 10px;
+}
+
+.column_text2,
+.bottom_padding_21 {
+    padding-bottom: 21px;
+}
+
+.column_semiText {
+    margin-left: 10px;
+    padding-left: 9px;
+    border-left: 1px solid #dddddd;
+    font-size: 12px;
+}
+
+.column_link_title,
+.column_item_title {
+    padding-left: 20px;
+    background: url(../images/icn_link.png) no-repeat left 3px;
+}
+
+.column_link_title a,
+.column_item_title a {
+    color: #4a423c;
+    font-weight: bold;
+}
+
+.column_link_url {
+    color: #ef7091;
+    font-size: 11px;
+}
+
+.column_link_url a {
+    color: inherit;
+    font-size: inherit;
+}
+
+.column_link_text {
+    color: #9a9692;
+    font-size: 11px;
+}
+
+.column_footlist {
+    margin-bottom: 25px;
+}
+
+.column_footlist li {
+    background: url(../images/icn_foot2.png) no-repeat 0 1px;
+    background-size: 19px;
+    padding-left: 25px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.column_footlist li:last-child {
+    margin-bottom: 0;
+}
+
+.column_numberlist {
+    counter-reset: li;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+.column_numberlist li {
+    font-size: 14px;
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 24px;
+    font-weight: bold;
+}
+
+.column_numberlist li:last-child {
+    margin-bottom: 0;
+}
+
+.column_numberlist li:before {
+    font-size: 14px;
+    content: counter(li) "";
+    counter-increment: li;
+    position: absolute;
+    left: 0;
+    width: 1.4em;
+    height: 1.4em;
+    background: #f09696;
+    border-radius: 50px;
+    color: #fff;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.column_item_detail {
+    float: left;
+    width: 340px;
+}
+
+.column_item_price {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.column_item_link {
+    margin-bottom: 10px;
+}
+
+.column_item_link .btn_item {
+    color: #ef7091;
+    display: inline-block;
+    padding: 8px 20px 2px 9px;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.45);
+    background: #9a8f82;
+    /* Old browsers */
+    background: -webkit-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: linear-gradient(to bottom, #ffffff 0%, #dddddd 100%);
+    /* W3C */
+    background: -moz-linear-gradient(top, #ffffff, #dddddd);
+    background: -ms-linear-gradient(top, #ffffff, #dddddd);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd', GradientType=0);
+    /* IE6-9 */
+    border: 1px solid #ddd;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.column_item_link .btn_item:before {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 18px;
+    margin-right: 16px;
+    background: url(../images/icn_cart.png) no-repeat;
+    vertical-align: middle;
+}
+
+.column_item_text {
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+}
+
+.column_box table .p30 {
+    width: 30%;
+}
+
+.column_box table .p40 {
+    width: 40%;
+}
+
+.column_box table .p50 {
+    width: 50%;
+}
+
+.column_box table .p60 {
+    width: 60%;
+}
+
+.column_box table .p70 {
+    width: 70%;
+}
+
+.column_table {
+    width: 100%;
+    border-left: 2px solid #fff;
+    border-top: 2px solid #fff;
+}
+
+.column_table th,
+.column_table td {
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 10px 15px;
+}
+
+.column_table th {
+    background-color: #e0dacb;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.column_table .ttl th {
+    background-color: #c9c1ac;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+.column_table td {
+    background-color: #f8f5f0;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+
+/* その他の記事 */
+
+.contents_column .sideContents {
+    margin: 0px auto 20px auto;
+    padding: 0px 0 40px 0;
+    width: 1000px;
+}
+
+.contents_column .sideContents .sc_column_title {
+    font-size: 21px;
+    margin: 0 0 10px 0;
+}
+
+.contents_column .sideContents ul {
+    overflow: hidden;
+}
+
+.contents_column .sideContents ul li {
+    border-bottom: 1px dotted #cccccc;
+    padding: 8px 0;
+    padding-left: 18px;
+    background: url("../images/arw_right_pink.png") no-repeat 3px 16px;
+}
+
+.box25 {
+  position: relative;
+  margin: 2em 5px;
+  padding: 1.5em 1em;
+  border: dashed 2px #fff;
+  background: #fff0cd;
+  box-shadow: 0 0 0 5px #fff0cd;
+  color: #454545;
+}
+.box25:after {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  border-width: 0 15px 15px 0;
+  border-style: solid;
+  border-color: #ffdb88 #fff #ffdb88;
+  box-shadow: -1px 1px 1px rgba(0,0,0,.15);
+  content: "";
+}
+.hh {
+  margin: 2.5em 0 1em;
+  padding: 0;
+  border: 0;
+  background: 0 0;
+  box-shadow: none;
+  font-weight: 700;
+}
+.hh30 {
+  position: relative;
+  padding-left: 1.2em;
+  line-height: 1.4;
+}
+p.hh {
+  font-size: 1.3em; 
+}
+.hh:before, .hh:after {
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  border: 0;
+  background: 0 0;
+  box-shadow: none;
+  content: none;
+}
+.hh30:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #5ab9ff;
+  font-family: FontAwesome;
+  font-size: 1em;
+  content: "\f00c";
+}
+.memo {
+  margin-bottom: 1.5em;
+  padding: 1em;
+  background: #fff9e5;
+  color: #545454;
+}
+.memo_ttl {
+  margin-bottom: 5px;
+  color: #ffb36b;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.memo_ttl:before {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin: 0 3px 0 0;
+  border-radius: 50%;
+  background: #ffb36b;
+  color: #fff;
+  font-family: FontAwesome;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
+  content: "\f040";
+}
+.memo p {
+  margin: 0 0 5px;
+}
+.li-dashed ul, .li-dashed ol {
+  border-width: 2px;
+  border-style: dashed;
+}
+.li-mainbdr ul, .li-mainbdr ol {
+  border-color: #f09696;
+}
+@media screen and (max-width:1100px) {
+  p.hh {
+    font-size: 1.1em; 
+  }
+}
+@media screen and (max-width:1100px) {
+    .column_header {
+        margin-bottom: 20px;
+    }
+    .column_title {
+        margin: 0 0 5px;
+        font-size: 15px;
+        padding: 5px 0;
+    }
+    .column_contents_warp {
+        position: relative;
+        border: 1px solid #e1ddd2;
+        z-index: 10;
+        margin: -15px 0px 15px 0px;
+        border-radius: 5px;
+    }
+    .column_contents_warp .title {
+        position: relative;
+        padding: 4px 10px;
+        border-bottom: 1px solid #e1ddd2;
+        background-color: #fbf9f5;
+        font-size: 16px;
+        line-height: 1.5;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        font-weight: bold;
+    }
+    .column_contents_warp .column_contents {
+        padding: 0px 0 0px;
+        letter-spacing: -.4em;
+    }
+    .column_contents_warp dl {
+        display: inline-block;
+        width: 100%;
+        padding: 6px 10px;
+        letter-spacing: normal;
+        vertical-align: top;
+        box-sizing: border-box;
+        border-bottom: 1px dotted #e1ddd2;
+        font-size: 14px;
+        margin: 0;
+    }
+    .column_contents_warp dl:last-of-type {
+        border-bottom: 0px;
+    }
+    .column_contents_warp dt {
+        font-weight: bold;
+        color: #4c4126;
+        line-height: 1.5;
+    }
+    .column_contents_warp dt a {
+        color: #4c4126;
+    }
+    .column_contents_warp ul {}
+    .column_contents_warp li {
+        line-height: 1.4;
+    }
+    .column_box {
+        margin: 30px 0 10px;
+    }
+    .column_caption {
+        margin-bottom: 10px;
+        font-size: 16px;
+    }
+    .column_caption2 {
+        margin-bottom: 10px;
+    }
+    .column_text_wrap {
+        float: none;
+        width: auto;
+    }
+    .column_image {
+        float: none;
+        max-width: 100%;
+        margin: 0px auto 10px auto;
+    }
+    .column_footlist {
+        margin: 0 0 15px 0;
+        line-height: 1.4em;
+    }
+    .column_numberlist {
+        line-height: 1.4em;
+    }
+    .column_box blockquote {
+        padding: 10px 10px 10px 34px;
+        background: url(../images/icn_blockquote.png) no-repeat 10px 10px #f8f5f0;
+        background-size: 15px;
+        position: relative;
+    }
+    .column_box blockquote {
+        margin-bottom: 10px;
+    }
+    .column_image {
+        float: none;
+        max-width: 100%;
+        margin: 0px auto 10px auto;
+    }
+    .column_footlist {
+        margin-bottom: 15px;
+    }
+    .column_box table .p30 {
+        width: 30%;
+    }
+    .column_box table .p40 {
+        width: 30%;
+    }
+    .column_box table .p50 {
+        width: 30%;
+    }
+    .column_box table .p60 {
+        width: 30%;
+    }
+    .column_box table .p70 {
+        width: 30%;
+    }
+    .mb10 {
+        margin-bottom: 5px;
+    }
+    .mb15 {
+        margin-bottom: 10px;
+    }
+    .mb20 {
+        margin-bottom: 15px;
+    }
+    /* その他の記事 */
+    .contents_column .sideContents {
+        margin: 0 3% 0;
+        padding: 0px 0 20px 0;
+        width: auto;
+    }
+    .contents_column .sideContents .sc_column_title {
+        font-size: 15px;
+        margin: 0 0 10px 0;
+    }
+    .contents_column .sideContents ul li {
+        padding: 5px 0;
+        padding-left: 18px;
+        background: url("../images/arw_right_pink.png") no-repeat 3px 12px;
+    }
+}
+
+/* コラムの外部リンク */
+.reference {
+  display: table;
+  max-width: 450px;
+  width: 100%;
+  margin: 1em 0 1.5em;
+  padding: 13px 10px 13px 0;
+  border-radius: 2px;
+  background: #f5f5f5;
+  box-shadow: 0 2px 2px rgba(0,0,0,.25);
+  color: #555;
+  font-weight: 700;
+  text-decoration: none!important;
+}
+.reference:hover {
+  box-shadow: 0 10px 20px -4px rgba(0,0,0,.22);
+  color: #888;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+}
+.reference .refttl {
+  width: 70px;
+  margin: 10px;
+  border-right: solid 2px #dadada;
+  text-align: center;
+  line-height: 1.5;
+}
+.reference .refttl:before {
+  display: block;
+  color: #ffb36b;
+  font-family: FontAwesome;
+  font-size: 1.5em;
+  content: "\f02e";
+}
+.tbcell {
+  display: table-cell;
+  vertical-align: middle;
+}
+.reference .refcite {
+  width: 200px;
+  width: calc(100% - 70px);
+  padding-left: 10px;
+  font-size: .95em;
+  line-height: 1.5;
+}
+.reference .refcite span {
+  display: block;
+  color: #ababab;
+  font-size: .9em;
+}
+
+
+/* ------------------------------------------------------------------
+下層ページ共通 上書き用CSS sectionに.subPageEを追加 ------------------------------------------------------------------ */
+
+section.subPageE .keyColor .key {
+    padding: 65px 0 0px !important;
+}
+
+section.subPageE .keyColor .key h1 {
+    font-size: 200%;
+}
+
+section.subPageE .inner {
+    margin: 0 auto 40px auto;
+    padding: 0px 0;
+    width: 1100px;
+    font-size: 15px;
+}
+
+.wrap_white {
+    margin: 40px 0 0 0;
+    background: #ffffff;
+    padding: 25px 25px 15px 25px;
+    line-height: 2em;
+    font-size: 16px;
+}
+
+.wrap_white p {
+    padding: 0 0 10px 0;
+}
+
+.heading2 {
+    margin: 40px 0 15px 0;
+    padding: 10px 10px 10px 35px;
+    background: url(../images/icon_title07.png) 0 50% no-repeat;
+    font-size: 160%;
+    line-height: 100%;
+    border-bottom: 1px #ea5f83 solid;
+}
+
+.margin_top40 {
+    margin-top: 40px;
+}
+
+.margin_bottom40 {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width:1100px) {
+    section.subPageE .keyColor .key {
+        padding: 13px 0 13px !important;
+    }
+    section.subPageE .keyColor .key h1 {
+        font-size: 18px;
+        line-height: 1.4em;
+    }
+    section.subPageE .inner {
+        margin: 0 3%;
+        width: auto;
+        font-size: 14px;
+    }
+    .wrap_white {
+        margin: 13px 0 0 0;
+        padding: 10px 8px 2px 8px;
+        line-height: 1.6em;
+        font-size: 13px;
+    }
+    .heading2 {
+        padding: 10px 10px 10px 35px;
+        font-weight: bold;
+        font-size: 15px;
+        margin: 0 0 7px 0;
+    }
+    .margin_top40 {
+        margin-top: 10px;
+    }
+    .margin_bottom40 {
+        margin-bottom: 20px;
+    }
+}
+
+
+/* --会社概要-- */
+
+.table_tworow {
+    background: #fff;
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    margin: 40px 0 0 0;
+    border: 1px #ddd solid;
+    font-size: 16px;
+}
+
+.table_tworow th {
+    width: 200px;
+    background: #fdf5f4;
+    border-bottom: 1px #ddd solid;
+    border-right: 1px #ddd solid;
+    vertical-align: middle;
+    padding: 30px 30px;
+}
+
+.table_tworow td {
+    padding: 30px 30px;
+    vertical-align: middle;
+    border-bottom: 1px #ddd solid;
+}
+
+@media screen and (max-width:1100px) {
+    .table_tworow {
+        margin: 0 10px 10px 10px;
+        width: auto;
+        border-bottom: none;
+    }
+    .table_tworow th {
+        display: block;
+        width: auto;
+        border-right: none;
+        padding: 10px 15px;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .table_tworow td {
+        display: block;
+        width: auto;
+        padding: 10px 15px;
+    }
+}
+
+
+/* --茶色のフレーム-- */
+
+.brownFrame {
+    padding: 15px;
+    background: #ede2dc;
+    border-radius: 15px;
+    margin: 40px 0 0 0;
+}
+
+.brownFrame.margin_s {
+    margin: 15px 0 15px 0;
+}
+
+.brownFrame a {
+    color: #ea5f83;
+    word-break: break-word;
+}
+
+.brownFrame a:hover {
+    text-decoration: underline;
+}
+
+.brownFrame .textInner {
+    padding: 40px 40px 20px 40px;
+    background: #fff;
+}
+
+.brownFrame .textInner .heading_border_b {
+    margin: 40px 0 20px 0;
+    padding: 0 0 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 1px #ea5f83 solid;
+}
+
+.brownFrame .textInner .margin_none {
+    margin: 0px 0 20px 0;
+}
+
+.brownFrame .textInner p {
+    margin: 0px 0 15px 0;
+}
+
+.brownFrame .textInner ol {
+    margin: 0px 0 15px 0;
+    padding: 0 0 0 20px;
+    list-style-type: decimal;
+}
+
+.brownFrame .textInner li {
+    margin: 0px 0 15px 0;
+}
+
+.brownFrame .textInner li:last-child {
+    margin: 0px 0 0 0;
+}
+
+.brownFrame .textInner li ol {
+    margin: 10px 0 15px 0;
+    padding: 0 0 0 26px;
+}
+
+.brownFrame .textInner li ol li {
+    margin: 0px 0 10px 0;
+}
+
+.brownFrame .notes {
+    text-align: right;
+    color: #888888;
+    font-size: 13px;
+}
+
+.supplementary {
+    padding: 20px 20px 5px 20px;
+    background: #fdf5f4;
+    border-radius: 15px;
+    margin: 0 0 20px 0;
+    font-size: 14px;
+}
+
+.supplementary dl dt {
+    font-weight: bold;
+}
+
+.supplementary dl dd {
+    padding: 7px 0 15px 0;
+}
+
+.supplementary dl.border_b {
+    border-bottom: 1px dashed #d9c8c5;
+    margin: 0 0 15px 0;
+}
+
+@media screen and (max-width:1100px) {
+    .brownFrame {
+        padding: 4px;
+        border-radius: 5px;
+        margin: 13px auto;
+    }
+    .brownFrame.margin_s {
+        margin: 5px auto;
+    }
+    .brownFrame .textInner {
+        padding: 5px 10px 10px;
+        border-radius: 5px;
+    }
+    .brownFrame .textInner .heading_border_b {
+        margin: 13px 0 8px 0;
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 1.4em;
+        padding: 0 0 3px 0;
+    }
+    .brownFrame .textInner p {
+        margin: 0 0 10px 0;
+        font-size: 13px;
+        line-height: 1.6em;
+    }
+    .brownFrame .textInner ol {
+        margin: 0px 0 10px 0;
+        padding: 0 0 0 20px;
+        font-size: 13px;
+        line-height: 1.6em;
+    }
+    .brownFrame .textInner li {
+        margin: 0px 0 5px 0;
+    }
+    .brownFrame .textInner li ol {
+        margin: 5px 0 15px 0;
+        padding: 0 0 0 20px;
+    }
+    .brownFrame .textInner li ol li {
+        margin: 0px 0 5px 0;
+    }
+    .brownFrame .notes {
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+    .supplementary {
+        padding: 15px 15px 5px 15px;
+        border-radius: 10px;
+        margin: 0 -5px 10px -10px;
+        font-size: 13px;
+        line-height: 1.6em;
+        letter-spacing: 0.5px;
+    }
+    .supplementary dl dd {
+        padding: 5px 0 10px 0;
+    }
+    .supplementary dl.border_b {
+        margin: 0 0 10px 0;
+    }
+}
+
+
+/* --リンクピンクの矢印-- */
+
+.arrow_pink {
+    clear: both;
+    text-align: right;
+    margin: 0 0 20px 0;
+}
+
+.arrow_pink_margin0 {
+    clear: both;
+    text-align: right;
+    margin: 0 0 0px 0;
+}
+
+.arrow_pink_center {
+    clear: both;
+    text-align: center;
+    margin: 20px auto 0 auto;
+}
+
+.arrow_pink a,
+.arrow_pink_margin0 a,
+.arrow_pink_center a {
+    background: url(../images/arrow10.png) no-repeat right center;
+    padding: 0 23px 0 0;
+    color: #ef7091;
+}
+
+.arrow_pink a:hover,
+.arrow_pink_margin0 a:hover,
+.arrow_pink_center a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1100px) {
+    .arrow_pink,
+    .arrow_pink_center,
+    .arrow_pink_margin0 {
+        margin: 0 0 10px 0;
+    }
+}
+
+
+/* ===================================================================
+  ユーザーマイページ
+=================================================================== */
+
+
+/* ===================================================================
+  トップページ
+=================================================================== */
+
+section.usermypage .inner {
+    margin: 0px auto;
+    padding: 40px 0;
+    width: 1100px;
+}
+
+section.usermypage .heading1 {
+    margin: 0 auto 10px auto;
+    color: #714228;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: center;
+    line-height: 120%;
+}
+
+section.usermypage .border {
+    margin: 0 auto 30px auto;
+}
+
+.sp_only {
+    display: none;
+}
+
+@media (max-width: 640px) {
+    .pc_only {
+        display: none;
+    }
+    .sp_only {
+        display: block;
+    }
+    section.usermypage .inner {
+        margin: 0px auto;
+        padding: 20px 0;
+        width: auto;
+    }
+    section.usermypage .heading1 {
+        font-size: 130%;
+        margin: 0 auto 5px auto;
+    }
+    #newarrivals_content .heading1 {
+        width: auto;
+        background: none;
+        margin: 0 auto 5px auto;
+    }
+    section.usermypage .border {
+        margin: 0 auto 10px auto;
+    }
+}
+
+
+/* -- 新着メッセージ -- */
+
+#newarrivals_content .messagelist {
+    width: 1020px;
+    background: #ffffff;
+    padding: 20px 40px 20px 40px;
+}
+
+.messagelist {
+    overflow: hidden;
+}
+
+.messagelist ul {
+    margin: 0 0 20px 0;
+}
+
+.messagelist ul li {
+    overflow: hidden;
+    border-bottom: 1px dotted #bdb0a2;
+    padding: 14px 7px 12px 7px;
+    font-size: 15px;
+}
+
+.messagelist ul li .time,
+.messagelist ul li .comment {
+    float: left;
+    margin: 0 30px 0 0px;
+}
+
+.messagelist ul li .time {
+    width: 100px;
+}
+
+.messagelist ul li .comment {
+    width: 655px;
+    height: 23px;
+    overflow: inherit;
+}
+
+.messagelist ul li .more {
+    float: right;
+    color: #ef7091;
+}
+
+.arrow_pink {
+    clear: both;
+    text-align: right;
+    margin: 0 0 0px 0;
+}
+
+.arrow_pink a {
+    background: url(../images/arrow10.png) no-repeat right center;
+    padding: 0 23px 0 0;
+    color: #ef7091;
+}
+
+.arrow_pink a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+    #newarrivals_content .messagelist {
+        width: auto;
+        background: #ffffff;
+        padding: 15px 10px 15px 10px;
+    }
+    .messagelist ul {
+        margin: 0 0 10px 0;
+    }
+    .messagelist ul li {
+        overflow: hidden;
+        border-bottom: 1px solid #ded7d0;
+        padding: 8.5px 2px 8.5px 0px;
+    }
+    .messagelist .firstline {
+        color: #888888;
+        overflow: hidden;
+        margin: 0 0 2px 0;
+        font-size: 14px;
+    }
+    .messagelist ul li .time,
+    .messagelist ul li .dogid {
+        margin: 0 10px 0 0px;
+    }
+    .messagelist ul li .time {
+        width: 85px;
+    }
+    .messagelist ul li .comment {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+        margin: 0 0px 0 0px;
+        font-size: 14px;
+        line-height: 1.4em;
+    }
+    .arrow_pink a {
+        background: url(../images/arrow10.png) no-repeat right top;
+        font-size: 14px;
+        padding: 0px 20px 5px 0;
+    }
+}
+
+
+/* -- 新着・お気に入り登・履歴の子犬 -- */
+
+.noContent {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.puppyList .action {
+    overflow: hidden;
+}
+
+.puppyList .action a {
+    width: 38%;
+    float: left;
+    margin: 0 0 10px 2%;
+}
+
+.puppyList .action a:hover {
+    background: #fbe8ee;
+}
+
+.btn_style1 a {
+    display: block;
+    border: 1px solid #f4cacb;
+    margin: 4px 2% 24px;
+    padding: 4px 4px 4px 4px;
+    color: #ef7091;
+    background-size: 34px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    background: #fff;
+}
+
+.btn_style1 a:before {
+    display: inline-block;
+    content: "";
+    vertical-align: top;
+}
+
+.btn_style1 a:hover {
+    background: #fdf5f4;
+}
+
+.btn_style1 .mark_new {
+    background: #ff0000;
+    font-size: 16.5px;
+    line-height: 1.4em;
+    color: #ffffff;
+    border-radius: 14px;
+    height: 22px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0 6.5px;
+    margin: 1px 0 0 8px;
+    text-align: center;
+}
+
+.btn_style2 a {
+    display: block;
+    border: 1px solid #f4cacb;
+    margin: 4px 3% 6px;
+    padding: 4px 4px 4px 4px;
+    color: #ef7091;
+    background-size: 34px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    background: #fdf5f4;
+}
+
+.btn_style2 a:before {
+    display: inline-block;
+    content: "";
+    vertical-align: top;
+}
+
+.icon_mail a:before {
+    background-image: url(../images/icon_mail.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    width: 18px;
+    height: 15px;
+    margin: 4px 7px 0 0;
+}
+
+
+/*ログインしてないユーザーのお気に入りデザイン */
+
+.icon_favorite a:before {
+    background-image: url(../images/icon_star2.png);
+    background-repeat: no-repeat;
+    background-size: 34px;
+    background-position: 0px 0px;
+    width: 17px;
+    height: 17px;
+    margin: 3px 7px 0 0;
+}
+
+.icon_favorite a.added:before {
+    background-position: -17px 0px;
+}
+
+.favorite_popup {
+    position: relative;
+    /* 指定した分だけ相対的に移動 */
+    cursor: pointer;
+    /* カーソルをポインターで表示 */
+    float: right;
+    text-align: center;
+    top: 210px;
+    right: 60px;
+    z-index: 2;
+}
+
+@media (max-width: 1100px) {
+    .favorite_popup {
+        top: 210px;
+        right: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .favorite_popup {
+        top: 80px;
+        right: 60px;
+    }
+}
+
+@media (max-width: 640px) {
+    .favorite_popup {
+        top: 70px;
+        right: 50px;
+    }
+}
+
+@media (max-width: 420px) {
+    .favorite_popup {
+        top: 75px;
+        right: 45px;
+    }
+}
+
+
+/*子犬詳細のお気に入りデザイン*/
+
+.favorite_popup img {
+    width: 40px;
+}
+
+
+@media (max-width: 640px) {
+    .favorite_popup {
+        margin-top: 5%;
+    }
+    .icon_comment a:before {
+        background-image: url(../images/breedermypage/icon_comment.png);
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        width: 18px;
+        height: 18px;
+        margin: 4px 8px 0 0;
+    }
+    .icon_heart a:before {
+        background-image: url(../images/icon_title18.png);
+        background-size: 18px;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        width: 18px;
+        height: 18px;
+        margin: 5px 8px 0 0;
+    }
+    #favoritedog_content,
+    #historydog_content,
+    #commentdog_content {
+        margin: 0 3%;
+    }
+    .noContent {
+        margin: 20px auto;
+    }
+    #favoritedog_content .puppyList li,
+    #historydog_content .puppyList li,
+    #commentdog_content .puppyList li {
+        margin-bottom: 13px;
+    }
+    .puppyList .action {
+        margin: 0 0 5px 0;
+    }
+    .puppyList .action a {
+        width: 92%;
+        float: none;
+        margin: 0 auto 3px;
+    }
+    .btn_style1 a {
+        margin: 2px auto 2px auto;
+        padding: 4px 2px 4px 2px;
+        border-radius: 3px;
+        font-size: 11.5px;
+        line-height: 1.8em;
+    }
+    .btn_style1 .mark_new {
+        font-size: 14px;
+        line-height: 1.5em;
+        height: 20px;
+        margin: 1px 0 0 4px;
+    }
+    .btn_style2 a {
+        margin: 2px auto 2px auto;
+        padding: 4px 2px 4px 2px;
+        border-radius: 3px;
+        font-size: 11.5px;
+        line-height: 1.8em;
+    }
+    .icon_comment a:before {
+        background-image: url(../images/breedermypage/icon_comment.png);
+        background-size: 14px;
+        background-repeat: no-repeat;
+        background-position: 0px 0px;
+        width: 14px;
+        height: 18px;
+        margin: 4px 8px 0 0;
+    }
+    .icon_heart a:before {
+        background-image: url(../images/icon_title18.png);
+        background-size: 13px;
+        width: 13px;
+        height: 11px;
+        margin: 5px 4px 0 0;
+    }
+}
+
+
+/* 事務局からのお知らせ ---------------- */
+
+#news_content .inner {
+    border: 1px solid #ded7d0;
+    border-radius: 5px;
+    margin: 30px auto 50px auto;
+    background: #fff;
+    padding: 0;
+}
+
+#news_content .inner .heading {
+    font-size: 22px;
+    color: #624d35;
+    font-weight: bold;
+    background: #f8f5f0;
+    background-size: 37px;
+    padding: 23px 0 20px 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.newslist dt {
+    padding: 20px 20px;
+    border-top: 1px solid #ded7d0;
+    overflow: hidden;
+}
+
+.newslist dt .time {
+    float: left;
+    display: block;
+    width: 115px;
+}
+
+.newslist dt .title {
+    float: left;
+    display: block;
+    width: 910px;
+}
+
+.newslist dd {
+    padding: 0 20px 20px 20px;
+}
+
+.js_accordion .add {
+    cursor: pointer;
+}
+
+.js_accordion .add {
+    background: url(../images/toggle_add.png) no-repeat right 20px center;
+    background-size: 15px;
+}
+
+.js_accordion .selected {
+    background: url(../images/toggle_subtraction.png) no-repeat right 20px center;
+    background-size: 15px;
+}
+
+@media (max-width: 640px) {
+    #news_content .inner {
+        margin: 20px 10px 20px 10px;
+    }
+    #news_content .inner .heading {
+        font-size: 14.5px;
+        background-size: 24px;
+        padding: 6px 0 6px 6px;
+        border-radius: 5px 5px 0 0;
+        letter-spacing: 0.3px;
+    }
+    .newslist dt {
+        padding: 8px 25px 8px 8px;
+        font-size: 14px;
+        line-height: 1.4em;
+    }
+    .newslist dt .time {
+        float: none;
+        width: auto;
+        font-size: 12px;
+        color: #888888;
+    }
+    .newslist dt .title {
+        float: none;
+        width: auto;
+        font-size: 13px;
+    }
+    .newslist dd {
+        padding: 0px 8px 8px 8px;
+        font-size: 13px;
+        line-height: 1.4em;
+    }
+    .js_accordion .add {
+        background: url(../images/toggle_add.png) no-repeat right 8px center;
+        background-size: 10px;
+    }
+    .js_accordion .selected {
+        background: url(../images/toggle_subtraction.png) no-repeat right 8px center;
+        background-size: 10px;
+    }
+}
+
+
+/* ===================================================================
+  お気に入りの子犬一覧ページ
+=================================================================== */
+
+.resp-tabs-list2 {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 20px 0;
+}
+
+.resp-tabs-list2 li {
+    background: #eab6b6;
+    width: 50%;
+    float: left;
+}
+
+.resp-tabs-list2 li.current {
+    background-color: #ef7091;
+}
+
+.resp-tabs-list2 li a {
+    display: block;
+    color: #fff;
+    padding: 20px 0px 20px 0;
+    text-align: center;
+    font-size: 140%;
+}
+
+.resp-tabs-list2 li a.dog {
+    background: url(../images/icon_dog.png) 26px 50% no-repeat;
+}
+
+.resp-tabs-list2 li a.breeder {
+    background: url(../images/icon_breeder2.png) 30px 50% no-repeat;
+}
+
+@media (max-width: 640px) {
+    .resp-tabs-list2 li a {
+        font-size: 16px;
+    }
+    .resp-tabs-list2 li a.dog {
+        background: url(../images/icon_dog.png) 20px 50% no-repeat;
+        background-size: 32px;
+        padding: 10px 0px 10px 25px;
+    }
+    .resp-tabs-list2 li a.breeder {
+        background: url(../images/icon_breeder2.png) 15px 50% no-repeat;
+        background-size: 26px;
+        padding: 10px 0px 10px 34px;
+    }
+}
+
+@media (max-width: 640px) {
+    #favoritedoglist_content,
+    #eatchhistorydoglist_content {
+        margin: 0 3%;
+        width: auto;
+        padding: 10px 0 8px;
+    }
+    #favoritedoglist_content .resp-tabs-list {
+        margin: 0 0 10px 0;
+    }
+    #favoritedoglist_content .resp-tabs-list li:nth-child(1) {
+        background: #eab6b6 url(../images/icon_dog.png) 12px 50% no-repeat;
+        -moz-background-size: 28px 22px;
+        background-size: 33px;
+    }
+    #favoritedoglist_content .resp-tabs-list li:nth-child(2) {
+        background: #eab6b6 url(../images/icon_breeder2.png) 12px 50% no-repeat;
+        -moz-background-size: 28px 22px;
+        background-size: 26px;
+    }
+    #favoritedoglist_content .resp-tabs-list li.current {
+        background-color: #ef7091;
+    }
+}
+
+
+/* ===================================================================
+  保存した検索条件
+=================================================================== */
+
+.record_style_01 {
+    background: #ffffff;
+    padding: 30px 20px;
+    margin: 0 auto 30px auto;
+}
+
+.record_style_01 .caption_2 {
+    font-size: 32px;
+    color: #555555;
+    margin: 0 0 20px 0;
+    display: inline-block;
+}
+
+.time_01 {
+    color: #888888;
+}
+
+.record_style_01 .time_01 {
+    float: right;
+}
+
+table.style_4rows_01 {
+    border: 1px solid #ddd0c9;
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    margin: 0 auto 20px auto;
+}
+
+table.style_4rows_01 th {
+    background: #f4ebe6;
+    width: 100px;
+    border: 1px solid #ddd0c9;
+    padding: 15px 30px;
+}
+
+table.style_4rows_01 td {
+    border: 1px solid #ddd0c9;
+    padding: 15px 30px;
+}
+
+.deletion_01 a {
+    display: block;
+    border: 1px solid #ec7190;
+    background: url(../images/icon_deletion.png) no-repeat 16px center;
+    background-size: 20px;
+    border-radius: 3px;
+    padding: 8px 20px 6px 46px;
+    color: #ec7190;
+    font-size: 14px;
+    width: 105px;
+}
+
+.record_style_01 .deletion_01 a {
+    float: right;
+}
+
+@media (max-width: 640px) {
+    .record_style_01 {
+        padding: 15px 10px;
+        margin: 0 auto 10px auto;
+    }
+    .record_style_01 .caption_2 {
+        font-size: 20px;
+        margin: 0 0 10px 0;
+        font-weight: bold;
+    }
+    .time_01 {
+        font-size: 14px;
+    }
+    table.style_4rows_01 {
+        width: auto;
+        margin: 0 auto 10px auto;
+        font-size: 14px;
+    }
+    table.style_4rows_01 th {
+        width: 60px;
+        padding: 10px 10px;
+        vertical-align: middle;
+    }
+    table.style_4rows_01 td {
+        padding: 10px 10px;
+    }
+    .deletion_01 a {
+        background: url(../images/icon_deletion.png) no-repeat 16px center;
+        background-size: 16px;
+        padding: 4px 20px 2px 26px;
+        width: 160px;
+        margin: 0 auto 10px auto;
+        text-align: center;
+    }
+    .record_style_01 .deletion_01 a {
+        float: none;
+    }
+}
+
+
+
+/* 成約特典*/
+
+.contractBenefit_list {
+    overflow: hidden;
+    margin: 10px 0 20px 0;
+}
+
+.contractBenefit_list dt {
+    background: #f57b03;
+    border-radius: 4px;
+    color: #ffffff;
+    float: left;
+    line-height: 1em;
+    padding: 7px 10px 5px;
+    margin: 0 3px 0 0;
+}
+
+.contractBenefit_list dd {
+    float: left;
+    line-height: 1em;
+    padding: 4px 10px 3px 5px;
+    margin: 0 30px 0 0;
+    font-weight: bold;
+    color: #f57b03;
+    font-size: 20px;
+}
+
+.button_orange {
+    text-align: center;
+    margin: 0 20px 0 0;
+}
+
+.button_green.inquiry,
+.button_pink.inquiry {
+    text-align: center;
+    margin: 0 10px 20px 0;
+    width: 100%;
+}
+
+.button_green.inquiry a,
+.button_pink.inquiry a {
+    color: #ffffff;
+    border-radius: 50px;
+    padding: 17px 0 15px;
+    margin: 0 auto;
+    clear: both;
+    width: 45%;
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.button_green.inquiry a {
+    background: #81af55;
+}
+
+.button_pink.inquiry a {
+    background: #ee819b;
+    line-height: unset;
+}
+
+@media (max-width: 640px) {
+    .button_green.inquiry a,        
+    .button_pink.inquiry a {        
+        padding: 7px 0;    
+        width: 90%;
+        font-size: 14px;
+        height: auto;
+        line-height: 43px;        
+    }
+}
+
+.button_orange a {
+    background: #f57b03;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 3px 10px;
+    margin: 15px auto 0;
+    clear: both;
+    width: 100%;
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.button_orange a:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 640px) {
+    .contractBenefit_list {
+        margin: 0px 0 10px 0;
+    }
+    .contractBenefit_list dt {
+        padding: 5px 6px 5px;
+        margin: 2px 3px 3px 0;
+        clear: left;
+    }
+    .contractBenefit_list dd {
+        padding: 4px 0px 3px 5px;
+        margin: 2px 0px 0 0;
+        font-size: 15px;
+    }
+}
+
+.dogSex_design li {
+    margin: 0px 20px 0px 0;
+    float: left;
+}
+
+.contactForm table .dogSex_design input[type=radio] {
+    top: 0;
+}
+
+.wrap_white_description {
+    background: #ffffff;
+    font-size: 15px;
+    padding: 25px 25px 15px 25px;
+}
+
+.contractBenefit_wrap_white {
+    padding: 20px 10px !important;
+    margin: 0 0 15px 0;
+}
+
+.contractBenefit_list {
+    margin: 0;
+}
+
+.contractBenefit_wrap_white dt {
+    border-radius: 7px;
+    padding: 9px;
+    margin: 0 3px 0 0;
+    position: absolute;
+}
+
+.contractBenefit_wrap_white dd {
+    font-size: 18px;
+    padding: 0;
+    margin: 0 0 0 30px;
+}
+
+.switch_form_tabcontent {
+    display: none;
+}
+
+.review_heading {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+.webcrew_img {
+    text-align: center;
+    padding: 0 0 30px;
+}
+
+@media only screen and (max-width: 500px) {
+    .contractBenefit_wrap_white {
+        padding: 10px !important;
+        margin: 15px 0 15px 0;
+    }
+    .contractBenefit_wrap_white dt {
+        border-radius: 2px;
+        padding: 6px;
+    }
+    .contractBenefit_wrap_white dd {
+        font-weight: normal;
+        font-size: 14px;
+        padding: 0;
+        margin: 0 0 0 20px;
+    }
+    .review_heading {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+}
+
+
+/* 成約特典ロイヤルカナン個人情報の取扱いについて */
+
+.personalInformationHandlingWrap {
+    background: #fff;
+    border-radius: 15px;
+    max-height: 300px;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+
+.personalInformationHandlingWrap .brownFrame {
+    margin: 0;
+}
+
+@media only screen and (max-width: 500px) {
+    .personalInformationHandlingWrap {
+        border-radius: 5px;
+        max-height: 180px;
+    }
+    .personalInformationHandlingWrap .brownFrame {
+        border-radius: 5px;
+    }
+    .personalInformationHandlingWrap .brownFrame .textInner {
+        padding: 5px 10px 10px;
+        border-radius: 5px;
+    }
+}
+
+
+/* 404ぺページ */
+
+#notfound .img_wrap {
+    background: url(../images/notfound_bg_pc.jpg) no-repeat center center;
+    width: 1100px;
+    height: 546px;
+    margin: 40px auto;
+    overflow: hidden;
+    border: 5px solid #e4d6ca;
+}
+
+#notfound .img_wrap .text_wrap {
+    width: 600px;
+    float: right;
+    margin: 80px 50px 0 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+#notfound .img_wrap .text_wrap .fontL {
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 1.1em;
+}
+
+#notfound .img_wrap .text_wrap .fontM {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.3em;
+    margin: 0 0 30px 0;
+}
+
+#notfound .img_wrap .text_wrap .fontS {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin: 0 0 30px 0;
+}
+
+#notfound .img_wrap .button a {
+    padding: 17px 0 15px;
+    width: 60%;
+}
+
+@media (max-width: 640px) {
+    #notfound .img_wrap {
+        background: url(../images/notfound_bg_sp.jpg) no-repeat center bottom;
+        background-size: auto 100%;
+        width: auto;
+        min-height: 41vh;
+        height: auto;
+        margin: 4%;
+        border: 3px solid #e4d6ca;
+        padding: 5% 3% 64%;
+    }
+    #notfound .img_wrap .text_wrap {
+        width: auto;
+        float: none;
+        margin: 0
+    }
+    #notfound .img_wrap .text_wrap .fontL {
+        font-size: 60px;
+        font-weight: bold;
+        line-height: 1.1em;
+    }
+    #notfound .img_wrap .text_wrap .fontM {
+        font-size: 36px;
+        font-weight: bold;
+        line-height: 1.3em;
+        margin: 0 0 2% 0;
+    }
+    #notfound .img_wrap .text_wrap .fontS {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.5em;
+        margin: 0 0 3% 0;
+    }
+    #notfound .img_wrap .button a {
+        padding: 12px 0 10px;
+        width: 80%;
+    }
+}
+
+
+/* 404ぺページ（最小サイズ） */
+
+@media screen and (max-width:350px) {
+    #notfound .img_wrap {}
+    #notfound .img_wrap .text_wrap .fontL {
+        font-size: 50px;
+    }
+    #notfound .img_wrap .text_wrap .fontM {
+        font-size: 30px;
+    }
+    #notfound .img_wrap .text_wrap .fontS {
+        font-size: 13px;
+    }
+}
+
+
+/*犬種から探すページ*/
+
+#dogbreed_search {
+    margin: 0 auto 60px auto;
+}
+
+section.subPageD .heading3 {
+    margin-bottom: 15px;
+    padding: 10px;
+    background: none;
+    font-size: 26px;
+    line-height: 100%;
+    border-bottom: none;
+    color: #6d3d23;
+}
+
+section.subPageD .icon_dog {
+    background: url(../images/icon_title02.png) no-repeat 0 center;
+    padding-left: 50px;
+}
+
+.dogbreedlist {
+    background: #ffffff;
+    border: 2px solid #f5d0cc;
+    border-radius: 5px;
+}
+
+.dogbreedlist .inactive-link{
+    pointer-events: none;
+    color: #a9a9a9;
+}
+
+.dogbreedlist.style2 {
+    background: #ffffff;
+    border: none;
+    border-radius: 0;
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.dogbreedlist dt {
+    font-size: 18px;
+    font-weight: bold;
+    color: #6b3a20;
+    border-top: 1px solid #f5d0cc;
+    padding: 14px 20px;
+}
+
+.dogbreedlist dt:first-child {
+    border-top: none;
+}
+
+.dogbreedlist dt.selected {
+    border-bottom: none;
+    background: url(../images/toggle_subtraction.png) no-repeat right 20px center #fdf5f4;
+    background-size: 15px;
+}
+
+.dogbreedlist dd {
+    padding: 8px 0 13px;
+    text-align: center;
+}
+
+.dogbreedlist ul {
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0 1.5%;
+}
+
+.dogbreedlist ul li {
+    width: 16.5%;
+    border-right: 1px dotted #dddddd;
+    border-bottom: 1px dotted #dddddd;
+    float: left;
+}
+
+.dogbreedlist ul li .dogbreed_set {
+    padding: 7% 3% 7%;
+}
+
+.dogbreedlist ul li a:hover .dogbreed_set {
+    background: #fff9ec;
+}
+
+.dogbreedlist ul li .dogbreed_set .photo {
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 96px;
+    position: relative;
+    margin: 0 auto 5px auto;
+    border-radius: 3px;
+}
+
+.dogbreedlist ul li img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+.dogbreedlist ul li p {
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    line-height: 1.4em;
+    height: 42px;
+}
+
+.dogbreedlist ul li p .count {
+    font-size: 12px;
+    padding: 0 0 0 2px;
+}
+
+.dogbreedlist ul li a:hover p {
+    color: #ec7190;
+}
+
+@media (max-width: 640px) {
+    #dogbreed_search {
+        margin: 13px auto 13px auto;
+    }
+    section.subPageD .heading3 {
+        margin-bottom: 7px;
+        padding: 5px;
+        font-size: 15px;
+    }
+    section.subPageD .icon_dog {
+        background: url(../images/icon_title02.png) no-repeat 0 center;
+        background-size: 26px;
+        padding-left: 30px;
+    }
+    .dogbreedlist dt {
+        font-size: 14px;
+        padding: 10px 13px 8px 10px;
+    }
+    .dogbreedlist dt.selected {
+        background: url(../images/toggle_subtraction.png) no-repeat right 8px center #fdf5f4;
+        background-size: 10px;
+    }
+    .dogbreedlist dd {
+        padding: 5px 0 8px;
+    }
+    .dogbreedlist ul {
+        padding: 0 1%;
+    }
+    .dogbreedlist ul li {
+        width: 33%;
+    }
+    .dogbreedlist ul li:nth-child(6),
+    .dogbreedlist ul li:nth-child(12),
+    .dogbreedlist ul li:nth-child(18),
+    .dogbreedlist ul li:nth-child(24),
+    .dogbreedlistd ul li:nth-child(30),
+    .dogbreedlist ul li:nth-child(36) {
+        border-right: 1px dotted #dddddd;
+    }
+
+    .dogbreedlist ul li .dogbreed_set {
+        padding: 7% 3% 7%;
+    }
+    .dogbreedlist ul li .dogbreed_set .photo {
+        height: 60px;
+    }
+    .dogbreedlist ul li p {
+        font-size: 10px;
+        letter-spacing: 0.3px;
+        line-height: 1.2em;
+        height: 34px;
+    }
+    .dogbreedlist ul li p .count {
+        font-size: 10px;
+        padding: 0 0 0 2px;
+    }
+}
+
+
+/* 最近見た子犬 */
+
+section.watched_history_puppyContent {
+    background: #f9e7e5;
+}
+
+section.watched_history_puppyContent .inner {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1100px;
+    padding: 25px 0 0;
+}
+
+section.watched_history_puppyContent .swiper-container {
+    margin: 20px 0 0;
+    padding: 0 0 40px 0;
+}
+
+section.watched_history_puppyContent .puppyList,
+section.watched_history_puppyContent .puppyList_layout2 {
+    background: #ffffff;
+    margin: 0 8px 0 8px;
+}
+
+
+/*注目の子犬販売情報*/
+
+section.featured_puppyContent {
+    background: #d8efed;
+}
+
+section.featured_puppyContent .inner {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1100px;
+    padding: 25px 0 0;
+}
+
+.title_flag {
+    background: url(../images/icon_flag.png) 0 0px no-repeat;
+    background-size: 45px;
+    padding: 6px 0 0 54px;
+}
+
+section.featured_puppyContent .swiper-container {
+    margin: 20px 0 0;
+    padding: 0 0 40px 0;
+}
+
+section.featured_puppyContent .puppyList,
+section.featured_puppyContent .puppyList_layout2 {
+    background: #ffffff;
+    margin: 0 8px 0 8px;
+}
+
+@media screen and (max-width:1100px) {
+    /* 最近見た子犬 */
+    section.watched_history_puppyContent {
+        margin: 12px 0 0px 0;
+    }
+    section.watched_history_puppyContent .inner {
+        width: 100%;
+        padding: 15px 3% 0;
+        box-sizing: border-box;
+    }
+    section.watched_history_puppyContent .swiper-container {
+        margin: 0px 0 0;
+        padding: 0 0 35px 0;
+    }
+    section.watched_history_puppyContent .puppyList,
+    section.watched_history_puppyContent .puppyList_layout2 {
+        margin: 0 3px 0 3px;
+    }
+    /* 注目の子犬 */
+    section.featured_puppyContent {
+        margin: 12px 0 0px 0;
+    }
+    section.featured_puppyContent .inner {
+        width: 100%;
+        padding: 15px 3% 0;
+        box-sizing: border-box;
+    }
+    .title_flag {
+        background: url(../images/icon_flag.png) 0 0px no-repeat;
+        background-size: 22px;
+        padding: 3px 0 3px 26px;
+    }
+    section.featured_puppyContent .swiper-container {
+        margin: 0px 0 0;
+        padding: 0 0 35px 0;
+    }
+    section.featured_puppyContent .puppyList,
+    section.featured_puppyContent .puppyList_layout2 {
+        margin: 0 3px 0 3px;
+    }
+}
+
+
+/*人気の子犬販売情報*/
+
+section.popularity_puppyContent {
+    margin-bottom: 60px;
+}
+
+section.popularity_puppyContent .inner {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1100px;
+    padding: 40px 0 30px;
+}
+
+section.popularity_puppyContent .swiper-container {
+    margin: 30px 0 0;
+    padding: 0 0 40px 0;
+}
+
+section.popularity_puppyContent .puppyList_layout2 {
+    background: #ffffff;
+    margin: 0 8px 0 8px;
+}
+
+@media screen and (max-width:1100px) {
+    section.popularity_puppyContent {
+        margin: 12px 0 0px 0;
+    }
+    section.popularity_puppyContent .inner {
+        width: 100%;
+        padding: 15px 3% 0;
+        box-sizing: border-box;
+    }
+    section.popularity_puppyContent .swiper-container {
+        margin: 0px 0 0;
+        padding: 0 0 35px 0;
+    }
+    section.popularity_puppyContent .puppyList_layout2 {
+        margin: 0 3px 0 3px;
+    }
+}
+
+
+/*おすすめ特集*/
+
+section.special .swiper-container-special .swiper-pagination {
+    padding: 0 0 0 0;
+}
+
+section.special .swiper-container-special .swiper-button-prev .swiper-button-next {
+    padding: 0;
+}
+
+section.swiper-container-special {
+    background: #fdf5f4;
+    margin-bottom: 60px;
+}
+
+section.swiper-container-special .inner {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 1100px;
+    padding: 40px 0 30px;
+}
+
+section.special .swiper-container-special {
+    margin: 0px 0 0;
+    padding: 0 0 40px 0;
+}
+
+@media screen and (max-width:320px) {
+    .special_single {
+        width: 31%;
+        margin: 1%;
+    }
+}
+
+
+/*コメント*/
+
+.comment_style1 {
+    padding: 20px;
+    background: #ffffff;
+}
+
+.comment_style1 a {
+    color: #ef6f90;
+}
+
+.comment_style1 .button a {
+    color: #ffffff;
+    margin: 30px auto 20px;
+}
+
+.comment_style1 .comment_box {
+    overflow: hidden;
+    padding: 10px 0 10px 0;
+}
+
+.comment_style1 .comment_secondary_box {
+    width: 60px;
+    text-align: center;
+}
+
+.comment_style1 .user .comment_secondary_box {
+    float: left;
+}
+
+.comment_style1 .breeder .comment_secondary_box {
+    float: right;
+}
+
+.comment_style1 .icon {
+    width: 49px;
+    margin: 30px auto 0;
+}
+
+.comment_style1 .icon img {
+    width: 100%;
+}
+
+.comment_style1 .comment_primary_box {
+    width: 85%;
+}
+
+.comment_style1 .user .comment_primary_box {
+    float: left;
+    padding: 0 0 0 20px;
+}
+
+.comment_style1 .breeder .comment_primary_box {
+    float: right;
+    padding: 0 20px 0 0px;
+}
+
+.comment_style1 .head_wrap {
+    overflow: hidden;
+}
+
+.comment_style1 .content_wrap {
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 16px 20px 13px 20px;
+}
+
+.comment_style1 .user .bg_speechballoon {
+    background: url(../images/comment_speechballoon_user.png) no-repeat left 12px;
+    background-size: 24px;
+    padding: 0 0 0 20px;
+    margin: 0 0 0 -20px;
+}
+
+.comment_style1 .user .bg_speechballoon .content_wrap {
+    background: #f9eabf;
+}
+
+.comment_style1 .breeder .bg_speechballoon {
+    background: url(../images/comment_speechballoon_breeder.png) no-repeat right 12px;
+    background-size: 24px;
+    padding: 0 20px 0 0px;
+    margin: 0 -20px 0 0px;
+}
+
+.comment_style1 .breeder .bg_speechballoon .content_wrap {
+    background: #fee5e5;
+}
+
+.comment_style1 .name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.comment_style1 .breeder .name {
+    float: right;
+}
+
+.comment_style1 .text {
+    font-size: 16px;
+}
+
+.comment_style1 .text .to {
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.comment_style1 .text p {
+    clear: both;
+}
+
+.comment_style1 .text img {
+    width: 45%;
+    float: left;
+    margin: 13px;
+}
+
+.comment_style1 .content_wrap .bottom_line {
+    overflow: hidden;
+    font-size: 15px;
+    margin: 8px 0 0 0;
+    clear: both;
+}
+
+.comment_style1 .data {
+    color: #888888;
+    float: left;
+}
+
+@media screen and (max-width:610px) {
+    .comment_style1 {
+        padding: 6px 3%;
+        margin: 8px 0 13px 0;
+    }
+    .comment_style1 .button a {
+        margin: 13px auto 13px;
+    }
+    .comment_style1 .box {
+        padding: 5px 0 5px 0;
+    }
+    .comment_style1 .comment_secondary_box {
+        width: 30px;
+    }
+    .comment_style1 .icon {
+        width: 100%;
+        margin: 30px auto 0;
+    }
+    .comment_style1 .comment_primary_box {
+        width: 84%;
+    }
+    .comment_style1 .user .comment_primary_box {
+        float: left;
+        padding: 0 0 0 20px;
+    }
+    .comment_style1 .breeder .comment_primary_box {
+        float: right;
+        padding: 0 20px 0 0px;
+    }
+    .comment_style1 .head_wrap {
+        overflow: hidden;
+    }
+    .comment_style1 .content_wrap {
+        padding: 14px 13px 10px 13px;
+    }
+    .comment_style1 .user .bg_speechballoon {
+        background: url(../images/comment_speechballoon_user.png) no-repeat left 12px;
+        background-size: 16px;
+        padding: 0 0 0 15px;
+        margin: 0 0 0 -15px;
+    }
+    .comment_style1 .breeder .bg_speechballoon {
+        background: url(../images/comment_speechballoon_breeder.png) no-repeat right 12px;
+        background-size: 16px;
+        padding: 0 15px 0 0px;
+        margin: 0 -15px 0 0px;
+    }
+    .comment_style1 .name {
+        font-size: 13px;
+    }
+    .comment_style1 .text {
+        font-size: 14px;
+    }
+    .comment_style1 .text .to {
+        margin-bottom: 8px;
+    }
+    .comment_style1 .text img {
+        width: 100%;
+        float: none;
+        margin: 8px auto 0;
+    }
+    .comment_style1 .content_wrap .bottom_line {
+        font-size: 13px;
+        margin: 5px 0 0 0;
+    }
+    .comment_style1 .contactForm {
+        background: none;
+        margin: 0px -3%;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .comment_style1 .comment_secondary_box {
+        width: 25px;
+    }
+    .comment_style1 .comment_primary_box {
+        width: 83%;
+    }
+}
+
+
+/* 返信コメント（ピンクの吹き出し） */
+
+.reply_comment {
+    background: url(../images/arrow19.png) no-repeat 15px 0px;
+    background-size: 29px;
+    padding: 14px 0 0 0;
+    font-size: 14px;
+}
+
+.reply_comment .wrap {
+    font-size: 14px;
+    background: #fee5e5;
+    padding: 20px 40px;
+    border-bottom: 1px solid #e7e7e7;
+    overflow: hidden;
+}
+
+.reply_comment .wrap .title {
+    letter-spacing: 0;
+    line-height: 1.3em;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.reply_comment .wrap .date {
+    text-align: right;
+    margin: 15px 0 0 0;
+}
+
+@media screen and (max-width:1100px) {
+    .reply_comment {
+        background: url(../images/arrow19.png) no-repeat 15px 0px;
+        background-size: 24px;
+        padding: 10px 0 0 0;
+    }
+    .reply_comment .wrap {
+        font-size: 12px;
+        padding: 15px 3% 5px;
+    }
+    .reply_comment .wrap .date {
+        margin: 12px 0 0 0;
+    }
+}
+
+section.contactForm table.form_style1 .error,
+.errortext {
+    color: #cc0000;
+}
+
+
+/* ユーザーログイン */
+
+.margin_on_box {
+    margin: 40px auto 40px;
+    width: 1100px;
+}
+
+.centerText {
+    text-align: center;
+    margin: 18px auto;
+}
+
+.margin_top {
+    margin: 40px auto 40px;
+    width: 1100px;
+}
+
+.user_login {
+    overflow: hidden;
+}
+
+.user_login li {
+    overflow: hidden;
+    width: 45%;
+    float: right;
+}
+
+.user_login li:last-child {
+    width: 45%;
+    float: left;
+}
+
+.user_login li.button a {
+    width: 100%;
+    border-radius: 100px;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    font-size: 24px;
+    padding: 13px 0 15px;
+}
+
+.user_login li.button a.button_green {
+    background-color: #81af55;
+}
+
+.user_login li.button a.button_green:hover {
+    background-color: #72a047;
+}
+
+.user_login li.button a span {
+    display: block;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+@media screen and (max-width:1100px) {
+    .margin_on_box {
+        padding: 3% 0;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 8px auto;
+    }
+    .centerText {
+        margin: 0 auto 8px;
+        font-size: 13px;
+    }
+    .user_login li,
+    .user_login li:last-child {
+        overflow: hidden;
+        width: 100%;
+        float: none;
+        margin: 8px auto;
+    }
+    .user_login li.button a {
+        line-height: 1.5em;
+        font-size: 16px;
+        padding: 8px 0;
+    }
+    .user_login li.button a.button_green {
+        background-color: #81af55;
+    }
+    .user_login li.button a.button_green:hover {
+        background-color: #72a047;
+    }
+    .user_login li.button a span {
+        font-size: 13px;
+    }
+}
+
+
+/*コメント*/
+
+.comment_style1 {
+    padding: 20px;
+    background: #ffffff;
+}
+
+.comment_style1 a {
+    color: #ef6f90;
+}
+
+.comment_style1 .comment_box {
+    overflow: hidden;
+    padding: 10px 0 10px 0;
+}
+
+.comment_style1 .comment_secondary_box {
+    width: 60px;
+    text-align: center;
+}
+
+.comment_style1 .user .comment_secondary_box {
+    float: left;
+}
+
+.comment_style1 .breeder .comment_secondary_box {
+    float: right;
+}
+
+.comment_style1 .icon {
+    width: 49px;
+    margin: 30px auto 0;
+}
+
+.comment_style1 .icon img {
+    width: 100%;
+}
+
+.comment_style1 .comment_primary_box {
+    width: 85%;
+}
+
+.comment_style1 .user .comment_primary_box {
+    float: left;
+    padding: 0 0 0 20px;
+}
+
+.comment_style1 .breeder .comment_primary_box {
+    float: right;
+    padding: 0 20px 0 0px;
+}
+
+.comment_style1 .head_wrap {
+    overflow: hidden;
+}
+
+.comment_style1 .content_wrap {
+    overflow: hidden;
+    border-radius: 5px;
+    padding: 16px 20px 13px 20px;
+}
+
+.comment_style1 .user .bg_speechballoon {
+    background: url(../images/comment_speechballoon_user.png) no-repeat left 12px;
+    background-size: 24px;
+    padding: 0 0 0 20px;
+    margin: 0 0 0 -20px;
+}
+
+.comment_style1 .user .bg_speechballoon .content_wrap {
+    background: #f9eabf;
+}
+
+.comment_style1 .breeder .bg_speechballoon {
+    background: url(../images/comment_speechballoon_breeder.png) no-repeat right 12px;
+    background-size: 24px;
+    padding: 0 20px 0 0px;
+    margin: 0 -20px 0 0px;
+}
+
+.comment_style1 .breeder .bg_speechballoon .content_wrap {
+    background: #fee5e5;
+}
+
+.comment_style1 .name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.comment_style1 .breeder .name {
+    float: right;
+}
+
+.comment_style1 .text {
+    font-size: 16px;
+}
+
+.comment_style1 .text .to {
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+.comment_style1 .text p {
+    clear: both;
+}
+
+.comment_style1 .text img {
+    width: 45%;
+    float: left;
+    margin: 13px;
+}
+
+.comment_style1 .content_wrap .bottom_line {
+    overflow: hidden;
+    font-size: 15px;
+    margin: 8px 0 0 0;
+    clear: both;
+}
+
+.comment_style1 .data {
+    color: #888888;
+    float: left;
+}
+
+@media screen and (max-width:610px) {
+    .comment_style1 {
+        padding: 6px 3%;
+        margin: 8px 0 13px 0;
+    }
+    .comment_style1 .box {
+        padding: 5px 0 5px 0;
+    }
+    .comment_style1 .comment_secondary_box {
+        width: 30px;
+    }
+    .comment_style1 .icon {
+        width: 100%;
+        margin: 30px auto 0;
+    }
+    .comment_style1 .comment_primary_box {
+        width: 84%;
+    }
+    .comment_style1 .user .comment_primary_box {
+        float: left;
+        padding: 0 0 0 20px;
+    }
+    .comment_style1 .breeder .comment_primary_box {
+        float: right;
+        padding: 0 20px 0 0px;
+    }
+    .comment_style1 .head_wrap {
+        overflow: hidden;
+    }
+    .comment_style1 .content_wrap {
+        padding: 14px 13px 10px 13px;
+    }
+    .comment_style1 .user .bg_speechballoon {
+        background: url(../images/comment_speechballoon_user.png) no-repeat left 12px;
+        background-size: 16px;
+        padding: 0 0 0 15px;
+        margin: 0 0 0 -15px;
+    }
+    .comment_style1 .breeder .bg_speechballoon {
+        background: url(../images/comment_speechballoon_breeder.png) no-repeat right 12px;
+        background-size: 16px;
+        padding: 0 15px 0 0px;
+        margin: 0 -15px 0 0px;
+    }
+    .comment_style1 .name {
+        font-size: 13px;
+    }
+    .comment_style1 .text {
+        font-size: 14px;
+    }
+    .comment_style1 .text .to {
+        margin-bottom: 8px;
+    }
+    .comment_style1 .text img {
+        width: 100%;
+        float: none;
+        margin: 8px auto 0;
+    }
+    .comment_style1 .content_wrap .bottom_line {
+        font-size: 13px;
+        margin: 5px 0 0 0;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .comment_style1 .comment_secondary_box {
+        width: 25px;
+    }
+    .comment_style1 .comment_primary_box {
+        width: 83%;
+    }
+}
+
+section.contactForm table.form_style1 .error,
+.errortext {
+    color: #cc0000;
+}
+
+/* wp chihuahua_contents */
+.box-title {
+    font-weight: bold;
+}
+.box28 .box-title {
+    display: inline-block;
+    position: absolute;
+    top: -30px;
+    left: -3px;
+    height: 28px;
+    padding: 0 9px;
+    border-radius: 5px 5px 0 0;
+    background: #62c1ce;
+    color: #fff;
+    font-size: 17px;
+    vertical-align: middle;
+    line-height: 28px;
+}
+.box28 {
+    position: relative;
+    margin: 3em 0 2em;
+    padding: 1.5em 1em;
+    border: solid 3px #62c1ce;
+}
+.c_linkto {
+    display: block;
+    overflow: hidden;
+    max-width: 400px;
+    width: 100%;
+    margin: 1em 0;
+    padding: 0;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+    color: #555;
+    font-weight: bold;
+    text-decoration: none!important;
+}
+@media only screen and (min-width: 481px){
+  .c_linkto {
+      display: inline-block;
+      margin-right: 20px;
+  }
+}
+.c_linkto .c_linkto_text {
+    display: block;
+    padding: 15px 13px;
+    line-height: 1.6;
+}
+.c_linkto:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+    color: #888;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+/*entry-content*/
+.entry-content {
+    padding: 40px 15px 0;
+}
+.entry-content p {
+    margin: 0 0 1.5em;
+}
+.entry-content p a {
+    text-decoration: underline;
+}
+.entry-content p a:hover {
+    text-decoration: none;
+}
+.entry-content .column_caption {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAIAAABLMMCEAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3NpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDYuMC1jMDAyIDc5LjE2NDQ2MCwgMjAyMC8wNS8xMi0xNjowNDoxNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplODI3YTFhYS1kMWY1LTRhNDctYWIzNC1hMDRiMTE1NmU0M2YiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDVDNTdDNTlDOTYyMTFFQTlBN0REMTBFMDg1Q0I4MDkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDVDNTdDNThDOTYyMTFFQTlBN0REMTBFMDg1Q0I4MDkiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIDIxLjIgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6ZTJmZDg4NDctYzQ2Ni0xNjQ0LWI2YzUtYjgwZDU3YWMxNjY2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmU4MjdhMWFhLWQxZjUtNGE0Ny1hYjM0LWEwNGIxMTU2ZTQzZiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PkhtYsUAAAA4SURBVHjaYnyXP4kBDpgYmXi5GJiZmDCFGP7+Y8IU+vf5GxOmEMO//0yYQiBlmEIgUUwhIAAIMACRpiUeGdlKhQAAAABJRU5ErkJggg==) repeat 0 0;
+    color: #fff;
+    position: relative;
+    padding: 17px 5px 15px 90px;
+    border-radius: 5px 5px 0 0;
+}
+.entry-content .column_caption:before {
+    position: absolute;
+    display: block;
+    top: -30px;
+    left: 4px;
+    width: 81px;
+    height: 91px;
+    content: "";
+    background: url(https://www.breeder-navi.jp/column/wp-content/uploads/2020/07/colum_hedding_icon-dog.png) no-repeat center center;
+    background-size: 100%;
+}
+.entry-content ul {
+    margin-bottom: 1.5em;
+    padding: 1.5em 1em 1.5em 2.5em;
+    border: solid 2px #dcdcdc;
+}
+.entry-content .column_caption2 {
+    background: #ffecca;
+    border-left: solid 5px #89bf09;
+    border-bottom: 1px dotted #be8d36;
+    padding: 15px 5px 13px 17px;
+}
+
+/*画像*/
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+.entry-content .size-auto,
+.entry-content .size-full,
+.entry-content .size-large,
+.entry-content .size-medium,
+.entry-content .size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+.entry-content .aligncenter,
+.entry-content img.aligncenter {
+    display: block;
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
+}
+/*定義リスト*/
+.entry-content dd {
+    margin-bottom: 1.5em;
+    margin-left: 0;
+    color: #787878;
+    font-size: .9em;
+}
+
+section.inquiry_form .pointWrap {
+    margin-bottom: 20px;
+    width: 100%;
+    overflow: auto;
+}
+
+#puppy .pointWrap {
+    margin-bottom: 10px;
+    width: 100%;
+    overflow: auto;
+}
+
+section.inquiry_form .point {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#puppy .pointWrap .point {
+    padding: 15px;
+    background: #f9e7e5;
+    border-radius: 10px;
+    max-width: 740px;
+    margin: auto;
+}
+
+section.inquiry_form .pointWrap .point h3 {
+    margin-bottom: 7px;
+    padding: 6px 5px 5px 27px;
+    background: url(../images/icon11.png) 0 50% no-repeat;
+    background-size: 20px;
+    font-size: 15px;
+}
+section.inquiry_form .pointWrap.small-font {
+    font-size: 90%;
+}
+section.inquiry_form .pointWrap.small-font.appealWrap {
+    width: auto;
+    margin-left: 2px;
+}
+
+section.inquiry_form ul.listPoint {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+section.inquiry_form ul.listPoint .title_bold {
+    font-weight: bold;
+}
+
+/*吹き出し（会話形式）[say]*/
+.say {
+    display: table;
+    overflow: hidden;
+    width: 100%;
+    margin: 1.5em 0;
+}
+
+.faceicon {
+    display: table-cell;
+    width: 100px;
+    padding-right: 20px;
+    text-align: center;
+    vertical-align: top;
+}
+
+.faceicon img {
+    width: 100%;
+    height: auto;
+    border: solid 3px #eaedf2;
+    border-radius: 50%;
+}
+.faceicon span {
+    font-size: 11px;
+    font-weight: bold;
+}
+.chatting {
+    display: table-cell;
+    position: relative;
+    width: calc(100% - 100px);
+    font-size: .95em;
+    vertical-align: top;
+}
+
+.sc {
+    display: inline-block;
+    text-align: left;
+    padding: 13px;
+    border: solid 2px #d5d5d5;
+    border-radius: 12px;
+    background: #fff;
+    word-break : break-all;
+}
+.sc:before {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: -23px;
+    border: 12px solid transparent;
+    border-right: 12px solid #d5d5d5;
+    content: "";
+}
+.sc:after {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    left: -20px;
+    border: 12px solid transparent;
+    border-right: 12px solid #fff;
+    content: "";
+}
+.sc p {
+    margin: 5px 0;
+    padding: 0;
+}
+
+/*見出し*/
+#inner-content .hh {
+    margin: 2.5em 0 1em;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    font-weight: bold;
+}
+#inner-content p.hh {
+    font-size: 1.1em;
+}
+#inner-content .hh:before,
+#inner-content .hh:after {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+    content: none;
+}
+#inner-content .hh23 {
+    position: relative;
+    padding: .3em 0;
+}
+#inner-content .hh23:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: repeating-linear-gradient(-45deg, #6ad1c8, #6ad1c8 2px, #fff 2px, #fff 4px);
+    content: "";
+}
+
+.box29 {
+    position: relative;
+    margin: 2em 0;
+    padding: 30px 15px 15px;
+    border: solid 2px #ffc107;
+}
+.box29 .box-title {
+    display: inline-block;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    height: 25px;
+    padding: 0 9px;
+    background: #ffc107;
+    color: #fff;
+    font-size: 17px;
+    vertical-align: middle;
+    line-height: 25px;
+}
+.box29 .box-title:before {
+    padding-right: 4px;
+    font-family: FontAwesome;
+    content: "\f0eb";
+}
+#inner-content .btn {
+    margin: .5em .5em .5em 0;
+    text-decoration: none;
+}
+#inner-content a.btn:hover {
+   text-decoration: none;
+}
+#inner-content .green-bc {
+   background: #90d581;
+}
+/* ボタン */
+.raised {
+    display: inline-block;
+    margin: .5em 0;
+    padding: .4em 1.3em;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.2), 0 2px 3px -2px rgba(0,0,0,.15);
+    color: #fff;
+    text-decoration: none;
+    vertical-align: middle;
+    transition: .3s ease-in-out;
+}
+.raised:hover,
+.raised:focus {
+    box-shadow: 0 13px 20px -3px rgba(0,0,0,.24);
+    text-decoration: none;   
+    -webkit-tap-highlight-color: transparent;
+}
+#puppy .pointWrap .point h3 {
+    margin-bottom: 7px;
+    padding: 6px 5px 5px 27px;
+    background: url(../images/icon11.png) 0 50% no-repeat;
+    background-size: 20px;
+    font-size: 15px;
+}
+/* =======================
+子犬詳細ページ 子犬情報
+==========================*/
+.lead_dog-info{
+    letter-spacing: 0;
+    text-align: right;
+  }
+  .lead_dog-info .date{
+    font-size: 14px;
+    color: #888888;
+    margin: 0 0 5px 3px;
+    padding: 10px 3% 0px;
+  }
+  .lead_dog-info .price{
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .lead_dog-info .price span.seiyaku {
+    margin: -3px 5px 0 0;
+    padding: 4px 5px 4px 5px;
+    text-align: center;
+    font-size: 12px;
+    background: #b2aa93;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    font-weight: normal;
+    vertical-align: middle;
+    border: solid 0px #b2aa93;
+    outline: solid 1px #b2aa93;
+    outline-offset: 1px;
+  }
+.lead_dog-info .price span.shoudan {
+    margin: -3px 5px 0 0;
+    padding: 4px 5px 4px 5px;
+    text-align: center;
+    font-size: 12px;
+    background: #61c8cb;
+    color: #fff;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    display: inline-block;
+    font-weight: normal;
+    vertical-align: middle;
+    border: solid 0px #61c8cb;
+    outline: solid 1px #61c8cb;
+    outline-offset: 1px;
+}
+  .l_d-i_table {
+    width: 100%;;
+    border-collapse: collapse;
+    font-size: 14px;
+    line-height: 1.4em;
+    text-align: center;
+    margin: 20px 0;
+  }
+  .l_d-i_table th {
+    background: #fddddd;
+    border-left: 1px #ffffff solid;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #555555;
+    padding: 5px 10px 3px 10px;
+  }
+  .l_d-i_table th:first-of-type {
+    border-left: 1px solid #fddddd;
+  }
+  .l_d-i_table td {
+    background: #fff;
+    border-right: 1px #eeeeee solid;
+    border-bottom: 1px #eeeeee solid;
+    vertical-align: middle;
+    padding: 12px 10px 10px 12px;
+  }
+  .l_d-i_table td:first-of-type {
+    border-left: 1px #eeeeee solid;
+  }
+  .l_d-i_table th.dog_breed{
+    width: 180px;
+  }
+  .l_d-i_table th.color{
+    width: 140px;
+  }
+  .l_d-i_table td span{
+    display: inline-block;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .l_d-i_box{
+    display: none;
+  }
+  @media screen and (max-width:1100px) {
+  /* =======================
+  子犬詳細ページ 子犬情報
+  ==========================*/
+    .lead_dog-info{
+      width: auto;
+      margin: 0px auto 13px auto;
+    }
+    .lead_dog-info .date{
+      font-size: 12px;
+      margin: 4px 0 2px 3px;
+      padding: 0;
+    }
+    .lead_dog-info .price{
+      font-size: 20px;
+      display: inline-block;
+    }
+    .l_d-i_table{
+      display: none;
+    }
+    .l_d-i_box{
+      display: block;
+      border: 1px solid #eeeeee;
+      border-radius: 4px;
+      padding: 12px 2% 8px 3%;
+      font-size: 11px;
+      line-height: 1.7em;
+      margin: 15px 0;
+    }
+    .l_d-i_box span{
+      padding: 0 5px 0 0;
+    }
+    .l_d-i_box .dog_breed{
+      padding: 0 5px 8px 0;
+      font-size: 13px;
+      display: inline-block;
+    }
+  }
+  @media screen and (max-width:374px) {
+  /* =======================
+  子犬詳細ページ 子犬情報
+  ==========================*/
+    .lead_dog-info .date{
+      font-size: 11px;
+    }
+    .lead_dog-info .price{
+      font-size: 13px;
+    }
+    .l_d-i_box{
+      padding: 10px 1% 8px 2%;
+      font-size: 10px;
+      margin: 15px 0;
+    }
+    .l_d-i_box .dog_breed{
+      padding: 0 5px 5px 0px;
+      font-size: 12px;
+    }
+  }
+
+/* ===================================
+子犬詳細ページ このワンちゃんを育てたのは情報
+=====================================*/
+.who-breeds {
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    max-width: 730px;
+    margin: 0 auto;
+}
+.who-breeds_thumbnail {
+    width: 45px;
+    height: 45px;
+    flex: 0 0 auto;
+    margin-right: 10px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.who-breeds_thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.who-breeds_text {
+    flex: 1 1 auto;
+}
+.who-breeds_breeder-name-prefix {
+    color: #999;
+    font-size: 0.8em;
+}
+.who-breeds_breeder-name {
+    font-weight: bold;
+    display: block;
+}
+.who-breeds_award-badge {
+    margin-left: 10px;
+    width: 40px;
+    flex: 0 0 auto;
+}
+.who-breeds_award-badge img {
+    width: 100%;
+    height: auto;
+}
+@media screen and (min-width:1101px) {
+    .who-breeds {
+        padding: 8px 14px;
+    }
+    .who-breeds_thumbnail {
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+    }
+
+    .who-breeds_award-badge {
+        width: 60px;
+    }
+}
+
+.dog-breed-faq dt,
+.dog-breed-faq dd {
+    padding: 20px;
+}
+
+.dog-breed-faq dt {
+    padding-left: 60px;
+    color: #333;
+    background: #fff url(../images/faq_q.png) no-repeat 10px 50%;
+    border-bottom: 1px #ea5f83 dashed;
+    box-sizing: border-box;
+}
+
+.dog-breed-faq dd {
+    display: block;
+    padding-left: 60px;
+    background: #fff4f3 url(../images/faq_a.png) no-repeat 10px 10px;
+}
+
+.dog-breed_card_wrap {
+    margin-bottom: 60px;
+}
+
+.dog-breed_card {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.dog-breed_card .d-b_c_content {
+    display: block;
+}
+
+.kenshu_title {
+    background: #F6E8E5;
+    font-size: 16px;
+    line-height: 1;
+    padding: 1.3em;
+    color: #F0718F;
+    text-align: center;
+}
+
+#dogbreed_search {
+    margin: 13px auto 13px auto;
+}
+
+h2.search_title {
+    font-size: 12px;
+    line-height: 1;
+    font-weight: normal;
+    margin: 20px 0 10px;
+}
+
+.search_tag_list li {
+    border-radius: 5px;
+    border: 1px solid #CCCCCC;
+    background-color: #fff;
+    display: inline-block;
+    margin: 0 0 4px 0;
+    color: #555;
+  }
+  
+  .search_tag_list li a {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 1;
+    padding: 8px;
+  }
+  
+  .search_tag_list li.active {
+    background-color: #A28871;
+  }
+  
+  .search_tag_list li.active a {
+    color: #fff;
+  }
+
+.search_window {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.search_text_dog_breeds {
+    padding: 12px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    width: 90%;
+    margin-right: 2%;
+    font-size: 16px;
+}
+
+.search_text_dog_breeds::-webkit-input-placeholder {
+    color: #CCCCCC;
+}
+
+.search_text_dog_breeds:-ms-input-placeholder {
+    color: #CCCCCC;
+}
+
+.search_text_dog_breeds::-ms-input-placeholder {
+    color: #CCCCCC;
+}
+
+.search_text_dog_breeds::placeholder {
+    color: #CCCCCC;
+}
+
+.search_window_submit {
+    width: 78px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    background: #F0718F;
+    border-radius: 5px;
+    border: none;
+    -webkit-box-shadow: 0px 2px 0px #C04D68;
+            box-shadow: 0px 2px 0px #C04D68;
+}
+
+.search_result {
+    background: #C9BAAD;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 8px;
+    margin-bottom: 16px;
+    text-align: end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.search_result .kenshu_sort {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 1px solid #ccc;
+    background: #fff url(../images/arrow_black_b.png) no-repeat 90% 50%;
+    background-size: 11px 7px;
+    color: #555;
+    width: 120px;
+    padding: .5em;
+    font-size: 13px;
+}
+
+.search_result .kenshu_sort::-webkit-input-placeholder {
+    color: #555;
+}
+
+.search_result .kenshu_sort:-ms-input-placeholder {
+    color: #555;
+}
+
+.search_result .kenshu_sort::-ms-input-placeholder {
+    color: #555;
+}
+
+.search_result .kenshu_sort::placeholder {
+    color: #555;
+}
+
+.dog-breed_card {
+    border: 2px solid #A28871;
+    background: #FAF7F4;
+    padding: 0;
+    border-radius: 5px;
+    line-height: 1.8em;
+    margin-bottom: 20px;
+}
+
+.dog-breed_card .d-b_c_title {
+    font-size: 16px;
+    padding: 12px 4%;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+    width: auto;
+    line-height: 1.3em;
+}
+
+.card_inner {
+    padding: 12px 5px 20px;
+}
+
+.dog_photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.dog_photo img {
+    height: 120px;
+    width: 50%;
+    margin-right: 1px;
+    object-fit: cover;
+}
+
+.dog_photo img:last-of-type {
+    margin-right: 0;
+}
+
+.tags .tag_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+.tags .tag_list li {
+    font-size: 13px;
+    color: #555555;
+    background: #FFFFFF;
+    padding: 5px 7px 6px;
+    border-radius: 4px;
+    line-height: 1;
+    margin: 0 7px 7px 0;
+}
+
+
+.detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    border-top: 1px solid #C9BAAD;
+    width: 100%;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.detail .detail_title {
+    width: 5em;
+    background: #C9BAAD;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.detail dd {
+    font-size: 12px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    line-height: 1.6;
+    padding-left: 4px;
+}
+
+.detail_2col {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.detail_dog_country,
+.detail_dog_size {
+    width: 49%;
+    margin-right: 1%;
+}
+
+.dog-breed_card .d-b_c_button_area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+
+.dog-breed_card .d-b_c_button_area a.icon_arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 5px;
+    background: #A28871 url(../images/arrow_w.png) no-repeat 95% 49%;
+    background-size: 7px 11px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px 0 7px 10px;
+    margin-right: 2px;
+    font-size: x-small;
+}
+
+.d-b_c_button_area .inactive-link{
+    pointer-events: none;
+    background: #ded3c9 url(../images/arrow_w.png) no-repeat 95% 49% !important;
+    background-size: 7px 11px !important;
+}
+
+.dog-breed_card .d-b_c_button_area a.icon_arrow span {
+    display: inline-block;
+    line-height: 1;
+    margin-right: 10px;
+    padding: 3px;
+}
+
+@media screen and (min-width: 1100px) {
+    .kenshu_title {
+        font-size: 30px;
+    }
+    section.subPageD .inner.search-inner {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        max-width: 900px;
+        margin-top: 40px;
+        border: 1px solid #707070;
+        padding: 0 60px;
+    }
+    h2.search_title {
+        font-size: 16px;
+        margin: 40px 0 20px;
+    }
+
+    .search_tag_list li {
+        border-radius: 10px;
+        margin: 0 0 5px 0;
+    }
+    .search_tag_list li a {
+        font-size: 16px;
+        padding: 14px 1em;
+    }
+
+    .search_window {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
+    }
+    .search_text_dog_breeds {
+        padding: 1em;
+        width: 550px;
+    }
+    .search_window_submit {
+        width: 110px;
+        font-size: 16px;
+        -webkit-box-shadow: 0px 4px 0px #C04D68;
+                box-shadow: 0px 4px 0px #C04D68;
+    }
+    .search_result {
+        font-size: 16px;
+        margin-bottom: 40px;
+        padding: 10px 8px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .search_result p {
+        width: 780px;
+        font-size: 16px;
+    }
+    .search_result .form {
+        margin: auto;
+        max-width: 900px;
+    }
+    
+    .pc-flex {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .card_inner {
+        padding: 20px 40px 20px 20px;
+    }
+    .dog_photo {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .dog_photo img {
+        width: 380px;
+        height: 280px;
+        margin-bottom: 1px;
+        object-fit: cover;
+    }
+    .txt_area {
+        padding: 20px 0 0 20px;
+    }
+    .tags .tag_list {
+        margin-bottom: 40px;
+    }
+    .tags .tag_list li {
+        font-size: 16px;
+        padding: 8px 10px 8px;
+        border-radius: 4px;
+        line-height: 1;
+        margin: 0 7px 7px 0;
+    }
+    .detail {
+        margin-bottom: 20px;
+    }
+    .detail .detail_title {
+        width: 7em;
+        font-size: 20px;
+    }
+    .detail dd {
+        font-size: 16px;
+        padding-left: 1em;
+    }
+    .detail_2col {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .detail_dog_country,
+    .detail_dog_size {
+        width: 100%;
+        margin-right: 0;
+    }
+    .dog-breed_card .d-b_c_button_area {
+        max-width: 678px;
+        margin: 20px auto 0;
+    }
+    .dog-breed_card .d-b_c_button_area a.icon_arrow {
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: left;
+            -ms-flex-pack: left;
+                justify-content: left;
+        border-radius: 5px;
+        background-size: 14px 22px;
+        font-size: 20px;
+        padding: 14px 50px 14px 20px;
+        margin-right: 6px;
+    }
+    .d-b_c_button_area .inactive-link{
+        background-size: 14px 22px !important;
+    }
+    .dog-breed_card .d-b_c_button_area a.icon_arrow span {
+        display: block;
+        line-height: 1.2;
+    }
+}
+.accordion-content {
+    display: none;
+}
+.accordion-title {
+    position: relative;
+  }
+.accordion-title::before {
+    border-right: solid 2px #A28871;
+    border-top: solid 2px #A28871;
+    content: "";
+    display: block;
+    height: 8px;
+    position: absolute;
+    right: 3px;
+    top: 38%;
+    transform: rotate(135deg);
+    transition: transform .3s ease-in-out, top .3s ease-in-out;
+    width: 8px;
+}
+.accordion-title.open::before {
+    top: 45%;
+    transform: rotate(-45deg);
+}
+
+  /*# sourceMappingURL=kenshu.css.map */
+
+.selected_items:after {
+    content: "/";
+}
+.selected_items:last-child:after {
+    content: none;
+}
+.search_area {
+    margin: 0px 10px;
+    width: auto;
+}
+@media screen and (min-width: 1100px) {
+    .search_area {
+        margin: auto;
+        width: 1100px;
+    }
+}
+.otherBreederDog .button a {
+    padding-right: 8%;
+    padding-left: 8%;
+}
